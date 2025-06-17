@@ -1,39 +1,45 @@
 <script>
 import Sidebar from '@/components/sidebar/Sidebar'
+import Navbar from '@/components/sidebar/Navbar'
+
 import { sidebarWidth } from '@/components/sidebar/state'
 export default {
-  components: { Sidebar },
+  components: { Sidebar,Navbar },
   setup() {
     return { sidebarWidth }
   }
 }
 </script>
 <template>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<Navbar />
+<div class="d-flex">
   <Sidebar />
+</div>
   <div :style="{ 'margin-left': sidebarWidth }">
     <router-view />
   </div>
 </template>
 
+
+
+<style scoped>
+@import url('../src/globle.scss');
+</style>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+   font-family: "Montserrat"!important;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+ body {
+   min-height: 100vh;
+   color: var(--color-text);
+   background: #182040;
+   transition:color 0.5s,
+   background-color 0.5s;
+   line-height: 1.6;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
 </style>

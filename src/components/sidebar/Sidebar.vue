@@ -16,32 +16,113 @@
                     <img src="../../assets/Image/PlusIcon.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="TabBarMain">
-           <SelectButton v-model="value" :options="options" />
-            <!-- <ToggleGroupRoot v-model="toggleStateSingle" type="single" class="flex">
-                <ToggleGroupItem @click="goToMainPage" value="left" aria-label="Toggle italic" id="Tab" :class="toggleGroupItemClasses">
-                    All
-                </ToggleGroupItem>
-                <ToggleGroupItem value="center" aria-label="Toggle italic" id="Tab" :class="toggleGroupItemClasses">
-                    Stocks
-                </ToggleGroupItem>
-                <ToggleGroupItem value="right" aria-label="Toggle italic" id="Tab" :class="toggleGroupItemClasses">
-                    Crypto
-                </ToggleGroupItem>
-                <ToggleGroupItem value="right" aria-label="Toggle italic" id="Tab" :class="toggleGroupItemClasses">
-                    ETFs
-                </ToggleGroupItem>
-            </ToggleGroupRoot>
-            <div class="SearchDv">
-                <img :src="searchIcon" alt="">
-            </div> -->
+            <div class="TabBarMain">
+                <SelectButton v-model="value" :options="options" />
+                <div class="SearchDv">
+                    <img src="../../assets/Image/SearchIcon.png" alt="">
+                </div>
+            </div>
         </div>
         <!-- <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
         <SidebarLink to="/dashboard" icon="fas fa-columns">Dashboard</SidebarLink>
         <SidebarLink to="/analytics" icon="fas fa-chart-bar">Analytics</SidebarLink>
         <SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>
         <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink> -->
+    </div>
+    <div class="MessagesDv_ContentMain">
+        <router-link to="/dashboard">
+            <div class="MessageDv" :class="{ active: selectedIndex === 0 }" @click="selectedIndex = 0">
+                <div class="Noc-GeneratingDvMain">
+                    <div class="CompanyDv">
+                        <figure>
+                            <img src="../../assets/Image/Apple_Logo_Icon.png" alt="Company Logo" />
+                        </figure>
+                        <p>$100</p>
+                        <h6>
+                            <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                            29%
+                        </h6>
+                    </div>
+                    <div class="CompanyData_Entry">
+                        <div class="CompanyName">
+                            <div class="DocumentKey">
+                                <h2><span>#</span>GOOG</h2>
+                                <div class="dot"></div>
+                                <p>Google Inc</p>
+                            </div>
+                            <div class="Count">
+                                <h5>7</h5>
+                            </div>
+                        </div>
+
+                        <div class="GrphMain">
+                            <h6>Generating...</h6>
+                            <img src="../../assets/Image/GraphMountain.png" alt="Graph" />
+                        </div>
+
+                        <div class="Dv_Of_ActionIconMain">
+                            <div class="Dv_Of_ActionIcon">
+                                <div class="flexD">
+                                    <img src="../../assets/Image/Comment_Icon.png" alt="Comment Icon" />
+                                    <p>27k</p>
+                                </div>
+                                <img src="../../assets/Image/Bell_Icon.png" alt="Bell Icon" />
+                                <img src="../../assets/Image/Reload_Icon.png" alt="Reload Icon" />
+                                <img src="../../assets/Image/Pin_Icon.png" alt="Pin Icon" />
+                            </div>
+                            <p>2m ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </router-link>
+        <router-link to="/image">
+          <div class="MessageDv" :class="{ active: selectedIndex === 1 }" @click="selectedIndex = 1">
+            <div class="Noc-GeneratingDvMain">
+                <div class="CompanyDv">
+                    <figure>
+                        <img src="../../assets/Image/Apple_Logo_Icon.png" alt="Company Logo" />
+                    </figure>
+                    <p>$100</p>
+                    <h6>
+                        <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                        29%
+                    </h6>
+                </div>
+                <div class="CompanyData_Entry">
+                    <div class="CompanyName">
+                        <div class="DocumentKey">
+                            <h2><span>#</span>GOOG</h2>
+                            <div class="dot"></div>
+                            <p>Google Inc</p>
+                        </div>
+                        <div class="Count">
+                            <h5>7</h5>
+                        </div>
+                    </div>
+
+                    <div class="GrphMain">
+                        <h6>Generating...</h6>
+                        <img src="../../assets/Image/GraphMountain.png" alt="Graph" />
+                    </div>
+
+                    <div class="Dv_Of_ActionIconMain">
+                        <div class="Dv_Of_ActionIcon">
+                            <div class="flexD">
+                                <img src="../../assets/Image/Comment_Icon.png" alt="Comment Icon" />
+                                <p>27k</p>
+                            </div>
+                            <img src="../../assets/Image/Bell_Icon.png" alt="Bell Icon" />
+                            <img src="../../assets/Image/Reload_Icon.png" alt="Reload Icon" />
+                            <img src="../../assets/Image/Pin_Icon.png" alt="Pin Icon" />
+                        </div>
+                        <p>2m ago</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </router-link>
     </div>
 </div>
 </template>
@@ -57,7 +138,6 @@ import {
     toggleSidebar,
     sidebarWidth
 } from './state'
-
 export default {
     components: {
         // SidebarLink,
@@ -65,7 +145,6 @@ export default {
     },
     setup() {
         const checked = ref(false)
-
         return {
             collapsed,
             toggleSidebar,
@@ -76,58 +155,7 @@ export default {
 }
 </script>
 <script setup>
-const value = ref('All');
-const options = ref(['All', 'Stocks', 'Crypto', 'ETFs']);
-const toggleGroupItemClasses = 'hover:text-white focus:bg-[#2A5391] focus:text-white'
+const value = ref('All')
+const options = ['All', 'Stocks', 'Crypto', 'ETFs']
+const selectedIndex = ref(null)
 </script>
-<style>
-:root {
-    --sidebar-bg-color: #2f855a;
-    --sidebar-item-hover: #38a169;
-    --sidebar-item-active: #276749;
-}
-</style>
-<style scoped>
-@import url('./SideBar.scss');
-
-.sidebar {
-    color: white;
-    background-color: var(--sidebar-bg-color);
-
-    float: left;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding: 0.5em;
-
-    transition: 0.3s ease;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar h1 {
-    height: 2.5em;
-}
-
-.collapse-icon {
-    position: absolute;
-    bottom: 0;
-    padding: 0.75em;
-
-    color: rgba(255, 255, 255, 0.7);
-
-    transition: 0.2s linear;
-}
-
-.rotate-180 {
-    transform: rotate(180deg);
-    transition: 0.2s linear;
-}
-::v-deep(.p-selectbutton .p-button.p-highlight) {
-  background-color: #2A5391 !important;
-  color: white !important;
-}
-</style>
