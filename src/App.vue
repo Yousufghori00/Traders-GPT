@@ -1,5 +1,5 @@
 <script>
-import Sidebar from '@/components/sidebar/Sidebar'
+import Sidebar from './components/sidebar/SideBar2.vue'
 import Navbar from '@/components/sidebar/Navbar'
 
 import { sidebarWidth } from '@/components/sidebar/state'

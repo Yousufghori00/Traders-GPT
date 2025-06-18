@@ -23,6 +23,24 @@
                     </div>
                 </div>
             </div>
+            <div class="AleartsDv">
+                <div class="Icon_Plus_ToggleDV">
+                    <img src="../../assets/Image/Pin_Icon.png" alt="">
+                    <p>Pin</p>
+                    <ToggleSwitch v-model="checked" />
+                </div>
+                <div class="Icon_Plus_ToggleDV">
+                    <img src="../../assets/Image/Reload_Icon.png" alt="">
+                    <p>Updates</p>
+                      <ToggleSwitch v-model="checked" />
+                </div>
+                <div class="Icon_Plus_ToggleDV">
+                    <img src="../../assets/Image/Pin_Icon.png" alt="">
+                    <p>Alerts</p>
+                     <ToggleSwitch v-model="checked" />
+                </div>
+                <img style="width: 20px; height: 20px;" src="../../assets/Image/setting.svg" alt="">
+            </div>
         </div>
         <div class="NavbarContentDvTwo">
             <div class="TabsBtn">
@@ -39,11 +57,15 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import {
+    ref
+} from 'vue'
 import SelectButton from 'primevue/selectbutton';
+import ToggleSwitch from 'primevue/toggleswitch';
 export default {
     components: {
-        SelectButton
+        SelectButton,
+        ToggleSwitch
     },
     setup() {
         const checked = ref(false)
@@ -52,7 +74,10 @@ export default {
         }
     }
 }
-</script><script setup>
+</script>
+<script setup>
+const checked = ref(false);
 const value = ref('Analytics')
 const options = ['Analytics', 'History']
 </script>
+

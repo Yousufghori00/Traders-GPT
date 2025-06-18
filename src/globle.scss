@@ -1,5 +1,6 @@
 :root {
     --vt-c-Traders-Main-Background: #1C2648;
+    --vt-c-Traders-Main-SideBar2-Background: #111831;
     --vt-c-Traders-SideMenu-Background: #1C2648;
     --vt-c-Color-White: #ffffff;
     --vt-c-Color-Text-Soft-Brow: #BFBFBF;
@@ -10,14 +11,158 @@
     --vt-c-Color-Text-gray: #7B879A;
 }
 
+.sidebar{ color: var(--vt-c-Color-White); background-color: var(--sidebar-bg-color); float: left; position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; padding: 0px; transition: 0.3s ease; display: flex; flex-direction: column; }
+.sidebar-2{ border-right: 1px solid #1D274B; color: var(--vt-c-Color-White); background-color: var(--vt-c-Traders-Main-SideBar2-Background); float: left; position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; padding: 0px; transition: 0.3s ease; display: flex; flex-direction: row;
+    .SideBarStickMain{
+        border-right: 1px solid #23305B; padding: 26px 18px; display: flex; flex-direction: column; gap: 25px; background: #192345; height: 100% ;
+        img{ width: 34px; height: 32px; }
+        .hr{ background: #49516C; width: 100%; height: 2px; }
+        .Icons{
+            cursor: pointer; border-radius: 5px; display: flex; justify-content: center; align-items: center; height: 35px; height: 35px;
+            img{
+                width: 20px; height: 18px;
+            }
+            .BigHardimg{
+                width: 16px; height: 20px;
+            }
+        }
+        .active{
+             background: #1E3F7C; 
+        }
+    }
+      .LogoPlusConverSationMain{
+        padding: 23px 10px; display: flex; flex-direction: column; gap: 30px;
+         .T-GPTLogo{
+             display: flex; align-items: center; justify-content: space-between;
+            img{
+                width: 174px; height: 32px; 
+            }
+            .SideBarToggle{
+                width: 24px; height: 24px; cursor: pointer;
+            }
+        }
+        .Dv_ConverSation{
+            display: flex; flex-direction: column; gap: 20px;
+           
+            .ConverSationMain{
+                display: flex; justify-content: space-between; align-items: center;
+                .ConverSation{
+                    display: flex; align-items: center; gap: 10px;
+                    img{
+                        width: 20px; height: 20px; 
+                    }
+                    h1{
+                        color: #8CB8CE; margin: 0px; font-size: 15px; font-weight: 600; line-height: 16px;
+                    }
+                }
+                .PlusIcon{
+                    width: 30px; height: 28px; cursor: pointer; background: #0098E4; display: flex; border-radius: 4px; align-items: center; justify-content: center; 
+                    
+                    img{
+                        width: 18px; height: 18px; 
+                    }
+                }
+            }
+            .TabBarMain{
+                width: 100%; display: flex; align-items: center; justify-content: space-between;
+               .p-togglebutton-checked{
+                border-radius: 10px; background: #2A5391;
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                }
+            }
+            .p-togglebutton-label{
+                color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 14px; padding: 10px 15px;
+            }
+            .SearchDv{
+                    border-radius: 6px; width: 28px; height: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center; background: var(--vt-c-Traders-Main-Background) ; 
+                    img{
+                        width: 16px; height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .MessagesDv_ContentMain{
+       cursor: pointer;
+       .MessageDv{
+           width: 100%; padding: 13px 19px;  border-left: 2px solid var(--vt-c-Traders-Main-SideBar2-Background); border-bottom: 1px solid #192345;
+           .Noc-GeneratingDvMain{ 
+               display: flex; flex-direction: row; gap: 15px;
+               .CompanyDv{
+                   display: flex; flex-direction: column; gap: 7px; min-width: 47px;
+                   figure{
+                       width: 40px; height: 40px;  margin: 0px 0px 4px 0px;
+                       img{
+                           width: 100%; height: 100%; border-radius: 14px;
+                       }
+                   }
+                   h1{
+                       margin: 0px;color: #465787; font-size: 12px; font-weight: 400; line-height: 100%;
+                   }
+               }
+               .CompanyData_Entry{ 
+                   display: flex; flex-direction: column; gap: 6px; width: 100%;
+                   .CompanyName{
+                       display: flex; justify-content: space-between; align-items: center;
+                       .DocumentKey{
+                           display: flex; align-items: center; gap: 10px;
+                           h2{
+                               color: var(--vt-c-Color-White); font-size: 15px; font-weight: 600; line-height: 100%; margin: 0px;
+                               span{
+                                   color: var(--vt-c-Color-Text-Light-Gray); font-weight: 400;
+                               }
+                           }
+                           p{
+                               line-height: 100%; color: var(--vt-c-Color-Text-Light-Plus-Gray); font-size: 12px; font-weight: 400; margin: 0px;
+                           }
+                       }
+                       .CountDv{
+                        display: flex; flex-direction: row; gap: 15px;
+                        .Count{ 
+                            height: 20px; width: fit-content; display: flex; justify-content: center; align-items: center;  border-radius: 30px; background: #2A5391; padding: 0px 9px;
+                            h5{
+                                line-height: 100%; color: var(--vt-c-Color-White);font-size: 12px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); font-weight: 400; margin: 0px;
+                            }
+                        }
+                        h6{
+                            color: var(--vt-c-Color-White); font-size: 14px; font-weight: 700; margin: 0px; letter-spacing: 0.8px;
+                        }                       
+                    }
+                }
+                   .GrphMain{
+                    display: flex; justify-content: space-between; align-items: center;
+                       h6{
+                           color: #465787; font-size: 14px; font-weight: 400; margin: 0px; line-height: 100%;  white-space: nowrap; width: 140px; text-overflow: ellipsis; overflow: hidden;
+                       }
+                      h5{
+                        margin: 0px; display: flex; align-items: center; gap: 3px; color: var(--vt-c-Color-Text-HighLight-Green); font-size: 12px; font-weight: 500; line-height: 100%;
+                       img{
+                           width: 6px; height: 5px;
+                       }
+                   }
+                   }
+                   .Dv_Of_ActionIconMain{
+                       display: flex; align-items: center; justify-content: space-between;
+                       p{
+                           color: var(--vt-c-Color-Text-Light-Gray); font-size: 14px; font-weight: 400; margin: 0px; line-height: 100%; white-space: nowrap; width: 140px; text-overflow: ellipsis; overflow: hidden;
+                       }
+                        img{
+                           width: 58px; height: 16px;
+                       }
+                   }
+               }
+           }
+       }
+       .MessageDv.active {
+           background-color: #182245;
+       }
+    }
 
-
-// SideMenu Scss Styling
-// .sidebar{ color: white; background-color: var(--sidebar-bg-color); float: left; position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; padding: 0.5em; transition: 0.3s ease; display: flex; flex-direction: column;}
-.sidebar{ color: white; background-color: var(--sidebar-bg-color); float: left; position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; padding: 0.5em; transition: 0.3s ease; display: flex; flex-direction: column; }
+}
 .rotate-180 { transform: rotate(180deg); transition: 0.2s linear;}
 .sidebar{
-     width: 380px; background: var(--vt-c-Traders-SideMenu-Background); color: var(--vt-c-Color-White); height: 100vh; padding: 0px;
+      width: 380px; background: var(--vt-c-Traders-SideMenu-Background); color: var(--vt-c-Color-White); height: 100vh; padding: 0px;
      .LogoPlusConverSationMain{
         padding: 23px 20px; display: flex; flex-direction: column; gap: 30px;
          .T-GPTLogo{
@@ -56,7 +201,7 @@
                .p-togglebutton-checked{
                 border-radius: 30px; background: #2A5391;
                 .p-togglebutton-label{
-                    color: #FFFFFF; line-height: 100%; font-weight: 600; 
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
                 }
             }
             .p-togglebutton-label{
@@ -239,7 +384,7 @@
                   .p-togglebutton-checked{
                 border-radius: 8px; background: #203063; height: 41px;
                 .p-togglebutton-label{
-                    color: #FFFFFF; line-height: 100%; font-weight: 600; 
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
                 }
             }
             .p-togglebutton-label{

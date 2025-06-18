@@ -1,0 +1,132 @@
+.DashBoradMainContent_DV{
+    display: flex; flex-direction: row; width: 100%; 
+    .DashBoardOneMain{
+        width: 70%;
+    }
+    .DashBoardTwoMain{
+        width: 30%; height: 100%; padding: 16px 20px; background: var(--vt-c-Traders-Main-SideBar2-Background); display: flex; flex-direction: column; gap: 28px;
+        .ImgHead{
+            display: flex; justify-content: space-between; align-items: center;
+            img{
+                width: 150px; height: 31px;
+            }
+            .icon{
+                width: 25px; height: 25px;
+            }
+        }
+        .SelectBtn{
+            width: 100%; overflow: auto; 
+            .p-togglebutton-checked{
+                border-radius: 8px; background: #203063; height: 41px;
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                }
+            }
+            .p-togglebutton-label{
+                color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 14px; padding: 12px 15px;
+            }
+        }
+        .SelectBtn::-webkit-scrollbar { display: none;}
+        .CompanyControversyMain{
+            padding: 2px 5px; 
+            .CompanyNameDv{
+                    flex-direction: column; display: flex; gap: 20px;
+                .CampanyLogo{
+                    display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+                    img{
+                        width: 46px; height: 46px;
+                    }
+                    .CampanyTextMain{ 
+                        display: flex; flex-direction: row; gap: 15px; align-items: center;
+                        .CampanyText{
+                            display: flex; flex-direction: column; gap: 4px;
+                            h1{
+                               font-size: 14px; font-weight: 600; line-height: 100%; color: var(--vt-c-Color-White); margin: 0px;
+                               span{
+                                color: #8E8C97; 
+                               }
+                            }
+                            h2{
+                                color: #FFB21D; font-size: 20px; font-weight: 700; gap: 15px; margin: 0px; line-height: 100%;
+                                span{
+                                    color: #28CF62; font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                    .threeDot{
+                        width: 28px; height: 28px;
+                    }
+                }
+                    .BoxMain{
+                        overflow: auto; width: 100%;
+                        .BoxDvContent{
+                            display: flex; flex-direction: row; gap: 20px; align-items: center;
+                            .BoxDvContentTextMain{
+                                width: 220px; height: 143px; background: #171E40; padding: 20px; border-radius: 10px; display: flex; flex-direction: column; gap: 22px; justify-content: center; 
+                                .BoxText{
+                                    display: flex; flex-direction: column; gap: 8px;
+                                    p{
+                                        text-transform: uppercase; margin: 0px; color: #8E8C97; font-size: 12px; font-weight: 400; line-height: 100%;
+                                    }
+                                    h2{
+                                        margin: 0px; font-size: 16px; font-weight: 700; color: var(--vt-c-Color-White); line-height: 100%;
+                                    }
+                                    h6{
+                                        color: #FFB21D; font-size: 16px; font-weight: 700; gap: 15px; margin: 0px; line-height: 100%;
+                                        span{
+                                            color: #28CF62; font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+                .BoxMain::-webkit-scrollbar { display: none;}
+                .ForCastMain{
+                    display: flex; flex-direction: column; gap: 15px;
+                    .ForCastHead{
+                        display: flex; justify-content: space-between; align-items: center;
+                        p{
+                            color: var(--vt-c-Color-White); font-size: 16px; font-weight: 600; margin: 0px;
+                        }
+                        h2{
+                            color: #899AB4; font-size: 12px;font-weight: 500; margin: 0px;
+                        }
+                    }
+                    .DayOfBoxMainDv{
+                        width: 100%; overflow: auto;
+                        .DivForKeep{
+                            display: flex; flex-direction: row; gap: 20px; width: 100%;
+                            .DayOfBoxMain{
+                                gap: 30px;height: 77px; border-radius: 10px; padding: 15px; background: #171E40; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+                                .OnDay{
+                                    width: 47px; height: 47px; border-radius: 8px; background: #182346; display: flex; flex-direction: column; justify-content: center; gap: 3px; align-items: center; 
+                                    p{
+                                        color: var(--vt-c-Color-White); font-size: 16px; font-weight: 700; margin: 0px; line-height: 100%; 
+                                    }
+                                    h6{
+                                        color: #BABDC7; font-size: 10px; font-weight: 700; margin: 0px; line-height: 100%;
+                                    }
+                                }
+                                h1{
+                                    font-size: 18px; font-weight: 700; margin: 0px; color: var(--vt-c-Color-White);
+                                }
+                                .LinearGraph{
+                                    display: flex; flex-direction: column; align-items: end; gap: 5px;
+                                    img{
+                                        width: 57px; height: 17px; 
+                                    }
+                                    h3{
+                                        margin: 0px; font-size: 14px; font-weight: 500; margin: 0px; color: #34E36F;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .DayOfBoxMainDv::-webkit-scrollbar { display: none;}
+                }
+            }
+        }
+    }
+}
