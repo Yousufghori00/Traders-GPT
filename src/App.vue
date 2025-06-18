@@ -12,7 +12,9 @@ export default {
 </script>
 <template>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<Navbar />
+<div :style="{ 'margin-left': sidebarWidth }">
+  <Navbar />
+</div>
 <div class="d-flex">
   <Sidebar />
 </div>
@@ -41,5 +43,6 @@ export default {
    text-rendering: optimizeLegibility;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+   margin: 0px;
  }
 </style>

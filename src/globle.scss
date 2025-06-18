@@ -101,12 +101,6 @@
                        display: flex; justify-content: space-between; align-items: center;
                        .DocumentKey{
                            display: flex; align-items: center; gap: 10px;
-                              h2.router-link-active,
-h2.router-link-exact-active,
-h2.router-link {
-  text-decoration: none;
-}
-
                            h2{
                                color: var(--vt-c-Color-White); font-size: 15px; font-weight: 600; line-height: 100%; margin: 0px;
                                span{
@@ -159,4 +153,99 @@ h2.router-link {
        }
     }
  
+}
+
+
+.navbar{
+    padding: 18px 20px; background: #1C2648; width: 100%; height: 80px; border-left: 1px solid #19213F; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    .NavbarContentDv{
+        display: flex; justify-content: space-between; align-items: center; gap: 20px;
+        .NavbarContentDvOne{ 
+            width: 70%; display: flex; justify-content: space-between; align-items: center; 
+            .CompanyDv{
+                display: flex; flex-direction: row;  align-items: end; gap: 12px;
+                figure{
+                    width: 40px; height: 40px; margin: 0px;
+                    img{
+                        width: 100%; height: 100%; border-radius: 14px;
+                    }
+                }
+                p{
+                    color: var(--vt-c-Color-White); font-size: 13px; font-weight: 700; margin: 0px; line-height: 20px; margin: 0px; 
+                }
+                h6{
+                    margin-left: 4px; margin: 0px; display: flex; align-items: center; gap: 3px; color: var(--vt-c-Color-Text-HighLight-Green); font-size: 10px; font-weight: 500; line-height: 100%;
+                    img{
+                        width: 6px; height: 5px;
+                    }
+                }
+            }
+             .CompanyName{
+                display: flex; justify-content: space-between; align-items: center;
+                .DocumentKey{
+                    display: flex; align-items: center; gap: 10px;
+                    h2{
+                        color: var(--vt-c-Color-White); font-size: 15px; font-weight: 600; line-height: 100%; margin: 0px;
+                        span{
+                            color: var(--vt-c-Color-Text-Light-Gray); font-weight: 400;
+                        }
+                    }
+                    .dot{
+                        background: var(--vt-c-Color-Text-Light-Plus-Gray); width: 5px; height: 5.6px; border-radius: 50%;
+                    }
+                    p{
+                        line-height: 100%; color: var(--vt-c-Color-Text-Light-Plus-Gray); font-size: 12px; font-weight: 400; margin: 0px;
+                    }
+                }
+                .Count{
+                    border-radius: 30px; background: #0098E4; padding: 0px 9px;
+                    h5{
+                        color: var(--vt-c-Color-White);font-size: 12px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); font-weight: 400; margin: 0px;
+                    }
+                }
+            }
+            .flexDv{
+                display: flex; flex-direction: row; gap: 5px;
+            }
+            .AleartsDv{
+                display: flex; flex-direction: row; gap: 20px;
+                .Icon_Plus_ToggleDV{
+                    display: flex; flex-direction: row; gap: 5px; align-items: center;
+                    img{
+                        width: 16px; height: 16px;
+                    }
+                    p{
+                        color: var(--vt-c-Color-Text-gray); font-size: 12px; font-weight: 500; margin: 0px;
+                    }
+                    #airplane-mode-span{
+                        background: var(--vt-c-Color-Text-gray); width: 14px; height: 13.7px; border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .NavbarContentDvTwo{
+            width: 30%;  display: flex; justify-content: space-between; align-items: center;
+            .ProfileDvMain{
+                display: flex; flex-direction: row-reverse; gap: 22px; align-items: center;
+                img{
+                    width: 35px; height: 35px; border-radius: 50%;
+                }
+                .settingImg{
+                    width: 24px; height: 24px;
+                }
+            }
+            .TabsBtn{
+                display: flex; align-items: center; justify-content: space-between;
+                  .p-togglebutton-checked{
+                border-radius: 8px; background: #203063; height: 41px;
+                .p-togglebutton-label{
+                    color: #FFFFFF; line-height: 100%; font-weight: 600; 
+                }
+            }
+            .p-togglebutton-label{
+                color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 16px; padding: 11px 15px;
+            }
+            }
+        }
+    }
 }

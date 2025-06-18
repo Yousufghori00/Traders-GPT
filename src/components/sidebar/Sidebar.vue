@@ -75,53 +75,98 @@
                     </div>
                 </div>
             </div>
-
         </router-link>
         <router-link to="/image">
-          <div class="MessageDv" :class="{ active: selectedIndex === 1 }" @click="selectedIndex = 1">
-            <div class="Noc-GeneratingDvMain">
-                <div class="CompanyDv">
-                    <figure>
-                        <img src="../../assets/Image/Apple_Logo_Icon.png" alt="Company Logo" />
-                    </figure>
-                    <p>$100</p>
-                    <h6>
-                        <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
-                        29%
-                    </h6>
-                </div>
-                <div class="CompanyData_Entry">
-                    <div class="CompanyName">
-                        <div class="DocumentKey">
-                            <h2><span>#</span>GOOG</h2>
-                            <div class="dot"></div>
-                            <p>Google Inc</p>
-                        </div>
-                        <div class="Count">
-                            <h5>7</h5>
-                        </div>
+            <div class="MessageDv" :class="{ active: selectedIndex === 1 }" @click="selectedIndex = 1">
+                <div class="Noc-GeneratingDvMain">
+                    <div class="CompanyDv">
+                        <figure>
+                            <img src="../../assets/Image/Apple_Logo_Icon.png" alt="Company Logo" />
+                        </figure>
+                        <p>$100</p>
+                        <h6>
+                            <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                            29%
+                        </h6>
                     </div>
-
-                    <div class="GrphMain">
-                        <h6>Generating...</h6>
-                        <img src="../../assets/Image/GraphMountain.png" alt="Graph" />
-                    </div>
-
-                    <div class="Dv_Of_ActionIconMain">
-                        <div class="Dv_Of_ActionIcon">
-                            <div class="flexD">
-                                <img src="../../assets/Image/Comment_Icon.png" alt="Comment Icon" />
-                                <p>27k</p>
+                    <div class="CompanyData_Entry">
+                        <div class="CompanyName">
+                            <div class="DocumentKey">
+                                <h2><span>#</span>GOOG</h2>
+                                <div class="dot"></div>
+                                <p>Google Inc</p>
                             </div>
-                            <img src="../../assets/Image/Bell_Icon.png" alt="Bell Icon" />
-                            <img src="../../assets/Image/Reload_Icon.png" alt="Reload Icon" />
-                            <img src="../../assets/Image/Pin_Icon.png" alt="Pin Icon" />
+                            <div class="Count">
+                                <h5>7</h5>
+                            </div>
                         </div>
-                        <p>2m ago</p>
+
+                        <div class="GrphMain">
+                            <h6>Generating...</h6>
+                            <img src="../../assets/Image/GraphMountain.png" alt="Graph" />
+                        </div>
+
+                        <div class="Dv_Of_ActionIconMain">
+                            <div class="Dv_Of_ActionIcon">
+                                <div class="flexD">
+                                    <img src="../../assets/Image/Comment_Icon.png" alt="Comment Icon" />
+                                    <p>27k</p>
+                                </div>
+                                <img src="../../assets/Image/Bell_Icon.png" alt="Bell Icon" />
+                                <img src="../../assets/Image/Reload_Icon.png" alt="Reload Icon" />
+                                <img src="../../assets/Image/Pin_Icon.png" alt="Pin Icon" />
+                            </div>
+                            <p>2m ago</p>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
+        </router-link>
+         <router-link to="/image">
+            <div class="MessageDv" :class="{ active: selectedIndex === 2 }" @click="selectedIndex = 2">
+                <div class="Noc-GeneratingDvMain">
+                    <div class="CompanyDv">
+                        <figure>
+                            <img src="../../assets/Image/McDonald_Logo.png" alt="Company Logo" />
+                        </figure>
+                        <p>$121.65</p>
+                        <h6>
+                            <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                            0.78%
+                        </h6>
+                    </div>
+                    <div class="CompanyData_Entry">
+                        <div class="CompanyName">
+                            <div class="DocumentKey">
+                                <h2><span>#</span>MCD</h2>
+                                <div class="dot"></div>
+                                <p>McDonald's Corp</p>
+                            </div>
+                            <div class="Count">
+                                <h5>7</h5>
+                            </div>
+                        </div>
+
+                        <div class="GrphMain">
+                            <h6>Here is tutorial, if you...</h6>
+                            <img src="../../assets/Image/GraphMountain.png" alt="Graph" />
+                        </div>
+
+                        <div class="Dv_Of_ActionIconMain">
+                            <div class="Dv_Of_ActionIcon">
+                                <div class="flexD">
+                                    <img src="../../assets/Image/Comment_Icon.png" alt="Comment Icon" />
+                                    <p>27k</p>
+                                </div>
+                                <img src="../../assets/Image/Bell_Icon.png" alt="Bell Icon" />
+                                <img src="../../assets/Image/Reload_Icon.png" alt="Reload Icon" />
+                                <img src="../../assets/Image/Pin_Icon.png" alt="Pin Icon" />
+                            </div>
+                            <p>2m ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </router-link>
     </div>
 </div>
