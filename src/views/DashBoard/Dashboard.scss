@@ -1,8 +1,103 @@
 .DashBoradMainContent_DV{
-    display: flex; flex-direction: row; width: 100%; 
+    display: flex; flex-direction: row; width: 100%;
     .DashBoardOneMain{
-        width: 70%;
-    }
+        width: 70%; background: #081327; padding: 38px 30px; position: relative;
+         .CampanyLogo{
+            display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+            img{
+                width: 46px; height: 46px;
+            }
+            .CampanyTextMain{ 
+                display: flex; flex-direction: row; gap: 15px; align-items: center;
+                .CampanyText{
+                    display: flex; flex-direction: column; gap: 8px;
+                    h1{
+                        font-size: 14px; font-weight: 600; line-height: 100%; color: var(--vt-c-Color-White); margin: 0px;
+                        span{
+                            color: var(--vt-c-Color-Text-Bold-Gray); 
+                        }
+                    }
+                    h2{
+                        color: #FFB21D; font-size: 20px; font-weight: 700; gap: 15px; margin: 0px; line-height: 100%;
+                        span{
+                            color: #28CF62; font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .ChatBoxMain{
+            position: absolute; bottom: 50px; width: 95%;  padding: 1px; background: linear-gradient(90deg, #04FFCD, #6A00FF); border-radius: 10px; display: inline-block;
+            .ChatBoxUnder{
+                padding: 15px 18px; display: flex; flex-direction: column; gap: 30px; background: #111831; border-radius: 10px; 
+                .ChatBoxUnderMainDv{
+                    display: flex; justify-content: space-between;
+                    .AskSomething{
+                        width: 86%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+                        .BoxIcon{
+                            background: #182245; width: 43px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 10px;
+                            img{
+                                width: 13px; height: 18px;
+                            }
+                        }
+                        input{
+                            border: none; color: #717AB4; font-size: 16px; font-weight: 400; background: none; width: 100%; padding: 0px 0px 0px 20px;
+                        }
+                        input::placeholder{
+                             color: #717AB4; font-size: 16px; font-weight: 400;
+                            }
+                            input:focus{
+                                outline: none; box-shadow: none; border: none; 
+                            }
+                        }
+                        .plan{
+                            p{
+                                font-weight: 500; font-size: 12px; color: #FFFFFF;
+                                span{
+                                    font-weight: 900; font-size: 12px; color: #3CBEFF;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ChatComitmentMain{
+                    display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+                    .WebMode{
+                        display: flex; flex-direction: row; gap: 15px;
+                        .Web{
+                            width: fit-content; height: 31px; display: flex; flex-direction: row; gap: 6px; border-radius: 10px; border: 1px solid #3F5191; padding: 5px; align-items: center;
+                            img{
+                                width: 20px; height: 20px;
+                            }
+                            .MicroImg{
+                                width: 9px; height: 19px;
+                            }
+                            p{
+                                color: #3F5191; font-size: 12px; font-weight: 500; margin: 0px; line-height: 100%; 
+                            }
+                            .circle{
+                                width: 14px; height: 14px; border: 2px solid #3F5191; border-radius: 50%;
+                            }
+                        }
+                    }
+                    .IconsForCommit{
+                        display: flex; flex-direction: row; gap: 15px;
+                        .Attachement{
+                            cursor: pointer; background: #182245; width: 30px; height: 30px; border-radius: 8px;  display: flex; justify-content: center; align-items: center;
+                            img{
+                                width: 18px; height: 18px;
+                            }
+                            .SendImg{
+                                width: 25px; height: 25px;
+                            }
+                        }
+                        .BlueAttachemnet{
+                            background: #33A6DF;
+                        }
+                    }
+                }
+            }
+        }
     .DashBoardTwoMain{
         width: 30%; height: 100%; padding: 16px 20px; background: var(--vt-c-Traders-Main-SideBar2-Background); display: flex; flex-direction: column; gap: 28px;
         .ImgHead{
@@ -43,7 +138,7 @@
                             h1{
                                font-size: 14px; font-weight: 600; line-height: 100%; color: var(--vt-c-Color-White); margin: 0px;
                                span{
-                                color: #8E8C97; 
+                                color: var(--vt-c-Color-Text-Bold-Gray); 
                                }
                             }
                             h2{
@@ -67,7 +162,7 @@
                                 .BoxText{
                                     display: flex; flex-direction: column; gap: 8px;
                                     p{
-                                        text-transform: uppercase; margin: 0px; color: #8E8C97; font-size: 12px; font-weight: 400; line-height: 100%;
+                                        text-transform: uppercase; margin: 0px; color: var(--vt-c-Color-Text-Bold-Gray); font-size: 12px; font-weight: 400; line-height: 100%;
                                     }
                                     h2{
                                         margin: 0px; font-size: 16px; font-weight: 700; color: var(--vt-c-Color-White); line-height: 100%;
@@ -125,6 +220,55 @@
                         }
                     }
                     .DayOfBoxMainDv::-webkit-scrollbar { display: none;}
+                }
+                .MetricsPerformanceMain{
+                    display: flex; flex-direction: column; gap: 15px;
+                    .MetricsText{
+                        display: flex; justify-content: space-between; align-items: center;
+                        p{
+                            color: var(--vt-c-Color-White); font-size: 16px; font-weight: 600; margin: 0px;
+                        }
+                        h2{
+                            color: #899AB4; font-size: 12px;font-weight: 500; margin: 0px;
+                        }
+                    }
+                    .MetricsPerformanceBoxDv{
+                        display: flex; flex-direction: row; gap: 20px; overflow: auto; 
+                        .MetricsBoxOne{
+                            height: 400px; width: 300px; background: #171E40; border-radius: 10px;
+                            .Structure{ 
+                                padding: 15px 20px; display: flex; flex-direction: column; gap: 5px;
+                                h1{
+                                   display: flex; align-items: center; gap: 5px; color: var(--vt-c-Color-White); font-size: 16px; font-weight: 600; margin: 0px;
+                                   img{
+                                    width: 18px; height: 18px;
+                                   }
+                                }
+                                p{
+                                    color: var(--vt-c-Color-Text-Bold-Gray);font-size: 12px;font-weight: 400; margin: 0px; line-height: 100%;
+                                }
+                            }
+                            .AuthDiv{
+                                background: #151937; padding: 13px 20px; display: flex; flex-direction: row; justify-content: space-between;align-items: center;
+                                h1{
+                                    color: var(--vt-c-Color-Text-Bold-Gray); font-size: 16px; font-weight: 400; margin: 0px; 
+                                }
+                                h4{
+                                    margin: 0px; font-size: 16px; font-weight: 700; color: #21C1FD;
+                                }
+                                .HighGreen{
+                                    color: #39D3D3;
+                                }
+                                .WhiteH4{
+                                    color: var(--vt-c-Color-White);
+                                }
+                            }
+                            .WithOutBack{
+                                background: none;
+                            }
+                        }
+                    }
+                    .MetricsPerformanceBoxDv::-webkit-scrollbar { display: none;}
                 }
             }
         }

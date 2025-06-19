@@ -1,4 +1,5 @@
 <script>
+// import Sidebar from './components/sidebar/Sidebar.vue'
 import Sidebar from './components/sidebar/SideBar2.vue'
 import Navbar from '@/components/sidebar/Navbar'
 
@@ -12,7 +13,7 @@ export default {
 </script>
 <template>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<div :style="{ 'margin-left': sidebarWidth }">
+<div :style="{ 'margin-left': sidebarWidth ,}">
   <Navbar />
 </div>
 <div class="d-flex">

@@ -9,6 +9,7 @@
     --vt-c-Color-Text-Light-Plus-Gray: #747883; 
     --vt-c-Color-Text-Light-purple: #5F5988;
     --vt-c-Color-Text-gray: #7B879A;
+    --vt-c-Color-Text-Bold-Gray: #8E8C97;
 }
 
 .sidebar{ color: var(--vt-c-Color-White); background-color: var(--sidebar-bg-color); float: left; position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; padding: 0px; transition: 0.3s ease; display: flex; flex-direction: column; }
