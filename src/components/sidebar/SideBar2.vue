@@ -16,8 +16,8 @@
              <inline-svg src="/src/assets/Image/Svg/GraphLineIconWhite.svg" />
         </div>
          <div class="SettingIconLogin">
-            <img src="../../assets/Image/SettingBlackIcon.png" alt="">
-            <img src="../../assets/Image/LogOutIcon.png" alt="">
+            <inline-svg src="/src/assets/Image/Svg/SettingBlackIcon.svg" />
+            <inline-svg src="/src/assets/Image/Svg/LogOutIcon.svg" />
         </div>
     </div>
     
@@ -26,17 +26,17 @@
             <div class="Dv_ConverSation">
                 <div class="ConverSationMain">
                     <div class="ConverSation">
-                        <img src="../../assets/Image/BoxIcon.png  " alt="">
+                        <inline-svg src="/src/assets/Image/Svg/BoxIcon.svg" />
                         <h1 class="bg-red-500 text-white p-4 text-center">Conversations (9)</h1>
                     </div>
                     <div class="PlusIcon">
-                        <img src="../../assets/Image/PlusIcon.png" alt="">
+                        <inline-svg src="/src/assets/Image/Svg/PlusIcon.svg" />
                     </div>
                 </div>
                 <div class="TabBarMain">
                     <SelectButton v-model="value" :options="options" />
                     <div class="SearchDv">
-                        <img src="../../assets/Image/SearchIcon.png" alt="">
+                        <inline-svg src="/src/assets/Image/Svg/SearchIcon.svg" />
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                             <div class="GrphMain">
                                 <h6>Generating...</h6>
                                   
-                                <h5> <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" /> 0.78% </h5>
+                                <h5><inline-svg src="/src/assets/Image/Svg/UpIcon.svg" /> 0.78% </h5>
                             </div>
                             <div class="Dv_Of_ActionIconMain">
                                 <p>Will do, super, thank</p>
