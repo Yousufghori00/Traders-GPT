@@ -13,12 +13,18 @@
                 <div class="Icon_Plus_ToggleDV">
                     <img src="../../assets/Image/Reload_Icon.png" alt="">
                     <p>Updates</p>
-                    <ToggleSwitch v-model="checked" />
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <div class="Icon_Plus_ToggleDV">
                     <img src="../../assets/Image/Pin_Icon.png" alt="">
                     <p>Alerts</p>
-                    <ToggleSwitch v-model="checked" />
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <img style="width: 20px; height: 20px;" src="../../assets/Image/setting.svg" alt="">
             </div>
@@ -42,11 +48,9 @@ import {
     ref
 } from 'vue'
 import SelectButton from 'primevue/selectbutton';
-import ToggleSwitch from 'primevue/toggleswitch';
 export default {
     components: {
         SelectButton,
-        ToggleSwitch
     },
     setup() {
         const checked = ref(false)
