@@ -15,7 +15,12 @@
          <div class="Icons" :class="{ active: selectedIcon === 3 }" @click="selectedIcon = 3">
             <img src="../../assets/Image/GraphLineIconWhite.png" alt="">
         </div>
+         <div class="SettingIconLogin">
+            <img src="../../assets/Image/SettingBlackIcon.png" alt="">
+            <img src="../../assets/Image/LogOutIcon.png" alt="">
+        </div>
     </div>
+    
     <div style="width: 308px;">
         <div class="LogoPlusConverSationMain">
             <div class="Dv_ConverSation">

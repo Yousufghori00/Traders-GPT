@@ -10,7 +10,31 @@
                 </div>
             </div>
         </div>
-
+        <div class="MiddleContentDv">
+            <img src="../../assets/Image/FaveiconBackgroundNone.png" alt="">
+            <p>Welcome To TRADERSGPT</p>
+            <h4> Discover anything about the markets, by just asking the <br /> intelligent Agent</h4>
+            <div class="QuestionBoxMain">
+                <div class="Box">
+                    <div class="Flash">
+                        <img src="../../assets/Image/FlashIcon.png" alt="">
+                    </div>
+                    <p>How has market been performing this month  ?</p>
+                </div>
+                <div class="Box">
+                    <div class="Flash">
+                        <img src="../../assets/Image/FlashIcon.png" alt="">
+                    </div>
+                    <p>How do you market moving next ?</p>
+                </div>
+                <div class="Box">
+                    <div class="Flash">
+                        <img src="../../assets/Image/FlashIcon.png" alt="">
+                    </div>
+                    <p>Analyze he market with consumer purchase data </p>
+                </div>
+            </div>
+        </div>
         <div class="ChatBoxMain">
             <div class="ChatBoxUnder">
                 <div class="ChatBoxUnderMainDv">

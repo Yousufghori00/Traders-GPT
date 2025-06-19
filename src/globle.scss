@@ -27,6 +27,12 @@
                 width: 16px; height: 20px;
             }
         }
+        .SettingIconLogin{
+            position: absolute; bottom: 40px; display: flex; flex-direction: column; gap: 20px;
+            img{
+                width: 25px; height: 25px; cursor: pointer;
+            }
+        }
         .active{
              background: #1E3F7C; 
         }
@@ -83,6 +89,7 @@
                 }
             }
         }
+      
     }
     .MessagesDv_ContentMain{
        cursor: pointer;
