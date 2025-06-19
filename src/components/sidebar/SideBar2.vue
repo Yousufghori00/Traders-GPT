@@ -4,16 +4,16 @@
         <img src="../../assets/Image/FaveiconBackgroundNone.png" alt="">
         <div class="hr"></div>
         <div class="Icons" :class="{ active: selectedIcon === 1 }" @click="selectedIcon = 1">
-            <img src="../../assets/Image/msgIconWhite.png" alt="">
+             <inline-svg src="/src/assets/Image/Svg/msgIconWhite.svg" />
         </div>
         <div class="Icons" :class="{ active: selectedIcon === 0 }" @click="selectedIcon = 0">
-            <img src="../../assets/Image/ChatIconWhite.png" alt="">
+            <inline-svg src="/src/assets/Image/Svg/ChatIconWhite.svg" />
         </div>
          <div class="Icons" :class="{ active: selectedIcon === 2 }" @click="selectedIcon = 2">
-            <img class="BigHardimg" src="../../assets/Image/HardBoardIcon.png" alt="">
+            <inline-svg src="/src/assets/Image/Svg/HardBoardIcon.svg" />
         </div>
          <div class="Icons" :class="{ active: selectedIcon === 3 }" @click="selectedIcon = 3">
-            <img src="../../assets/Image/GraphLineIconWhite.png" alt="">
+             <inline-svg src="/src/assets/Image/Svg/GraphLineIconWhite.svg" />
         </div>
          <div class="SettingIconLogin">
             <img src="../../assets/Image/SettingBlackIcon.png" alt="">

@@ -47,6 +47,7 @@ a,
     --vt-c-Color-Text-Light-purple: #5F5988;
     --vt-c-Color-Text-gray: #7B879A;
     --vt-c-Color-Text-Bold-Gray: #8E8C97;
+    --vt-c-Color-Text-Bold-Gray-SideBarIcon: #9EAAC0;
 }
 
 
@@ -64,6 +65,11 @@ a,
             .BigHardimg{
                 width: 16px; height: 20px;
             }
+            svg{
+                path{
+                    stroke: var(--vt-c-Color-Text-Bold-Gray-SideBarIcon);
+                }
+            }
         }
         .SettingIconLogin{
             position: absolute; bottom: 40px; display: flex; flex-direction: column; gap: 20px;
@@ -73,6 +79,11 @@ a,
         }
         .active{
              background: #1E3F7C; 
+              svg{
+                path{
+                    stroke: white;
+                }
+            }
         }
     }
       .LogoPlusConverSationMain{
