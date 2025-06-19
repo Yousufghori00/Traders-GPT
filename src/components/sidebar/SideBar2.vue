@@ -1,5 +1,5 @@
 <template>
-<div class="sidebar-2" :style="{ width: sidebarWidth }">
+<div class="sidebar-2" >
     <div class="SideBarStickMain">
         <img src="../../assets/Image/FaveiconBackgroundNone.png" alt="">
         <div class="hr"></div>

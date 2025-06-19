@@ -51,6 +51,26 @@ a,
 }
 
 
+::-webkit-scrollbar { width: 2px; background-color: #1a1a2e; }
+::-webkit-scrollbar-thumb { background-color: #5969A3; border-radius: 5px; }
+::-webkit-scrollbar-track:hover { background-color: #161C40; }
+::-webkit-scrollbar-thumb:hover { background-color: #5969A3; }
+::-webkit-scrollbar-corner { background-color: #161C40; }
+
+.DashBoardTwoMain{
+    .SelectBtn{ 
+        width: 100%; overflow: auto; 
+        .p-togglebutton-checked{
+            .p-togglebutton-label{
+                border-radius: 8px; background: #203063; height: 41px; color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+            }
+        }
+        .p-togglebutton-label{
+            color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 14px; padding: 12px 15px;
+        }
+    }
+}
+
 .sidebar{ color: var(--vt-c-Color-White); background-color: var(--sidebar-bg-color); float: left; position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; padding: 0px; transition: 0.3s ease; display: flex; flex-direction: column; }
 .sidebar-2{ border-right: 1px solid #1D274B; color: var(--vt-c-Color-White); background-color: var(--vt-c-Traders-Main-SideBar2-Background); float: left; position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; padding: 0px; transition: 0.3s ease; display: flex; flex-direction: row;
     .SideBarStickMain{
@@ -439,6 +459,11 @@ input:checked + .slider::before {transform: translateX(13px);}
                 .settingImg{
                     width: 24px; height: 24px;
                 }
+                svg{
+                    path{
+                        filter: invert(76%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(116%) contrast(91%);
+                    }
+                }
             }
             .TabsBtn{
                 display: flex; align-items: center; justify-content: space-between;
@@ -455,3 +480,7 @@ input:checked + .slider::before {transform: translateX(13px);}
         }
     }
 }
+
+
+
+

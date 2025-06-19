@@ -1,8 +1,7 @@
 .DashBoradMainContent_DV{
     display: flex; flex-direction: row; width: 100%;
     .DashBoardOneMain{
-        width: 70%; background: #081327; padding: 38px 30px; position: relative;
-
+          padding: 38px 30px; position: relative;  height: calc(100vh - 80px); display: flex;flex-direction: column; justify-content: space-between;
          .CampanyLogo{
             display: flex; flex-direction: row; align-items: center; justify-content: space-between;
             img{
@@ -26,80 +25,131 @@
                     }
                 }
             }
+            .Select{
+                display: flex; gap: 4px;
+                p{
+                    color: #747883; font-size: 15px; font-weight: 600; margin: 0px;
+                }
+                .p-select{
+                    width: 130px;
+                }
+                .p-select-label{
+                    color: #7A90B2; font-size: 15px; font-weight: 600; 
+                }
+            }
         }
-        .ChatBoxMain{
-            position: absolute; bottom: 50px; width: 95%;  padding: 1px; background: linear-gradient(90deg, #04FFCD, #6A00FF); border-radius: 10px; display: inline-block;
-            .ChatBoxUnder{
-                padding: 15px 18px; display: flex; flex-direction: column; gap: 30px; background: #111831; border-radius: 10px; 
-                .ChatBoxUnderMainDv{
-                    display: flex; justify-content: space-between;
-                    .AskSomething{
-                        width: 86%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
-                        .BoxIcon{
-                            background: #182245; width: 43px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 10px;
-                            img{
-                                width: 13px; height: 18px;
-                            }
+        .TrendingOption{
+            display: flex; flex-direction: column; gap: 19px;
+            .OptionsMain{
+                    display: flex; flex-direction: column; gap: 15px;
+                .optionHead{
+                    display: flex; justify-content: space-between; align-items: center; 
+                    .trendText{
+                        display: flex; 
+                        svg{
+                            width: 19px; height: 20px;
                         }
-                        input{
-                            border: none; color: #717AB4; font-size: 16px; font-weight: 400; background: none; width: 100%; padding: 0px 0px 0px 20px;
+                        p{
+                            color: #6A7AAF; font-size: 12px; font-weight: 500; margin: 0px;
                         }
-                        input::placeholder{
-                             color: #717AB4; font-size: 16px; font-weight: 400;
-                            }
-                            input:focus{
-                                outline: none; box-shadow: none; border: none; 
-                            }
-                        }
-                        .plan{
-                            p{
-                                font-weight: 500; font-size: 12px; color: #FFFFFF;
-                                span{
-                                    font-weight: 900; font-size: 12px; color: #3CBEFF;
+                    }
+                    .TrendIcon{
+                        display: flex; flex-direction: row; gap: 8px;
+                        .IconBox{
+                            width: 29px; height: 29px; background: #192550; border-radius: 5px; display: flex; align-items: center; justify-content: center; 
+                            svg{
+                                width: 20px; height: 16px;
+                                path{
+                                    stroke: #595F79;
                                 }
                             }
                         }
                     }
                 }
-                .ChatComitmentMain{
-                    display: flex; flex-direction: row; justify-content: space-between; align-items: center;
-                    .WebMode{
-                        display: flex; flex-direction: row; gap: 15px;
-                        .Web{
-                            width: fit-content; height: 31px; display: flex; flex-direction: row; gap: 6px; border-radius: 10px; border: 1px solid #3F5191; padding: 5px; align-items: center;
-                            img{
-                                width: 20px; height: 20px;
-                            }
-                            .MicroImg{
-                                width: 9px; height: 19px;
-                            }
-                            p{
-                                color: #3F5191; font-size: 12px; font-weight: 500; margin: 0px; line-height: 100%; 
-                            }
-                            .circle{
-                                width: 14px; height: 14px; border: 2px solid #3F5191; border-radius: 50%;
-                            }
-                        }
-                    }
-                    .IconsForCommit{
-                        display: flex; flex-direction: row; gap: 15px;
-                        .Attachement{
-                            cursor: pointer; background: #182245; width: 30px; height: 30px; border-radius: 8px;  display: flex; justify-content: center; align-items: center;
-                            img{
-                                width: 18px; height: 18px;
-                            }
-                            .SendImg{
-                                width: 25px; height: 25px;
-                            }
-                        }
-                        .BlueAttachemnet{
-                            background: #33A6DF;
+                .TrendSuggested{
+                    display: flex; flex-direction: row; gap: 15px; width: 100%; overflow: auto;
+                    .Suggest{
+                        width: fit-content; padding: 13px; border-radius: 10px; border: 1px solid #11182F;
+                        p{
+                            color: #7491F3; font-size: 12px; font-weight: 500; margin: 0px; 
                         }
                     }
                 }
             }
+            .ChatBoxMain{
+                 width: 100%; padding: 1px; background: linear-gradient(90deg, #04FFCD, #6A00FF); border-radius: 10px; display: inline-block;
+                .ChatBoxUnder{
+                    padding: 15px 18px; display: flex; flex-direction: column; gap: 30px; background: #111831; border-radius: 10px; 
+                    .ChatBoxUnderMainDv{
+                        display: flex; justify-content: space-between; align-items: center;
+                        .AskSomething{
+                            width: 86%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+                            .BoxIcon{
+                                background: #182245; width: 43px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 10px;
+                                img{
+                                    width: 13px; height: 18px;
+                                }
+                            }
+                            input{
+                                border: none; color: #717AB4; font-size: 16px; font-weight: 400; background: none; width: 100%; padding: 0px 0px 0px 20px;
+                            }
+                            input::placeholder{
+                                 color: #717AB4; font-size: 16px; font-weight: 400;
+                                }
+                                input:focus{
+                                    outline: none; box-shadow: none; border: none; 
+                                }
+                            }
+                            .plan{
+                                p{
+                                    font-weight: 500; font-size: 12px; color: #FFFFFF;
+                                    span{
+                                        font-weight: 900; font-size: 12px; color: #3CBEFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .ChatComitmentMain{
+                        display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+                        .WebMode{
+                            display: flex; flex-direction: row; gap: 15px;
+                            .Web{
+                                width: fit-content; height: 31px; display: flex; flex-direction: row; gap: 6px; border-radius: 10px; border: 1px solid #3F5191; padding: 5px; align-items: center;
+                                img{
+                                    width: 20px; height: 20px;
+                                }
+                                .MicroImg{
+                                    width: 12px; height: 19px;
+                                }
+                                p{
+                                    color: #3F5191; font-size: 12px; font-weight: 500; margin: 0px; line-height: 100%; 
+                                }
+                                .circle{
+                                    width: 14px; height: 14px; border: 2px solid #3F5191; border-radius: 50%;
+                                }
+                            }
+                        }
+                        .IconsForCommit{
+                            display: flex; flex-direction: row; gap: 15px;
+                            .Attachement{
+                                cursor: pointer; background: #182245; width: 30px; height: 30px; border-radius: 8px;  display: flex; justify-content: center; align-items: center;
+                                img{
+                                    width: 18px; height: 18px;
+                                }
+                                .SendImg{
+                                    width: 25px; height: 25px;
+                                }
+                            }
+                            .BlueAttachemnet{
+                                background: #33A6DF;
+                            }
+                        }
+                    }
+                }
+        }
             .MiddleContentDv{
-                display: flex; flex-direction: column; gap: 54px; align-items: center; position: absolute; right: 0px; left: 0px; top: 170px;
+                display: flex; flex-direction: column; gap: 30px; align-items: center; 
                 img{ 
                     width: 73px; height: 68px;
                 }
@@ -125,33 +175,30 @@
                     }
                 }
             }
-        }
+    }
     .DashBoardTwoMain{
-        width: 30%; height: 100%; padding: 16px 20px; background: var(--vt-c-Traders-Main-SideBar2-Background); display: flex; flex-direction: column; gap: 28px;
+          transition: all 0.3s ease; padding: 16px 20px; background: var(--vt-c-Traders-Main-SideBar2-Background); display: flex; flex-direction: column; gap: 28px; position: relative; height: calc(100vh - 80px); overflow-y: auto; overflow-x: hidden;
         .ImgHead{
-            display: flex; justify-content: space-between; align-items: center;
+            display: flex; justify-content: space-between; align-items: center; padding-left: 40px;
             img{
                 width: 150px; height: 31px;
             }
             .icon{
                 width: 25px; height: 25px;
             }
-        }
-        .SelectBtn{
-            width: 100%; overflow: auto; 
-            .p-togglebutton-checked{
-                border-radius: 8px; background: #203063; height: 41px;
-                .p-togglebutton-label{
-                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+            .toggleIcon{
+                    position: absolute; left: 10px; padding: 1px 1px; background: #5969A3; border-radius: 50%; display: flex;
+                svg{
+                    width: 25px; height: 25px; transform: rotate(90deg);
+                path{
+                    stroke: var(--vt-c-Color-White); 
                 }
             }
-            .p-togglebutton-label{
-                color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 14px; padding: 12px 15px;
             }
         }
         .SelectBtn::-webkit-scrollbar { display: none;}
         .CompanyControversyMain{
-            padding: 2px 5px; 
+            padding: 2px 5px;  display: flex; flex-direction: column; gap: 30px;
             .CompanyNameDv{
                     flex-direction: column; display: flex; gap: 20px;
                 .CampanyLogo{

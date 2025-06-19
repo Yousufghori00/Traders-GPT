@@ -107,7 +107,7 @@ export default {
 <div class="d-flex">
   <Sidebar />
 </div>
-  <div :style="{ 'margin-left': sidebarWidth }">
+  <div style="margin-left: 380px;">
     <router-view />
   </div>
 </template>
@@ -125,7 +125,7 @@ export default {
  body {
    min-height: 100vh;
    color: var(--color-text);
-   background: #182040;
+   background: #081327;
    transition:color 0.5s,
    background-color 0.5s;
    line-height: 1.6;

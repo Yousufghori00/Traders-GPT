@@ -11,7 +11,7 @@
             </div>
             <div class="AleartsDv">
                 <div class="Icon_Plus_ToggleDV">
-                    <img src="../../assets/Image/Reload_Icon.png" alt="">
+                    <inline-svg src="/src/assets/Image/Svg/Reload_Icon.svg" />
                     <p>Updates</p>
                     <label class="switch">
                         <input type="checkbox">
@@ -19,14 +19,14 @@
                     </label>
                 </div>
                 <div class="Icon_Plus_ToggleDV">
-                    <img src="../../assets/Image/Pin_Icon.png" alt="">
+                    <inline-svg src="/src/assets/Image/Svg/Bell_Icon.svg" />
                     <p>Alerts</p>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider"></span>
                     </label>
-                </div>
-                <img style="width: 20px; height: 20px;" src="../../assets/Image/setting.svg" alt="">
+                </div> 
+                    <inline-svg src="/src/assets/Image/Svg/SettingMainIcon.svg" />
             </div>
         </div>
         <div class="NavbarContentDvTwo">
@@ -35,7 +35,7 @@
             </div>
             <div class="ProfileDvMain">
                 <img src="../../assets/Image/profilePic copy.jpg" alt="">
-                <img class="settingImg" src="../../assets/Image/setting.svg" alt="">
+                <inline-svg class="settingImg" src="/src/assets/Image/Svg/SettingMainIcon.svg" />
             </div>
         </div>
 
