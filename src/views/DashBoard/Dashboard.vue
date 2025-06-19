@@ -31,7 +31,7 @@
                     <div class="Flash">
                         <img src="../../assets/Image/FlashIcon.png" alt="">
                     </div>
-                    <p>Analyze he market with consumer purchase data </p>
+                    <p>Analyze he market with consumer purchase  </p>
                 </div>
             </div>
         </div>
