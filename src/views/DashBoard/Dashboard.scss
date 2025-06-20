@@ -1,7 +1,5 @@
-.DashBoradMainContent_DV{
-    display: flex; flex-direction: row; width: 100%;
-    .DashBoardOneMain{
-          padding: 38px 30px; position: relative;  height: calc(100vh - 80px); display: flex;flex-direction: column; justify-content: space-between;
+ .DashBoardOneMain{
+          padding: 26px 30px; position: relative;  height: calc(100vh - 80px); display: flex;flex-direction: column; justify-content: space-between;
          .CampanyLogo{
             display: flex; flex-direction: row; align-items: center; justify-content: space-between;
             img{
@@ -58,10 +56,7 @@
                         .IconBox{
                             width: 29px; height: 29px; background: #192550; border-radius: 5px; display: flex; align-items: center; justify-content: center; 
                             svg{
-                                width: 20px; height: 16px;
-                                path{
-                                    stroke: #595F79;
-                                }
+                                width: 20px; height: 16px; cursor: pointer; filter: brightness(0) saturate(100%) invert(43%) sepia(7%) saturate(1336%) hue-rotate(203deg) brightness(91%) contrast(90%);
                             }
                         }
                     }
@@ -102,7 +97,7 @@
                             }
                             .plan{
                                 p{
-                                    font-weight: 500; font-size: 12px; color: #FFFFFF;
+                                    font-weight: 500; font-size: 12px; color: #FFFFFF; font-family: var(--vt-c-Text-Font-Montserrat);
                                     span{
                                         font-weight: 900; font-size: 12px; color: #3CBEFF;
                                     }
@@ -175,5 +170,4 @@
                     }
                 }
             }
-    }
 }

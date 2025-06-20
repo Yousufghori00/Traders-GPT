@@ -14,9 +14,3 @@ export const dashoardTwoWidth = computed(() =>
   `${collapsed.value ? DASHBOARFTwoBAR_WIDTH_COLLAPSED : DASHBOARDTWOBAR_WIDTH}%`
 )
 
-
-export const collapse = ref(false)
-export const toggleSidebar = () => (collapse.value = !collapse.value)
-export const SIDEBAR_WIDTH = 380
-export const SIDEBAR_WIDTH_COLLAPSED = 38
-export const sidebarWidth = computed( () => `${collapse.value ? SIDEBAR_WIDTH_COLLAPSED : SIDEBAR_WIDTH}px`)

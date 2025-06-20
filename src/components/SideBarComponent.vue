@@ -128,7 +128,7 @@ import {
 import {
     toggleDashBoardbar,
     dashoardWidth,
-} from '../../src/state.js'
+} from '../views/DashBoard/state.js'
 import SelectButton from 'primevue/selectbutton';
 import Select from 'primevue/select';
 

@@ -1,5 +1,5 @@
 <template>
-<div class="navbar">
+<div class="navbar" id="FirstBackground_Navbar">
     <div class="NavbarContentDv">
         <div class="NavbarContentDvOne">
             <div class="CompanyDv">

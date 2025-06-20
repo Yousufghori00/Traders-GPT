@@ -1,179 +1,221 @@
-.DashBoradMainContent_DV{
-    display: flex; flex-direction: row; width: 100%;
-    .DashBoardOneMain{
-          padding: 38px 30px; position: relative;  height: calc(100vh - 80px); display: flex;flex-direction: column; justify-content: space-between;
-         .CampanyLogo{
-            display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+.TradersChatDv_Content{
+    padding: 26px 20px 26px 30px;  background: linear-gradient(90deg, #181F35, #131834); height: calc(100vh - 80px); display: flex; flex-direction: column; justify-content: space-between; 
+    .ChatMain_Trader_Content{
+        padding-right: 10px; display: flex; flex-direction: column; gap: 25px; height: calc(70vh - 0px); overflow: auto; padding-bottom: 10px;
+        .UserChat_UI{
+            display: flex; flex-direction: row; gap: 15px;
             img{
-                width: 46px; height: 46px;
+                width: 48px; height: 48px; border-radius: 10px;
             }
-            .CampanyTextMain{ 
-                display: flex; flex-direction: row; gap: 15px; align-items: center;
-                .CampanyText{
-                    display: flex; flex-direction: column; gap: 8px;
+            .Chat{
+                display: flex; flex-direction: column; gap: 5px;
+                .Time_Date{
+                    display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+                    p{
+                        color: #7D88AC; font-size: 14px; font-weight: 700; margin: 0px;
+                        span{
+                            color: #586AA4; font-weight: 500; 
+                            a{
+                                color: #39456D; font-size: 14px; font-family: 500;
+                            }
+                        }
+                        m{
+                            color: #5569AE; font-weight: 700;
+                        }
+                    }
+                }
+                .Talk{
+                    padding: 18px; background: var(--vt-c-Traders-Main-Background); border-radius: 15px; display: flex; flex-direction: column; gap: 5px;
+                    p{
+                        color: var(--vt-c-Color-White); font-size: 16px; font-weight: 700; margin: 0px;
+                    }
                     h1{
-                        font-size: 14px; font-weight: 600; line-height: 100%; color: var(--vt-c-Color-White); margin: 0px;
-                        span{
-                            color: var(--vt-c-Color-Text-Bold-Gray); 
-                        }
-                    }
-                    h2{
-                        color: #FFB21D; font-size: 20px; font-weight: 700; gap: 15px; margin: 0px; line-height: 100%;
-                        span{
-                            color: #28CF62; font-size: 14px;
-                        }
+                        color: var(--vt-c-Color-White); font-family: var(--vt-c-Text-Font-Montserrat); font-size: 14px; font-weight: 400; margin: 0px; line-height: 20px;
                     }
                 }
-            }
-            .Select{
-                display: flex; gap: 4px;
-                p{
-                    color: #747883; font-size: 15px; font-weight: 600; margin: 0px;
+                .Executive_Summary{
+                     background: var(--vt-c-Traders-Main-Background); padding: 18px; display: flex; flex-direction: column; gap: 5px; border-radius: 15px;
+                       p{
+                        color: var(--vt-c-Color-White); font-size: 16px; font-weight: 700; margin: 0px;
+                    }
+                    h1{
+                        color: var(--vt-c-Color-White); font-family: var(--vt-c-Text-Font-Montserrat); font-size: 14px; font-weight: 400; margin: 0px; line-height: 20px;
+                    }
+                    .Executive_Summary_TableMain{
+                        border-radius: 5px; background: #151936; width: 100%;  margin-top: 20px;
+                            .Revenue_DV{
+                                display: flex; justify-content: space-between; align-items: center; padding: 11px 15px;  border-bottom: 1px solid #1B2648;
+                                p{
+                                    color: var(--vt-c-Color-White); font-size: 14px; font-weight: 600; margin: 0px; font-family: var(--vt-c-Text-Font-Montserrat);
+                            }
+                            .BigIcon{
+                                background: #10162B; width: 25px; height: 25px; display: flex; justify-content: center; align-items: center; border-radius: 5px;
+                            }
+                        }
+                        .Mini_Table_Main_Content{
+                            padding: 15px; background: #171E40; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;
+                            .Mini_Table{
+                                border-radius: 5px;
+                                .LineMain{
+                                    display: flex;  width: 100%; background: #121833;
+                                    .Revenue_DV_Width{
+                                         border-bottom: 1px solid #1B2648;  display: flex; justify-content: space-between; align-items: center; padding: 12px 19px; width: 25%;
+                                        p{
+                                            color: var(--vt-c-Color-White); font-size: 14px; font-weight: 600; margin: 0px; font-family: var(--vt-c-Text-Font-Montserrat);
+                                            span{
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        .BigIcon{
+                                            background: #10162B; width: 25px; height: 25px; display: flex; justify-content: center; align-items: center; border-radius: 5px; border-bottom: 1px solid #1B2648;
+                                        }
+                                    }   
+                                }
+                                .BackgroundDiff{
+                                    background: none;
+                                }
+                                .BorderTop{
+                                    border-top-left-radius: 5px; border-top-right-radius: 5px;
+                                }
+                                .BorderBottom{
+                                    border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;
+                                }
+                                
+                            }
+                        }
+                    }
                 }
-                .p-select{
-                    width: 130px;
-                }
-                .p-select-label{
-                    color: #7A90B2; font-size: 15px; font-weight: 600; 
-                }
+                .TrendIcon{
+                   display: flex; justify-content: end; flex-direction: row; gap: 8px; margin-top: 20px;
+                   .IconBox{
+                       width: 29px; height: 29px; background: #192550; border-radius: 5px; display: flex; align-items: center; justify-content: center; 
+                       svg{
+                           width: 20px; height: 16px; cursor: pointer; filter: brightness(0) saturate(100%) invert(43%) sepia(7%) saturate(1336%) hue-rotate(203deg) brightness(91%) contrast(90%);
+                       }
+                   }
+               }
             }
         }
-        .TrendingOption{
-            display: flex; flex-direction: column; gap: 19px;
-            .OptionsMain{
-                    display: flex; flex-direction: column; gap: 15px;
-                .optionHead{
-                    display: flex; justify-content: space-between; align-items: center; 
-                    .trendText{
-                        display: flex; 
-                        svg{
-                            width: 19px; height: 20px;
-                        }
-                        p{
-                            color: #6A7AAF; font-size: 12px; font-weight: 500; margin: 0px;
-                        }
-                    }
-                    .TrendIcon{
-                        display: flex; flex-direction: row; gap: 8px;
-                        .IconBox{
-                            width: 29px; height: 29px; background: #192550; border-radius: 5px; display: flex; align-items: center; justify-content: center; 
-                            svg{
-                                width: 20px; height: 16px;
-                                path{
-                                    stroke: #595F79;
-                                }
-                            }
-                        }
-                    }
-                }
-                .TrendSuggested{
-                    display: flex; flex-direction: row; gap: 15px; width: 100%; overflow: auto;
-                    .Suggest{
-                        width: fit-content; padding: 13px; border-radius: 10px; border: 1px solid #11182F;
-                        p{
-                            color: #7491F3; font-size: 12px; font-weight: 500; margin: 0px; 
-                        }
-                    }
-                }
-            }
-            .ChatBoxMain{
-                 width: 100%; padding: 1px; background: linear-gradient(90deg, #04FFCD, #6A00FF); border-radius: 10px; display: inline-block;
-                .ChatBoxUnder{
-                    padding: 15px 18px; display: flex; flex-direction: column; gap: 30px; background: #111831; border-radius: 10px; 
-                    .ChatBoxUnderMainDv{
-                        display: flex; justify-content: space-between; align-items: center;
-                        .AskSomething{
-                            width: 86%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
-                            .BoxIcon{
-                                background: #182245; width: 43px; height: 40px; display: flex; justify-content: center; align-items: center; border-radius: 10px;
-                                img{
-                                    width: 13px; height: 18px;
-                                }
-                            }
-                            input{
-                                border: none; color: #717AB4; font-size: 16px; font-weight: 400; background: none; width: 100%; padding: 0px 0px 0px 20px;
-                            }
-                            input::placeholder{
-                                 color: #717AB4; font-size: 16px; font-weight: 400;
-                                }
-                                input:focus{
-                                    outline: none; box-shadow: none; border: none; 
-                                }
-                            }
-                            .plan{
-                                p{
-                                    font-weight: 500; font-size: 12px; color: #FFFFFF;
-                                    span{
-                                        font-weight: 900; font-size: 12px; color: #3CBEFF;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .ChatComitmentMain{
-                        display: flex; flex-direction: row; justify-content: space-between; align-items: center;
-                        .WebMode{
-                            display: flex; flex-direction: row; gap: 15px;
-                            .Web{
-                                width: fit-content; height: 31px; display: flex; flex-direction: row; gap: 6px; border-radius: 10px; border: 1px solid #3F5191; padding: 5px; align-items: center;
-                                img{
-                                    width: 20px; height: 20px;
-                                }
-                                .MicroImg{
-                                    width: 12px; height: 19px;
-                                }
-                                p{
-                                    color: #3F5191; font-size: 12px; font-weight: 500; margin: 0px; line-height: 100%; 
-                                }
-                                .circle{
-                                    width: 14px; height: 14px; border: 2px solid #3F5191; border-radius: 50%;
-                                }
-                            }
-                        }
-                        .IconsForCommit{
-                            display: flex; flex-direction: row; gap: 15px;
-                            .Attachement{
-                                cursor: pointer; background: #182245; width: 30px; height: 30px; border-radius: 8px;  display: flex; justify-content: center; align-items: center;
-                                img{
-                                    width: 18px; height: 18px;
-                                }
-                                .SendImg{
-                                    width: 25px; height: 25px;
-                                }
-                            }
-                            .BlueAttachemnet{
-                                background: #33A6DF;
-                            }
-                        }
-                    }
-                }
-        }
-            .MiddleContentDv{
-                display: flex; flex-direction: column; gap: 30px; align-items: center; 
-                img{ 
-                    width: 73px; height: 68px;
-                }
-                p{
-                    color: #7A90B2; font-size: 30px; font-weight: 800; margin: 0px; line-height: 100%; text-align: center;
-                }
-                h4{
-                    color: #65799D; font-size: 20px; font-weight: 500; margin: 0px; line-height: 25px; text-align: center;
-                }
-                .QuestionBoxMain{
-                    display: flex; flex-direction: row; gap: 50px; align-items: center; 
-                    .Box{
-                        width: 243px; height: 128px; border-radius: 10px; border: 1px solid #586C8F; padding: 17px 20px; display: flex; flex-direction: column; gap: 18px;
-                        .Flash{
-                            width: 30px; height: 30px; background: #182245; border-radius: 10px; display: flex; align-items: center; justify-content: center;
-                            img{
-                                width: 15px; height: 18px;
-                            }
-                        }
-                        p{
-                            color: #717AB4; font-size: 16px; font-weight: 500; margin: 0px; line-height: 20px; text-align: start;
-                        }
-                    }
-                }
-            }
     }
+    .ChatInput_Suggested_Section_Main{
+        background: #0F1126;width: 100%; border-radius: 20px; padding-right: 10px;
+        .Suggestion_Content_Padding{
+            padding: 15px 17px; border-bottom: 3px solid #151C34; transition: all 0.3s ease;
+            .Suggestion_Content{
+                 height: calc(40vh - 150px); overflow: auto; display: flex; flex-direction: column; gap: 22px;
+                .OptionGet_By{
+                    display: flex; flex-direction: row; gap: 12px;
+                    .IconGet{
+                        width: 36px; height: 36px; background: var(--vt-c-Color-Blue-Sea-Icon-Back); border-radius: 3px; display: flex; justify-content: center; align-items: center;
+                        svg{
+                            width: 19px; height: 17px; 
+                            path{
+                                stroke: #0098E4;
+                            }
+                        }
+                        .StokeImg{
+                            width: 24px; height: 24px; 
+                        }
+                    }
+                    .Text_PlusIcon{
+                            display: flex; flex-direction: column; gap: 4px;
+                        .Lock_Text{
+                            display: flex; flex-direction: row; gap: 10px; align-items: center;
+                            h1{
+                                line-height: 100%; color: var(--vt-c-Color-White); font-size: 16px; font-weight: 700; margin: 0px; font-family: var(--vt-c-Text-Font-Montserrat); 
+                            }
+                            h3{
+                                line-height: 100%; color: rgba(255, 255, 255, 0.5); font-size: 12px; font-weight: 600; margin: 0px;font-family: var(--vt-c-Text-Font-Montserrat);
+                            }
+                            p{
+                                line-height: 100%; color: var(--vt-c-Color-Text-Light-Gray); font-size: 12px; font-weight: 400; margin: 0px;
+                            }
+                            .lock_Icon{
+                                background: var(--vt-c-Color-Yellow-Lock-Background); width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; border-radius: 3px;
+                                svg{
+                                    width: 10px; height: 10px; stroke: #E6CB00;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ChatSection_Dv{
+            padding: 18px; display: flex; flex-direction: column; gap: 25px;
+            .IconPlus_Input{
+                display: flex; flex-direction: row; gap: 10px; align-items: center;
+                .SearchIcon{ 
+                    cursor: pointer; width: 42px; height: 42px; border-radius: 10px; background: #203063; display: flex; justify-content: center; align-items: center;
+                    svg{
+                        width: 25px; height: 13px; 
+                        path{
+                            stroke: var(--vt-c-Color-White);
+                        }
+                    }
+                }
+                .Input{
+                    padding: 7px 12px; border-radius: 10px; background: #1C2648; width: 100%;  display: flex; flex-direction: row; justify-content: space-between; align-items: center; 
+                    .ImgInput{
+                        display: flex; flex-direction: row; gap: 10px; width: 100%;
+                        img{ border-radius: 50px; width: 35px; height: 35px; }
+                        input{ color: #636DA3; font-size: 14px; font-weight: 500; background: none; border: none; width: 100%; font-family: var(--vt-c-Text-Font-Montserrat)}
+                        input::placeholder{ color: #636DA3; font-size: 14px; font-weight: 500; font-family: var(--vt-c-Text-Font-Montserrat); }
+                        input:focus{ background: none; outline: none; border: none; }
+                    }
+                    .MicroPhoneIcon{
+                        display: flex; flex-direction: row; gap: 6px; 
+                        .Micro{
+                             border-radius: 10px; background: #171E40; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; 
+                            svg{
+                                width: 26px; height: 26px; filter: brightness(170%);
+                            }
+                        }
+                    }
+                }
+                .Micro-Sent{
+                     border-radius: 10px; background: #33A6DF; width: 42px; height: 42px; display: flex; justify-content: center; align-items: center; 
+                    svg{
+                        width: 29px; height: 29px; filter: brightness(170%);
+                    }
+                }
+            }
+            .ToggleIcon_DV{
+                display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center;
+            .ToggleIcon{
+                display: flex; flex-direction: row; gap: 20px;
+                .Toggle_Dv {
+                    display: flex; flex-direction: row; gap: 5px; align-items: center;
+                svg{
+                    width: 16px; height: 17px; filter: brightness(0) saturate(100%) invert(54%) sepia(13%) saturate(1178%) hue-rotate(210deg) brightness(92%) contrast(90%);
+                }
+                .switch {
+                    position: relative; display: inline-block; width: 34px; height: 18px;
+                    input {
+                        opacity: 0; width: 0; height: 0;
+                        &:checked + .slider { 
+                            background-color: #ffffff;
+                            &::before {
+                                transform: translateX(15px);
+                            }
+                        }
+                    }
+                    .slider {
+                        position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #3A4794;  transition: 0.2s; border-radius: 34px;
+                        &::before {
+                            position: absolute; content: ""; width: 14px; height: 14px; left: 3px; bottom: 2px; background-color: #707FB7; transition: 0.2s; border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        p{
+            font-weight: 500; font-size: 12px; color: #FFFFFF; font-family: var(--vt-c-Text-Font-Montserrat);
+            span{
+                font-weight: 900; font-size: 12px; color: #3CBEFF;
+            }
+        }
+        }
+    }
+}
 }

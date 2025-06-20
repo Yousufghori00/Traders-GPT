@@ -96,7 +96,7 @@ import {
     collapsed,
     toggleSidebar,
     sidebarWidth
-} from '../../../src/state.js'
+} from './state.js'
 export default {
     components: {
         // SidebarLink,

@@ -46,9 +46,9 @@
                     <div class="CompanyData_Entry">
                         <div class="CompanyName">
                             <div class="DocumentKey">
-                                <h2><span>#</span>GOOG</h2>
+                                <h2><span>#</span>AAPL</h2>
                                 <div class="dot"></div>
-                                <p>Google Inc</p>
+                                <p>Apple Inc</p>
                             </div>
                             <div class="Count">
                                 <h5>7</h5>
@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="GrphMain">
-                            <h6>Generating...</h6>
+                            <h6>Here is tutorial, if you </h6>
                             <img src="../../assets/Image/GraphMountain.png" alt="Graph" />
                         </div>
 
@@ -81,7 +81,7 @@
                 <div class="Noc-GeneratingDvMain">
                     <div class="CompanyDv">
                         <figure>
-                            <img src="../../assets/Image/Apple_Logo_Icon.png" alt="Company Logo" />
+                            <inline-svg src="/src/assets/Image/Svg/IntelLogo.svg" />
                         </figure>
                         <p>$100</p>
                         <h6>
@@ -92,9 +92,9 @@
                     <div class="CompanyData_Entry">
                         <div class="CompanyName">
                             <div class="DocumentKey">
-                                <h2><span>#</span>GOOG</h2>
+                                <h2><span>#</span>INTC</h2>
                                 <div class="dot"></div>
-                                <p>Google Inc</p>
+                                <p>Intel Corp</p>
                             </div>
                             <div class="Count">
                                 <h5>7</h5>
@@ -102,7 +102,7 @@
                         </div>
 
                         <div class="GrphMain">
-                            <h6>Generating...</h6>
+                            <h6>Will do, super, thank you...</h6>
                             <img src="../../assets/Image/GraphMountain.png" alt="Graph" />
                         </div>
 
@@ -182,7 +182,7 @@ import {
     collapsed,
     toggleSidebar,
     sidebarWidth
-} from '../../../src/state.js'
+} from './state.js'
 export default {
     components: {
         // SidebarLink,

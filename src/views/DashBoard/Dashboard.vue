@@ -1,5 +1,5 @@
 <template>
-<div class="DashBoradMainContent_DV">
+<div class="PageMainContent_DV">
     <div class="DashBoardOneMain" :style="{ width: dashoardTwoWidth }">
         <div class="CampanyLogo">
             <div class="CampanyTextMain">
@@ -122,7 +122,7 @@
             </div>
         </div>
     </div>    
-    <div class="DashBoardTwoMain"  v-if="!collapsed" :style="{ width: dashoardWidth }">
+    <div class="SideBarComponents_CalledInAll_Page"  v-if="!collapsed" :style="{ width: dashoardWidth }">
         <SideBarComponents />
     </div>
 </div>
@@ -136,7 +136,7 @@ import {
     toggleDashBoardbar,
     dashoardWidth,
     dashoardTwoWidth
-} from '../../state.js'
+} from './state.js'
 import SelectButton from 'primevue/selectbutton';
 import Select from 'primevue/select';
 import SideBarComponents from '../../components/SideBarComponent.vue';
