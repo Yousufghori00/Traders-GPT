@@ -224,7 +224,273 @@
                             </div>
                             <div class="Mini_Table_Main_Content">
                                 <div class="Mini_Table">
-                                    
+                                    <div class="Chart_MAin_Content">
+                                        <div class="TabsContent">
+                                            <p>Google Inc (AAPL)</p>
+                                            <SelectButton v-model="value" :options="options" />
+                                        </div>
+                                        <img src="../../assets/Image/ChartGoogleINC.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TrendIcon">
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/likeIcon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/DislikeIcon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg class="Reload" src="/src/assets/Image/Svg/Reload_Icon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/copyIcon.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="UserChat_UI">
+                <img src="../../assets/Image/profilePic.jpg" alt="">
+                <div class="Chat">
+                    <div class="Time_Date">
+                        <p>You</p>
+                        <p><span>2m ago</span></p>
+                    </div>
+                    <div class="Talk">
+                        <h1>Is Google Performing better over the last few few years ?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="UserChat_UI">
+                <img src="../../assets/Image/favicon.png" alt="">
+                <div class="Chat">
+                    <div class="Time_Date">
+                        <p>TradersGPT - <m>#GOOG</m>
+                        </p>
+                        <p><span>2m ago - <a>Time taken: 34 secs</a></span></p>
+                    </div>
+                    <div class="Executive_Summary">
+                        <p>Executive Summary</p>
+                        <h1>Here is a table of Google Inc.'s annual revenue of over the 20 years. These figures are based on Google’s financial reports for the respective years: such as Net Income and EPS (Earnings per Share) for each fiscal year:</h1>
+                        <div class="Executive_Summary_TableMain">
+                            <div class="Revenue_DV">
+                                <p>Revenue Analysis (2018-2024)</p>
+                                <div class="BigIcon">
+                                    <inline-svg class="settingImg" src="/src/assets/Image/Svg/BigSizeIcon.svg" />
+                                </div>
+                            </div>
+                            <div class="Mini_Table_Main_Content">
+                                <div class="Mini_Table">
+                                    <div class="Chart_MAin_Content">
+                                        <div class="TabsContent">
+                                            <p>Google Inc (AAPL)</p>
+                                            <SelectButton v-model="value" :options="options" />
+                                        </div>
+                                        <img class="GraphMargin" src="../../assets/Image/GraphTrade.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TrendIcon">
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/likeIcon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/DislikeIcon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg class="Reload" src="/src/assets/Image/Svg/Reload_Icon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/copyIcon.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="UserChat_UI">
+                <img src="../../assets/Image/profilePic.jpg" alt="">
+                <div class="Chat">
+                    <div class="Time_Date">
+                        <p>You</p>
+                        <p><span>2m ago</span></p>
+                    </div>
+                    <div class="Talk">
+                        <h1>Is Google Performing better over the last few few years ?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="UserChat_UI">
+                <img src="../../assets/Image/favicon.png" alt="">
+                <div class="Chat">
+                    <div class="Time_Date">
+                        <p>TradersGPT - <m>#GOOG</m>
+                        </p>
+                        <p><span>2m ago - <a>Time taken: 34 secs</a></span></p>
+                    </div>
+                    <div class="Executive_Summary">
+                        <p>Executive Summary</p>
+                        <h1>Here is a table of Google Inc.'s annual revenue of over the 20 years. These figures are based on Google’s financial reports for the respective years: such as Net Income and EPS (Earnings per Share) for each fiscal year:</h1>
+                        <div class="Executive_Summary_TableMain">
+                            <div class="Revenue_DV">
+                                <p>Revenue Analysis (2018-2024)</p>
+                                <div class="BigIcon">
+                                    <inline-svg class="settingImg" src="/src/assets/Image/Svg/BigSizeIcon.svg" />
+                                </div>
+                            </div>
+                            <div class="Mini_Table_Main_Content">
+                                <div class="Mini_Table">
+                                    <div class="Chart_MAin_Content">
+                                        <div class="TabsContent">
+                                            <p>Google Inc (AAPL)</p>
+                                        </div>
+                                        <img class="GraphMargin" src="../../assets/Image/BarGraphImg.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TrendIcon">
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/likeIcon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/DislikeIcon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg class="Reload" src="/src/assets/Image/Svg/Reload_Icon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg src="/src/assets/Image/Svg/copyIcon.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="UserChat_UI">
+                <img src="../../assets/Image/profilePic.jpg" alt="">
+                <div class="Chat">
+                    <div class="Time_Date">
+                        <p>You</p>
+                        <p><span>2m ago</span></p>
+                    </div>
+                    <div class="Talk">
+                        <h1>Is Google Performing better over the last few few years ?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="UserChat_UI">
+                <img src="../../assets/Image/favicon.png" alt="">
+                <div class="Chat">
+                    <div class="Time_Date">
+                        <p>TradersGPT - <m>#GOOG</m>
+                        </p>
+                        <p><span>2m ago - <a>Time taken: 34 secs</a></span></p>
+                    </div>
+                    <div class="Executive_Summary">
+                        <p>Executive Summary</p>
+                        <h1>Here is a table of Google Inc.'s annual revenue of over the 20 years. These figures are based on Google’s financial reports for the respective years: such as Net Income and EPS (Earnings per Share) for each fiscal year:</h1>
+                        <div class="Executive_Summary_TableMain">
+                            <div class="Revenue_DV">
+                                <p>Revenue Analysis (2018-2024)</p>
+                                <div class="BigIcon">
+                                    <inline-svg class="settingImg" src="/src/assets/Image/Svg/BigSizeIcon.svg" />
+                                </div>
+                            </div>
+                            <div class="Mini_Table_Main_Content">
+                                <div class="Mini_Table">
+                                    <div class="Chart_MAin_Content">
+                                        <div class="TabsContent">
+                                            <p>Board of Directors of Google</p>
+                                        </div>
+                                        <div class="Boxex_DV">
+                                            <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>Chairman CEO</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                             <div class="Box">
+                                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                                <div class="TextBox">
+                                                    <p>President & ...</p>
+                                                    <h1>satya nadella</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -476,10 +742,12 @@ import {
     dashoardTwoWidth
 } from '../DashBoard/state.js'
 import SideBarComponents from '../../components/SideBarComponent.vue';
+import SelectButton from 'primevue/selectbutton';
 
 export default {
     components: {
-        SideBarComponents
+        SideBarComponents,
+        SelectButton
     },
     setup() {
         const checked = ref(false)
@@ -492,20 +760,8 @@ export default {
     }
 }
 </script><script setup>
-const value = ref('Overview')
-const options = ['Overview', 'Company', 'Financial', 'Earnings', 'Analysis']
-const selectedCity = ref();
-const cities = ref([{
-        name: 'ChatGPT 4.1'
-    },
-    {
-        name: 'ChatGPT 4.2'
-    },
-    {
-        name: 'ChatGPT 4.2 Pro'
-    },
-]);
-
+const value = ref('1D')
+const options = ['1D', '5D', '1M', '6M', 'YTD', '1Y', '5Y', 'MAX']
 const showBox = ref(false)
 const toggleBox = () => {
     showBox.value = !showBox.value
