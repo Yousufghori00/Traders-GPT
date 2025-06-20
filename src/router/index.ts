@@ -21,14 +21,14 @@
 // })
 
 // export default router
+import Dashboard from '@/views/DashBoard/Dashboard.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/HomeView.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
   },
   {
     path: '/dashboard',
@@ -36,10 +36,10 @@ const routes = [
     component: () => import('../views/DashBoard/Dashboard.vue')
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/AboutView.vue')
-  }
+    path: '/Trader-Chat',
+    name: 'TraderCHat',
+    component: () => import('../views/TradersChat/TradersChat.vue')
+  },
 ]
 
 const router = createRouter({

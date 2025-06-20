@@ -9,17 +9,17 @@
         <div class="Dv_ConverSation">
             <div class="ConverSationMain">
                 <div class="ConverSation">
-                    <img src="../../assets/Image/BoxIcon.png  " alt="">
+                    <inline-svg src="/src/assets/Image/Svg/BoxIcon.svg" />
                     <h1 class="bg-red-500 text-white p-4 text-center">Conversations (9)</h1>
                 </div>
                 <div class="PlusIcon">
-                    <img src="../../assets/Image/PlusIcon.png" alt="">
+                    <inline-svg src="/src/assets/Image/Svg/PlusIcon.svg" />
                 </div>
             </div>
             <div class="TabBarMain">
                 <SelectButton v-model="value" :options="options" />
                 <div class="SearchDv">
-                    <img src="../../assets/Image/SearchIcon.png" alt="">
+                    <inline-svg src="/src/assets/Image/Svg/SearchIcon.svg" />
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
         <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink> -->
     </div>
     <div class="MessagesDv_ContentMain">
-        <router-link to="/dashboard">
+        <router-link to="/dashboard" style="text-decoration: none; border-bottom: none;">
             <div class="MessageDv" :class="{ active: selectedIndex === 0 }" @click="selectedIndex = 0">
                 <div class="Noc-GeneratingDvMain">
                     <div class="CompanyDv">
@@ -39,7 +39,7 @@
                         </figure>
                         <p>$100</p>
                         <h6>
-                            <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                            <inline-svg src="/src/assets/Image/Svg/UpIcon.svg" />
                             29%
                         </h6>
                     </div>
@@ -63,12 +63,12 @@
                         <div class="Dv_Of_ActionIconMain">
                             <div class="Dv_Of_ActionIcon">
                                 <div class="flexD">
-                                    <img src="../../assets/Image/Comment_Icon.png" alt="Comment Icon" />
+                                    <inline-svg src="/src/assets/Image/Svg/ChatIconWhite.svg" />
                                     <p>27k</p>
                                 </div>
-                                <img src="../../assets/Image/Bell_Icon.png" alt="Bell Icon" />
-                                <img src="../../assets/Image/Reload_Icon.png" alt="Reload Icon" />
-                                <img src="../../assets/Image/Pin_Icon.png" alt="Pin Icon" />
+                                <inline-svg src="/src/assets/Image/Svg/Bell_Icon.svg" />
+                                <inline-svg src="/src/assets/Image/Svg/Reload_Icon.svg" />
+                                <inline-svg src="/src/assets/Image/Svg/Pin_Icon.svg" />
                             </div>
                             <p>2m ago</p>
                         </div>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </router-link>
-        <router-link to="/image">
+        <router-link to="/Trader-Chat" style="text-decoration: none; border-bottom: none;">
             <div class="MessageDv" :class="{ active: selectedIndex === 1 }" @click="selectedIndex = 1">
                 <div class="Noc-GeneratingDvMain">
                     <div class="CompanyDv">
@@ -85,7 +85,7 @@
                         </figure>
                         <p>$100</p>
                         <h6>
-                            <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                            <inline-svg src="/src/assets/Image/Svg/UpIcon.svg" />
                             29%
                         </h6>
                     </div>
@@ -109,12 +109,12 @@
                         <div class="Dv_Of_ActionIconMain">
                             <div class="Dv_Of_ActionIcon">
                                 <div class="flexD">
-                                    <img src="../../assets/Image/Comment_Icon.png" alt="Comment Icon" />
+                                    <inline-svg src="/src/assets/Image/Svg/ChatIconWhite.svg" />
                                     <p>27k</p>
                                 </div>
-                                <img src="../../assets/Image/Bell_Icon.png" alt="Bell Icon" />
-                                <img src="../../assets/Image/Reload_Icon.png" alt="Reload Icon" />
-                                <img src="../../assets/Image/Pin_Icon.png" alt="Pin Icon" />
+                                <inline-svg src="/src/assets/Image/Svg/Bell_Icon.svg" />
+                                <inline-svg src="/src/assets/Image/Svg/Reload_Icon.svg" />
+                                <inline-svg src="/src/assets/Image/Svg/Pin_Icon.svg" />
                             </div>
                             <p>2m ago</p>
                         </div>
@@ -122,7 +122,7 @@
                 </div>
             </div>
         </router-link>
-         <router-link to="/image">
+         <!-- <router-link to="/image">
             <div class="MessageDv" :class="{ active: selectedIndex === 2 }" @click="selectedIndex = 2">
                 <div class="Noc-GeneratingDvMain">
                     <div class="CompanyDv">
@@ -131,7 +131,7 @@
                         </figure>
                         <p>$121.65</p>
                         <h6>
-                            <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                            <inline-svg src="/src/assets/Image/Svg/UpIcon.svg" />
                             0.78%
                         </h6>
                     </div>
@@ -167,7 +167,7 @@
                     </div>
                 </div>
             </div> 
-        </router-link>
+        </router-link> -->
     </div>
 </div>
 </template>
@@ -182,7 +182,7 @@ import {
     collapsed,
     toggleSidebar,
     sidebarWidth
-} from './state'
+} from '../../../src/state.js'
 export default {
     components: {
         // SidebarLink,
@@ -198,8 +198,7 @@ export default {
         }
     }
 }
-</script>
-<script setup>
+</script><script setup>
 const value = ref('All')
 const options = ['All', 'Stocks', 'Crypto', 'ETFs']
 const selectedIndex = ref(null)

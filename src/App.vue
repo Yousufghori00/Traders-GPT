@@ -86,12 +86,12 @@ nav a:first-of-type {
 
 
 <script>
-// import Sidebar from './components/sidebar/Sidebar.vue'
-import Sidebar from './components/sidebar/SideBar2.vue'
-// import Navbar from '@/components/sidebar/Navbar'
-import Navbar from './components/sidebar/Navbar2.vue'
+ import Sidebar from './components/sidebar/Sidebar.vue'
+// import Sidebar from './components/sidebar/SideBar2.vue'
+import Navbar from '@/components/sidebar/Navbar.vue' 
+// import Navbar from './components/sidebar/Navbar2.vue'
 
-import { sidebarWidth } from '@/components/sidebar/state'
+import { sidebarWidth } from '@/state'
 export default {
   components: { Sidebar,Navbar },
   setup() {

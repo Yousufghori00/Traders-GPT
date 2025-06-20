@@ -17,7 +17,7 @@
                     <div class="flexDv">
                         <p>$121.65</p>
                         <h6>
-                            <img src="../../assets/Image/UpIcon.png" alt="Trend Icon" />
+                            <inline-svg src="/src/assets/Image/Svg/UpIcon.svg" />
                             0.78%
                         </h6>
                     </div>
@@ -25,21 +25,30 @@
             </div>
             <div class="AleartsDv">
                 <div class="Icon_Plus_ToggleDV">
-                    <img src="../../assets/Image/Pin_Icon.png" alt="">
+                    <inline-svg src="/src/assets/Image/Svg/Pin_Icon.svg" />
                     <p>Pin</p>
-                    <ToggleSwitch v-model="checked" />
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <div class="Icon_Plus_ToggleDV">
-                    <img src="../../assets/Image/Reload_Icon.png" alt="">
+                    <inline-svg src="/src/assets/Image/Svg/Reload_Icon.svg" />
                     <p>Updates</p>
-                      <ToggleSwitch v-model="checked" />
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </div>
                 <div class="Icon_Plus_ToggleDV">
-                    <img src="../../assets/Image/Pin_Icon.png" alt="">
+                    <inline-svg src="/src/assets/Image/Svg/Pin_Icon.svg" />
                     <p>Alerts</p>
-                     <ToggleSwitch v-model="checked" />
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </div>
-                <img style="width: 20px; height: 20px;" src="../../assets/Image/setting.svg" alt="">
+                <inline-svg style="width: 20px; height: 20px;" class="settingImg" src="/src/assets/Image/Svg/SettingMainIcon.svg" />
             </div>
         </div>
         <div class="NavbarContentDvTwo">
@@ -48,7 +57,7 @@
             </div>
             <div class="ProfileDvMain">
                 <img src="../../assets/Image/profilePic copy.jpg" alt="">
-                <img class="settingImg" src="../../assets/Image/setting.svg" alt="">
+                <inline-svg class="settingImg" src="/src/assets/Image/Svg/SettingMainIcon.svg" />
             </div>
         </div>
 
@@ -61,11 +70,9 @@ import {
     ref
 } from 'vue'
 import SelectButton from 'primevue/selectbutton';
-import ToggleSwitch from 'primevue/toggleswitch';
 export default {
     components: {
         SelectButton,
-        ToggleSwitch
     },
     setup() {
         const checked = ref(false)
@@ -74,10 +81,8 @@ export default {
         }
     }
 }
-</script>
-<script setup>
+</script><script setup>
 const checked = ref(false);
 const value = ref('Analytics')
 const options = ['Analytics', 'History']
 </script>
-

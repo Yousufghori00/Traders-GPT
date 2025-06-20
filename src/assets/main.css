@@ -361,10 +361,16 @@ a,
                            display: flex; align-items: center; flex-direction: row; gap: 11px; margin-top: 5px;
                            .flexD{
                                display: flex; align-items: center; gap: 3px;
-                           }
-                           img{
-                               width: 16px; height: 16px; cursor: pointer;
-                           }
+                               svg{
+                                stroke: var(--vt-c-Color-Text-Light-purple); width: 16px; height: 16px; cursor: pointer; 
+                               }
+                            }
+                            svg{
+                                width: 16px; height: 16px; cursor: pointer;
+                                path{
+                                    stroke: var(--vt-c-Color-Text-Light-purple);
+                                }
+                            }
                        }
                    }
                }
@@ -376,6 +382,7 @@ a,
     }
  
 }
+/* Navbar-Component */
 .navbar{
     padding: 18px 20px; background: var(--vt-c-Traders-Main-SideBar2-Background); width: 100%; height: 80px; border-left: 1px solid #19213F; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
     .switch { position: relative; width: 30px; height: 15px; }
@@ -481,6 +488,176 @@ input:checked + .slider::before {transform: translateX(13px);}
     }
 }
 
-
-
-
+/* SideBarComponent */
+.DashBoardTwoMain{
+          transition: all 0.3s ease; padding: 16px 20px; background: var(--vt-c-Traders-Main-SideBar2-Background); display: flex; flex-direction: column; gap: 28px; position: relative; height: calc(100vh - 80px); overflow-y: auto; overflow-x: hidden;
+        .ImgHead{
+            display: flex; justify-content: space-between; align-items: center; padding-left: 40px;
+            img{
+                width: 150px; height: 31px;
+            }
+            .icon{
+                width: 25px; height: 25px;
+            }
+            .toggleIcon{
+                    position: absolute; left: 10px; padding: 1px 1px; background: #5969A3; border-radius: 50%; display: flex;
+                svg{
+                    width: 25px; height: 25px; transform: rotate(90deg);
+                path{
+                    stroke: var(--vt-c-Color-White); 
+                }
+            }
+            }
+        }
+        .SelectBtn::-webkit-scrollbar { display: none;}
+        .CompanyControversyMain{
+            padding: 2px 5px;  display: flex; flex-direction: column; gap: 30px;
+            .CompanyNameDv{
+                    flex-direction: column; display: flex; gap: 20px;
+                .CampanyLogo{
+                    display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+                    img{
+                        width: 46px; height: 46px;
+                    }
+                    .CampanyTextMain{ 
+                        display: flex; flex-direction: row; gap: 15px; align-items: center;
+                        .CampanyText{
+                            display: flex; flex-direction: column; gap: 4px;
+                            h1{
+                               font-size: 14px; font-weight: 600; line-height: 100%; color: var(--vt-c-Color-White); margin: 0px;
+                               span{
+                                color: var(--vt-c-Color-Text-Bold-Gray); 
+                               }
+                            }
+                            h2{
+                                color: #FFB21D; font-size: 20px; font-weight: 700; gap: 15px; margin: 0px; line-height: 100%;
+                                span{
+                                    color: #28CF62; font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                    .threeDot{
+                        width: 28px; height: 28px;
+                    }
+                }
+                    .BoxMain{
+                        overflow: auto; width: 100%;
+                        .BoxDvContent{
+                            display: flex; flex-direction: row; gap: 20px; align-items: center;
+                            .BoxDvContentTextMain{
+                                width: 220px; height: 143px; background: #171E40; padding: 20px; border-radius: 10px; display: flex; flex-direction: column; gap: 22px; justify-content: center; 
+                                .BoxText{
+                                    display: flex; flex-direction: column; gap: 8px;
+                                    p{
+                                        text-transform: uppercase; margin: 0px; color: var(--vt-c-Color-Text-Bold-Gray); font-size: 12px; font-weight: 400; line-height: 100%;
+                                    }
+                                    h2{
+                                        margin: 0px; font-size: 16px; font-weight: 700; color: var(--vt-c-Color-White); line-height: 100%;
+                                    }
+                                    h6{
+                                        color: #FFB21D; font-size: 16px; font-weight: 700; gap: 15px; margin: 0px; line-height: 100%;
+                                        span{
+                                            color: #28CF62; font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+                .BoxMain::-webkit-scrollbar { display: none;}
+                .ForCastMain{
+                    display: flex; flex-direction: column; gap: 15px;
+                    .ForCastHead{
+                        display: flex; justify-content: space-between; align-items: center;
+                        p{
+                            color: var(--vt-c-Color-White); font-size: 16px; font-weight: 600; margin: 0px;
+                        }
+                        h2{
+                            color: #899AB4; font-size: 12px;font-weight: 500; margin: 0px;
+                        }
+                    }
+                    .DayOfBoxMainDv{
+                        width: 100%; overflow: auto;
+                        .DivForKeep{
+                            display: flex; flex-direction: row; gap: 20px; width: 100%;
+                            .DayOfBoxMain{
+                                gap: 30px;height: 77px; border-radius: 10px; padding: 15px; background: #171E40; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+                                .OnDay{
+                                    width: 47px; height: 47px; border-radius: 8px; background: #182346; display: flex; flex-direction: column; justify-content: center; gap: 3px; align-items: center; 
+                                    p{
+                                        color: var(--vt-c-Color-White); font-size: 16px; font-weight: 700; margin: 0px; line-height: 100%; 
+                                    }
+                                    h6{
+                                        color: #BABDC7; font-size: 10px; font-weight: 700; margin: 0px; line-height: 100%;
+                                    }
+                                }
+                                h1{
+                                    font-size: 18px; font-weight: 700; margin: 0px; color: var(--vt-c-Color-White);
+                                }
+                                .LinearGraph{
+                                    display: flex; flex-direction: column; align-items: end; gap: 5px;
+                                    img{
+                                        width: 57px; height: 17px; 
+                                    }
+                                    h3{
+                                        margin: 0px; font-size: 14px; font-weight: 500; margin: 0px; color: #34E36F;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .DayOfBoxMainDv::-webkit-scrollbar { display: none;}
+                }
+                .MetricsPerformanceMain{
+                    display: flex; flex-direction: column; gap: 15px;
+                    .MetricsText{
+                        display: flex; justify-content: space-between; align-items: center;
+                        p{
+                            color: var(--vt-c-Color-White); font-size: 16px; font-weight: 600; margin: 0px;
+                        }
+                        h2{
+                            color: #899AB4; font-size: 12px;font-weight: 500; margin: 0px;
+                        }
+                    }
+                    .MetricsPerformanceBoxDv{
+                        display: flex; flex-direction: row; gap: 20px; overflow: auto; 
+                        .MetricsBoxOne{
+                            height: 400px; width: 300px; background: #171E40; border-radius: 10px;
+                            .Structure{ 
+                                padding: 15px 20px; display: flex; flex-direction: column; gap: 5px;
+                                h1{
+                                   display: flex; align-items: center; gap: 5px; color: var(--vt-c-Color-White); font-size: 16px; font-weight: 600; margin: 0px;
+                                   img{
+                                    width: 18px; height: 18px;
+                                   }
+                                }
+                                p{
+                                    color: var(--vt-c-Color-Text-Bold-Gray);font-size: 12px;font-weight: 400; margin: 0px; line-height: 100%;
+                                }
+                            }
+                            .AuthDiv{
+                                background: #151937; padding: 13px 20px; display: flex; flex-direction: row; justify-content: space-between;align-items: center;
+                                h1{
+                                    color: var(--vt-c-Color-Text-Bold-Gray); font-size: 16px; font-weight: 400; margin: 0px; 
+                                }
+                                h4{
+                                    margin: 0px; font-size: 16px; font-weight: 700; color: #21C1FD;
+                                }
+                                .HighGreen{
+                                    color: #39D3D3;
+                                }
+                                .WhiteH4{
+                                    color: var(--vt-c-Color-White);
+                                }
+                            }
+                            .WithOutBack{
+                                background: none;
+                            }
+                        }
+                    }
+                    .MetricsPerformanceBoxDv::-webkit-scrollbar { display: none;}
+                }
+            }
+        }
+}

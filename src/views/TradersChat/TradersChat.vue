@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="TrendSuggested">
-                    <div class="Suggest">
+                    <div class="Suggest"> 
                         <p>how is google performing this quarter comp... </p>
                     </div>
                      <div class="Suggest">
@@ -169,5 +169,6 @@ const cities = ref([
 </script>
 
 <style scoped>
-@import url('./Dashboard.scss');
+@import url('./tradersChat.scss');
 </style>
+ 
