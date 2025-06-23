@@ -512,216 +512,255 @@
                 </div>
             </div>
         </div>
-        <div class="ChatInput_Suggested_Section_Main">
-            <div class="Suggestion_Content_Padding" v-if="showBox">
-                <div class="Suggestion_Content">
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg src="/src/assets/Image/Svg/DollorIcon.svg" />
+         <div class="OptionsMain" v-if="!showBox">
+                <div class="optionHead">
+                    <div class="trendText">
+                        <inline-svg  src="/src/assets/Image/Svg/FlashIcon.svg" />
+                        <p>Trending Q’s</p>
+                    </div>
+                    <div class="TrendIcon">
+                        <div class="IconBox">
+                            <inline-svg  src="/src/assets/Image/Svg/likeIcon.svg" />
                         </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>Earnings Calls</h1>
-                                <h3>@earningscalls</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
+                        <div class="IconBox">
+                            <inline-svg  src="/src/assets/Image/Svg/DislikeIcon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg class="Reload" src="/src/assets/Image/Svg/Reload_Icon.svg" />
+                        </div>
+                        <div class="IconBox">
+                            <inline-svg  src="/src/assets/Image/Svg/copyIcon.svg" />
                         </div>
                     </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg class="StokeImg" src="/src/assets/Image/Svg/StokeUpIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>Estimates</h1>
-                                <h3>@estimates</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="TrendSuggested">
+                    <div class="Suggest">
+                        <p>how is google performing this quarter comp... </p>
                     </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg src="/src/assets/Image/Svg/StokeEqualIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>ETF Flows</h1>
-                                <h3>@etf</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
+                     <div class="Suggest">
+                        <p>Is google a good long term investment ?</p>
                     </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg src="/src/assets/Image/Svg/NewsIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>Files</h1>
-                                <h3>@files</h3>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
+                     <div class="Suggest">
+                        <p>What are key metrics ?</p>
                     </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg src="/src/assets/Image/Svg/FileIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>News</h1>
-                                <h3>@news</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
+                     <div class="Suggest">
+                        <p>What are key metrics ?</p>
                     </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>Sentiment</h1>
-                                <h3>@sentiment</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>Sentiment</h1>
-                                <h3>@sentiment</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>Sentiment</h1>
-                                <h3>@sentiment</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="OptionGet_By">
-                        <div class="IconGet">
-                            <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
-                        </div>
-                        <div class="Text_PlusIcon">
-                            <div class="Lock_Text">
-                                <h1>Sentiment</h1>
-                                <h3>@sentiment</h3>
-                                <div class="lock_Icon">
-                                    <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
-                                </div>
-                            </div>
-                            <div class="Lock_Text">
-                                <p>Over 20 years of earnings call transcripts and financial discussions.</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-            <div class="ChatSection_Dv">
-                <div class="IconPlus_Input">
-                    <div class="SearchIcon" @click="toggleBox">
-                        <inline-svg src="/src/assets/Image/Svg/SuggestedSearchIcon.svg" />
-                    </div>
-                    <div class="Input">
-                        <div class="ImgInput">
-                            <img src="../../assets/Image/profilePic.jpg" alt="">
-                            <input type="text" placeholder="Ask anything about the markets ?">
-                        </div>
-                        <div class="MicroPhoneIcon">
-                            <div class="Micro">
-                                <inline-svg src="/src/assets/Image/Svg/attachment.svg" />
+        <div class="ChatInput_Suggested_Section_Main">
+            <div>
+                <div class="Suggestion_Content_Padding" v-if="showBox">
+                    <div class="Suggestion_Content">
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg src="/src/assets/Image/Svg/DollorIcon.svg" />
                             </div>
-                            <div class="Micro">
-                                <inline-svg src="/src/assets/Image/Svg/microphone.svg" />
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>Earnings Calls</h1>
+                                    <h3>@earningscalls</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="Micro-Sent">
-                        <inline-svg src="/src/assets/Image/Svg/sent-fast.svg" />
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg class="StokeImg" src="/src/assets/Image/Svg/StokeUpIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>Estimates</h1>
+                                    <h3>@estimates</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg src="/src/assets/Image/Svg/StokeEqualIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>ETF Flows</h1>
+                                    <h3>@etf</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg src="/src/assets/Image/Svg/NewsIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>Files</h1>
+                                    <h3>@files</h3>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg src="/src/assets/Image/Svg/FileIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>News</h1>
+                                    <h3>@news</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>Sentiment</h1>
+                                    <h3>@sentiment</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>Sentiment</h1>
+                                    <h3>@sentiment</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>Sentiment</h1>
+                                    <h3>@sentiment</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="OptionGet_By">
+                            <div class="IconGet">
+                                <inline-svg class="StokeImg" src="/src/assets/Image/Svg/HappyFaceIcon.svg" />
+                            </div>
+                            <div class="Text_PlusIcon">
+                                <div class="Lock_Text">
+                                    <h1>Sentiment</h1>
+                                    <h3>@sentiment</h3>
+                                    <div class="lock_Icon">
+                                        <inline-svg src="/src/assets/Image/Svg/LockIcon.svg" />
+                                    </div>
+                                </div>
+                                <div class="Lock_Text">
+                                    <p>Over 20 years of earnings call transcripts and financial discussions.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="ToggleIcon_DV">
-                    <div class="ToggleIcon">
-                        <div class="Toggle_Dv">
-                            <inline-svg src="/src/assets/Image/Svg/WorldWebIcon.svg" />
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
+                <div class="ChatSection_Dv">
+                    <div class="IconPlus_Input">
+                        <div class="SearchIcon" @click="toggleBox">
+                            <inline-svg src="/src/assets/Image/Svg/SuggestedSearchIcon.svg" />
                         </div>
-                        <div class="Toggle_Dv">
-                            <inline-svg src="/src/assets/Image/Svg/MicroScopeIcon.svg" />
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
+                        <div class="Input">
+                            <div class="ImgInput">
+                                <img src="../../assets/Image/profilePic.jpg" alt="">
+                                <input type="text" placeholder="Ask anything about the markets ?">
+                            </div>
+                            <div class="MicroPhoneIcon">
+                                <div class="Micro">
+                                    <inline-svg src="/src/assets/Image/Svg/attachment.svg" />
+                                </div>
+                                <div class="Micro">
+                                    <inline-svg src="/src/assets/Image/Svg/microphone.svg" />
+                                </div>
+                            </div>
                         </div>
-                        <div class="Toggle_Dv">
-                            <inline-svg src="/src/assets/Image/Svg/FlashIcon.svg" />
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
-                        </div>
-                        <div class="Toggle_Dv">
-                            <inline-svg src="/src/assets/Image/Svg/ChatMsgIcon.svg" />
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
+                        <div class="Micro-Sent">
+                            <inline-svg src="/src/assets/Image/Svg/sent-fast.svg" />
                         </div>
                     </div>
-                    <p>Free Plan : <span>Upgrade</span></p>
+                    <div class="ToggleIcon_DV">
+                        <div class="ToggleIcon">
+                            <div class="Toggle_Dv">
+                                <inline-svg src="/src/assets/Image/Svg/WorldWebIcon.svg" />
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="Toggle_Dv">
+                                <inline-svg src="/src/assets/Image/Svg/MicroScopeIcon.svg" />
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="Toggle_Dv">
+                                <inline-svg src="/src/assets/Image/Svg/FlashIcon.svg" />
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="Toggle_Dv">
+                                <inline-svg src="/src/assets/Image/Svg/ChatMsgIcon.svg" />
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <p>Free Plan : <span>Upgrade</span></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -127,6 +127,39 @@
             }
         }
     }
+      .OptionsMain{
+                    display: flex; flex-direction: column; gap: 15px; margin: 10px 0px;
+                .optionHead{
+                    display: flex; justify-content: space-between; align-items: center; 
+                    .trendText{
+                        display: flex; 
+                        svg{
+                            width: 19px; height: 20px;
+                        }
+                        p{
+                            color: #6A7AAF; font-size: 12px; font-weight: 500; margin: 0px;
+                        }
+                    }
+                    .TrendIcon{
+                        display: flex; flex-direction: row; gap: 8px;
+                        .IconBox{
+                            width: 29px; height: 29px; background: #192550; border-radius: 5px; display: flex; align-items: center; justify-content: center; 
+                            svg{
+                                width: 20px; height: 16px; cursor: pointer; filter: brightness(0) saturate(100%) invert(43%) sepia(7%) saturate(1336%) hue-rotate(203deg) brightness(91%) contrast(90%);
+                            }
+                        }
+                    }
+                }
+                .TrendSuggested{
+                    display: flex; flex-direction: row; gap: 15px; width: 100%; overflow: auto;
+                    .Suggest{
+                        width: fit-content; padding: 13px; border-radius: 10px; border: 1px solid #11182F;
+                        p{
+                            color: #7491F3; font-size: 12px; font-weight: 500; margin: 0px; 
+                        }
+                    }
+                }
+            }
     .ChatInput_Suggested_Section_Main{
         background: #0F1126;width: 100%; border-radius: 20px; padding-right: 10px;
         .Suggestion_Content_Padding{
