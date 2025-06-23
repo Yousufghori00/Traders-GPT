@@ -17,7 +17,7 @@ export default {
 <div class="d-flex">
   <Sidebar />
 </div>
-  <div style="margin-left: 380px;">
+  <div :style="{ 'margin-left': sidebarWidth ,}">
     <router-view />
   </div>
 </template>

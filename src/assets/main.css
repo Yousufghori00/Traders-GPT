@@ -1,40 +1,4 @@
 @import './base.css';
-/* 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */
-
-
 :root {
     --vt-c-Traders-Main-Background: #1C2648;
     --vt-c-Traders-Main-SideBar2-Background: #111831;
@@ -394,7 +358,734 @@ a,
            background-color: #203063;  
        }
     }
- 
+    @media (min-width: 2500px) {
+    .LogoPlusConverSationMain{
+        gap: 40px;
+        .T-GPTLogo{
+            img{
+                width: 350px;height: 65px;
+            }
+            .SideBarToggle{
+                width: 35px; height: 35px;
+            }
+        }
+        .Dv_ConverSation{
+            .ConverSationMain{
+                .ConverSation{
+                    svg{
+                        width: 30px ; height: 30px; 
+                    }
+                    h1{
+                         font-size: 22px;
+                    }
+                }
+                .PlusIcon{
+                    width: 35px; height: 35px;
+                    svg{
+                        width: 25px; height: 25px; 
+                    }
+                }
+            }
+            .TabBarMain{
+               .p-togglebutton-checked{
+                border-radius: 30px; background: #2A5391;
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                }
+            }
+            .p-togglebutton-label{
+                font-size: 20px;
+            }
+            .SearchDv{
+                    svg{
+                        width: 25px ; height: 25px ;
+                    }
+                }
+            }
+        }
+    }
+    .MessagesDv_ContentMain{
+       .MessageDv{
+        padding: 23px 19px !important;
+        .Noc-GeneratingDvMain{ 
+               .CompanyDv{
+                    gap: 5px;
+                   figure{
+                       width: 60px; height: 60px;
+                       svg{
+                        width: 60px; height: 60px;
+                    }
+                   }
+                   p{
+                        font-size: 16px;
+                   }
+                   h6{
+                       font-size: 14px;
+                       svg{
+                           width: 12px; height: 10px;
+                       }
+                   }
+               }
+               .CompanyData_Entry{ 
+                    gap: 8px;
+                   .CompanyName{
+                       .DocumentKey{
+                           h2{
+                                font-size: 20px;
+                           }
+                           .dot{
+                               width: 7px; height: 7px;
+                           }
+                           p{
+                                font-size: 16px;
+                           }
+                       }
+                       .Count{
+                           padding: 1px 12px;
+                           h5{
+                               font-size: 14px ; 
+                           }
+                       }
+                   }
+                   .GrphMain{
+                       h6{
+                            width: 70%; font-size: 18px;
+                       }
+                       img{
+                        width: 100px; height: 26px;
+                       }
+                   }
+                   .Dv_Of_ActionIconMain{
+                    p{
+                        font-size: 18px;
+                    }
+                    .Dv_Of_ActionIcon{
+                        .flexD{
+                            svg{
+                                width: 20px; height: 20px; 
+                            }
+                        }
+                        svg{
+                            width: 20px; height: 20px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+       .MessageDv.active {
+           background-color: #203063;  
+       }
+    }
+}
+    @media (min-width: 2400px) and (max-width: 2550px) {
+    .LogoPlusConverSationMain{
+        gap: 40px;
+        .T-GPTLogo{
+            img{
+                width: 250px; height: 45px;
+            }
+            .SideBarToggle{
+                width: 30px; height: 30px;
+            }
+        }
+        .Dv_ConverSation{
+            .ConverSationMain{
+                .ConverSation{
+                    svg{
+                        width: 25px; height: 25px; 
+                    }
+                    h1{
+                         font-size: 20px;
+                    }
+                }
+                .PlusIcon{
+                    width: 35px; height: 35px;
+                    svg{
+                        width: 25px; height: 25px; 
+                    }
+                }
+            }
+            .TabBarMain{
+               .p-togglebutton-checked{
+                border-radius: 30px; background: #2A5391;
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                }
+            }
+            .p-togglebutton-label{
+                font-size: 20px;
+            }
+            .SearchDv{
+                    svg{
+                        width: 25px ; height: 25px ;
+                    }
+                }
+            }
+        }
+    }
+    .MessagesDv_ContentMain{
+       .MessageDv{
+        padding: 23px 19px !important;
+        .Noc-GeneratingDvMain{ 
+               .CompanyDv{
+                    gap: 5px;
+                   figure{
+                       width: 60px; height: 60px;
+                       svg{
+                        width: 60px; height: 60px;
+                    }
+                   }
+                   p{
+                        font-size: 16px;
+                   }
+                   h6{
+                       font-size: 14px;
+                       svg{
+                           width: 12px; height: 10px;
+                       }
+                   }
+               }
+               .CompanyData_Entry{ 
+                    gap: 8px;
+                   .CompanyName{
+                       .DocumentKey{
+                           h2{
+                                font-size: 20px;
+                           }
+                           .dot{
+                               width: 7px; height: 7px;
+                           }
+                           p{
+                                font-size: 16px;
+                           }
+                       }
+                       .Count{
+                           padding: 1px 12px;
+                           h5{
+                               font-size: 14px ; 
+                           }
+                       }
+                   }
+                   .GrphMain{
+                       h6{
+                            width: 70%; font-size: 18px;
+                       }
+                       img{
+                        width: 100px; height: 26px;
+                       }
+                   }
+                   .Dv_Of_ActionIconMain{
+                    p{
+                        font-size: 18px;
+                    }
+                    .Dv_Of_ActionIcon{
+                        .flexD{
+                            svg{
+                                width: 20px; height: 20px; 
+                            }
+                        }
+                        svg{
+                            width: 20px; height: 20px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+       .MessageDv.active {
+           background-color: #203063;  
+       }
+    }
+}
+    @media (min-width: 1745px) and (max-width: 1910px) {
+    .LogoPlusConverSationMain{
+        gap: 20px;
+        .T-GPTLogo{
+            img{
+                width: 180px; height: 35px;
+            }
+            .SideBarToggle{
+                width: 20px; height: 20px;
+            }
+        }
+        .Dv_ConverSation{
+            .ConverSationMain{
+                .ConverSation{
+                    svg{
+                        width: 20px; height: 20px; 
+                    }
+                    h1{
+                         font-size: 14px;
+                    }
+                }
+                .PlusIcon{
+                    width: 25px; height: 25px;
+                    svg{
+                        width: 18px; height: 18px; 
+                    }
+                }
+            }
+            .TabBarMain{
+               .p-togglebutton-checked{
+                border-radius: 30px; background: #2A5391;
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600;  padding: 5px 15px;
+                }
+            }
+            .p-togglebutton-label{
+                font-size: 12px; 
+            }
+            .SearchDv{
+                    svg{
+                        width: 18px; height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .MessagesDv_ContentMain{
+       .MessageDv{
+        .Noc-GeneratingDvMain{ 
+               .CompanyDv{
+                    gap: 2px;
+                   figure{
+                       width: 40px; height: 40px;
+                       svg{
+                        width: 40px; height: 40px;
+                    }
+                   }
+                   p{
+                        font-size: 12px;
+                   }
+                   h6{
+                       font-size: 10px;
+                       svg{
+                           width: 6px; height: 4px;
+                       }
+                   }
+               }
+               .CompanyData_Entry{ 
+                    gap: 8px;
+                   .CompanyName{
+                       .DocumentKey{
+                           h2{
+                                font-size: 16px;
+                           }
+                           .dot{
+                               width: 5px; height: 5px;
+                           }
+                           p{
+                                font-size: 14px;
+                           }
+                       }
+                       .Count{
+                           padding: 0px 10px;
+                           h5{
+                               font-size: 10px ; 
+                           }
+                       }
+                   }
+                   .GrphMain{
+                       h6{
+                            width: 70%; font-size: 12px;
+                       }
+                       img{
+                        width: 50px; height: 13px;
+                       }
+                   }
+                   .Dv_Of_ActionIconMain{
+                    p{
+                        font-size: 12px;
+                    }
+                    .Dv_Of_ActionIcon{
+                        .flexD{
+                            svg{
+                                width: 15px; height: 15px; 
+                            }
+                        }
+                        svg{
+                            width: 15px; height: 15px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+       .MessageDv.active {
+           background-color: #203063;  
+       }
+    }
+}
+    @media (min-width: 1536px) and (max-width: 1745px) {
+    .LogoPlusConverSationMain{
+        gap: 20px;
+        .T-GPTLogo{
+            img{
+                width: 130px; height: 25px;
+            }
+            .SideBarToggle{
+                width: 18px; height: 18px;
+            }
+        }
+        .Dv_ConverSation{
+            .ConverSationMain{
+                .ConverSation{
+                    gap: 6px;
+                    svg{
+                        width: 16px; height: 16px; 
+                    }
+                    h1{
+                         font-size: 12px;
+                    }
+                }
+                .PlusIcon{
+                    width: 20px; height: 20px;
+                    svg{
+                        width: 14px; height: 14px; 
+                    }
+                }
+            }
+            .TabBarMain{
+               .p-togglebutton-checked{
+                border-radius: 30px; background: #2A5391;
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600;  padding: 5px 15px;
+                }
+            }
+            .p-togglebutton-label{
+                font-size: 12px; 
+            }
+            .SearchDv{
+                    svg{
+                        width: 16px; height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .MessagesDv_ContentMain{
+       .MessageDv{
+        .Noc-GeneratingDvMain{ 
+            gap: 10px;
+               .CompanyDv{
+                    gap: 0px;
+                   figure{
+                       width: 35px; height: 35px;
+                       svg{
+                        width: 35px; height: 35px;
+                    }
+                   }
+                   p{
+                        font-size: 10px;
+                   }
+                   h6{
+                       font-size: 8px;
+                       svg{
+                           width: 6px; height: 4px;
+                       }
+                   }
+               }
+               .CompanyData_Entry{ 
+                    gap: 6px;
+                   .CompanyName{
+                       .DocumentKey{
+                           h2{
+                                font-size: 14px;
+                           }
+                           .dot{
+                               width: 5px; height: 5px;
+                           }
+                           p{
+                                font-size: 12px;
+                           }
+                       }
+                       .Count{
+                           padding: 0px 10px;
+                           h5{
+                               font-size: 10px ; 
+                           }
+                       }
+                   }
+                   .GrphMain{
+                       h6{
+                            width: 70%; font-size: 10px;
+                       }
+                       img{
+                        width: 50px; height: 13px;
+                       }
+                   }
+                   .Dv_Of_ActionIconMain{
+                    p{
+                        font-size: 10px;
+                    }
+                    .Dv_Of_ActionIcon{
+                        .flexD{
+                            svg{
+                                width: 12px; height: 12px; 
+                            }
+                        }
+                        svg{
+                            width: 12px; height: 12px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+       .MessageDv.active {
+           background-color: #203063;  
+       }
+    }
+}
+    @media (min-width: 1280px) and (max-width: 1535px) {
+    .LogoPlusConverSationMain{
+        gap: 20px; padding: 15px;
+        .T-GPTLogo{
+            img{
+                width: 120px; height: 25px;
+            }
+            .SideBarToggle{
+                width: 15px; height: 15px;
+            }
+        }
+        .Dv_ConverSation{
+            .ConverSationMain{
+                .ConverSation{
+                    gap: 6px;
+                    svg{
+                        width: 12px; height: 12px; 
+                    }
+                    h1{
+                         font-size: 10px;
+                    }
+                }
+                .PlusIcon{
+                    width: 18px; height: 18px;
+                    svg{
+                        width: 12px; height: 12px; 
+                    }
+                }
+            }
+            .TabBarMain{
+               .p-togglebutton-checked{
+                border-radius: 30px; background: #2A5391; 
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600;  padding: 0px 11px;
+                }
+            }
+            .p-togglebutton-label{
+                font-size: 10px;  padding: 8px;
+            }
+            .SearchDv{
+                    svg{
+                        width: 16px; height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .MessagesDv_ContentMain{
+       .MessageDv{
+        padding: 10px 15px;
+        .Noc-GeneratingDvMain{ 
+            gap: 10px;
+               .CompanyDv{
+                    gap: 0px;
+                   figure{
+                       width: 30px; height: 30px;
+                       svg{
+                        width: 30px; height: 30px;
+                    }
+                   }
+                   p{
+                        font-size: 10px;
+                   }
+                   h6{
+                       font-size: 8px;
+                       svg{
+                           width: 6px; height: 4px;
+                       }
+                   }
+               }
+               .CompanyData_Entry{ 
+                    gap: 6px;
+                   .CompanyName{
+                       .DocumentKey{
+                        gap: 6px;
+                           h2{
+                                font-size: 12px;
+                           }
+                           .dot{
+                               width: 5px; height: 5px;
+                           }
+                           p{
+                                font-size: 10px;
+                           }
+                       }
+                       .Count{
+                           padding: 0px 10px;
+                           h5{
+                               font-size: 10px ; 
+                           }
+                       }
+                   }
+                   .GrphMain{
+                       h6{
+                            width: 70%; font-size: 8px;
+                       }
+                       img{
+                        width: 50px; height: 13px;
+                       }
+                   }
+                   .Dv_Of_ActionIconMain{
+                    p{
+                        font-size: 10px;
+                    }
+                    .Dv_Of_ActionIcon{
+                        .flexD{
+                            svg{
+                                width: 12px; height: 12px; 
+                            }
+                        }
+                        svg{
+                            width: 12px; height: 12px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+       .MessageDv.active {
+           background-color: #203063;  
+       }
+    }
+}
+    @media (min-width: 1024px) and (max-width: 1279px) {
+    .LogoPlusConverSationMain{
+        gap: 20px; padding: 10px;
+        .T-GPTLogo{
+            img{
+                width: 90px; height: 18px;
+            }
+            .SideBarToggle{
+                width: 12px; height: 12px;
+            }
+        }
+        .Dv_ConverSation{
+            .ConverSationMain{
+                .ConverSation{
+                    gap: 4px;
+                    svg{
+                        width: 10px; height: 10px; 
+                    }
+                    h1{
+                         font-size: 9px;
+                    }
+                }
+                .PlusIcon{
+                    width: 15px; height: 15px;
+                    svg{
+                        width: 10px; height: 10px; 
+                    }
+                }
+            }
+            .TabBarMain{
+               .p-togglebutton-checked{
+                border-radius: 30px; background: #2A5391; 
+                .p-togglebutton-label{
+                    color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600;  padding: 0px 10px;
+                }
+            }
+            .p-togglebutton-label{
+                font-size: 8px;  padding: 8px;
+            }
+            .SearchDv{
+                width: 10px; height: 10px;
+                    svg{
+                        width: 10px; height: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .MessagesDv_ContentMain{
+       .MessageDv{
+        padding: 10px;
+        .Noc-GeneratingDvMain{ 
+            gap: 6px;
+               .CompanyDv{
+                    gap: 5px;
+                   figure{
+                       width: 25px; height: 25px; margin: 0px;
+                       svg{
+                        width: 25px; height: 25px;
+                    }
+                   }
+                   p{
+                        font-size: 8px; line-height: 100%;
+                   }
+                   h6{
+                       font-size: 7px;
+                       svg{
+                           width: 4px; height: 4px;
+                       }
+                   }
+               }
+               .CompanyData_Entry{ 
+                    gap: 3px;
+                   .CompanyName{
+                       .DocumentKey{
+                        gap: 4px;
+                           h2{
+                                font-size: 10px;
+                           }
+                           .dot{
+                               width: 3px; height: 3px;
+                           }
+                           p{
+                                font-size: 8px;
+                           }
+                       }
+                       .Count{
+                        padding: 0px 6px;
+                           h5{
+                               font-size: 8px; 
+                           }
+                       }
+                   }
+                   .GrphMain{
+                       h6{
+                            width: 70%; font-size: 7px;
+                       }
+                       img{
+                        width: 30px; height: 10px;
+                       }
+                   }
+                   .Dv_Of_ActionIconMain{
+                    p{
+                        font-size: 8px;
+                    }
+                    .Dv_Of_ActionIcon{
+                        gap: 6px;
+                        .flexD{
+                            svg{
+                                width: 10px; height: 10px; 
+                            }
+                        }
+                        svg{
+                            width: 10px; height: 10px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+       .MessageDv.active {
+           background-color: #203063;  
+       }
+    }
+}
 }
 /* Navbar-Component */
 .navbar{
@@ -402,9 +1093,9 @@ a,
     .switch { position: relative; width: 30px; height: 15px; }
     .switch input { opacity: 0; width: 0; height: 0; } 
     .slider { position: absolute; cursor: pointer; background-color: #262A45; border-radius: 34px;top: 0; left: 0; right: 0; bottom: 0; transition: 0.2s; }
-.slider::before { position: absolute; content: ""; height: 12px; width: 12px; left: 3px; bottom: 2px; background-color:#6B7992; transition: 0.2s; border-radius: 50%; }
-input:checked + .slider { background-color: var(--vt-c-Color-White);}
-input:checked + .slider::before {transform: translateX(13px);}
+    .slider::before { position: absolute; content: ""; height: 12px; width: 12px; left: 3px; bottom: 2px; background-color:#6B7992; transition: 0.2s; border-radius: 50%; }
+    input:checked + .slider { background-color: var(--vt-c-Color-White);}
+    input:checked + .slider::before {transform: translateX(13px);}
     .NavbarContentDv{
         display: flex; justify-content: space-between; align-items: center; gap: 20px;
         .NavbarContentDvOne{ 
@@ -497,6 +1188,98 @@ input:checked + .slider::before {transform: translateX(13px);}
             .p-togglebutton-label{
                 color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 16px; padding: 11px 15px;
             }
+            }
+        }
+    }
+    @media (min-width: 2500px) {
+        height: 100px;
+         .NavbarContentDv{
+            display: flex; justify-content: space-between; align-items: center; gap: 20px;
+            .NavbarContentDvOne{ 
+                width: 70%; display: flex; justify-content: space-between; align-items: center; 
+                .CompanyDv{
+                    display: flex; flex-direction: row;  align-items: center !important; gap: 12px;
+                    figure{
+                        width: 60px !important; height: 60px !important;
+                        img{
+                            width: 100%; height: 100%; border-radius: 14px;
+                        }
+                    }
+                        p{
+                            color: var(--vt-c-Color-White); font-size: 18px !important; font-weight: 700; margin: 0px; line-height: 20px; margin: 0px; 
+                        }
+                        h6{
+                            margin-left: 4px; margin: 0px; display: flex; align-items: center; gap: 3px; color: var(--vt-c-Color-Text-HighLight-Green); font-size: 14px !important; font-weight: 500; line-height: 100%;
+                            svg{
+                                width: 10px !important; height: 8px !important;
+                            }
+                        }
+                    }
+                .CompanyName{
+                    display: flex; justify-content: space-between; align-items: center;
+                    .DocumentKey{
+                        display: flex; align-items: center; gap: 10px;
+                        h2{
+                            color: var(--vt-c-Color-White); font-size: 22px !important; font-weight: 600; line-height: 100%; margin: 0px;
+                            span{
+                                color: var(--vt-c-Color-Text-Light-Gray); font-weight: 400;
+                            }
+                        }
+                        .dot{
+                            background: var(--vt-c-Color-Text-Light-Plus-Gray); width: 8px; height: 8px; border-radius: 50%;
+                        }
+                        p{
+                            line-height: 100%; color: var(--vt-c-Color-Text-Light-Plus-Gray); font-size: 18px !important; font-weight: 400; margin: 0px;
+                        }
+                    }
+                }
+                .flexDv{
+                    display: flex; flex-direction: row; gap: 5px;
+                }
+                .AleartsDv{
+                    display: flex; flex-direction: row; gap: 20px;
+                    .Icon_Plus_ToggleDV{
+                        display: flex; flex-direction: row; gap: 5px; align-items: center;
+                        svg{
+                            width: 24px !important; height: 24px !important;
+                        }
+                        p{
+                            color: var(--vt-c-Color-Text-gray); font-size: 18px !important; font-weight: 500; margin: 0px;
+                        }
+                    }
+                    .settingImg{
+                         width: 24px !important; height: 24px !important; cursor: pointer !important;
+                    }
+                }
+            }
+            .NavbarContentDvTwo{
+                width: 30%;  display: flex; justify-content: space-between; align-items: center;
+                .ProfileDvMain{
+                    display: flex; flex-direction: row-reverse; gap: 22px; align-items: center;
+                    img{
+                        width: 35px; height: 35px; border-radius: 50%;
+                    }
+                    .settingImg{
+                        width: 24px; height: 24px;
+                    }
+                    svg{
+                        path{
+                            filter: invert(76%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(116%) contrast(91%);
+                        }
+                    }
+                }
+                .TabsBtn{
+                    display: flex; align-items: center; justify-content: space-between;
+                    .p-togglebutton-checked{
+                        border-radius: 8px; background: #203063; height: 41px;
+                        .p-togglebutton-label{
+                            color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                        }
+                    }
+                    .p-togglebutton-label{
+                        color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 16px; padding: 11px 15px;
+                    }
+                }
             }
         }
     }
