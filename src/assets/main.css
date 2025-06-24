@@ -24,6 +24,7 @@
 ::-webkit-scrollbar-thumb:hover { background-color: #5969A3; }
 ::-webkit-scrollbar-corner { background-color: #161C40; }
 
+
 .SideBarComponents_CalledInAll_Page{
     .SelectBtn{ 
         width: 100%; overflow: auto; 
@@ -1149,7 +1150,7 @@
                 display: flex; flex-direction: row; gap: 20px;
                 .Icon_Plus_ToggleDV{
                     display: flex; flex-direction: row; gap: 5px; align-items: center;
-                    img{
+                    svg{
                         width: 16px; height: 16px;
                     }
                     p{
@@ -1191,99 +1192,354 @@
             }
         }
     }
-    @media (min-width: 2500px) {
-        height: 100px;
-         .NavbarContentDv{
-            display: flex; justify-content: space-between; align-items: center; gap: 20px;
-            .NavbarContentDvOne{ 
-                width: 70%; display: flex; justify-content: space-between; align-items: center; 
-                .CompanyDv{
-                    display: flex; flex-direction: row;  align-items: center !important; gap: 12px;
-                    figure{
-                        width: 60px !important; height: 60px !important;
-                        img{
-                            width: 100%; height: 100%; border-radius: 14px;
-                        }
-                    }
-                        p{
-                            color: var(--vt-c-Color-White); font-size: 18px !important; font-weight: 700; margin: 0px; line-height: 20px; margin: 0px; 
-                        }
-                        h6{
-                            margin-left: 4px; margin: 0px; display: flex; align-items: center; gap: 3px; color: var(--vt-c-Color-Text-HighLight-Green); font-size: 14px !important; font-weight: 500; line-height: 100%;
-                            svg{
-                                width: 10px !important; height: 8px !important;
-                            }
-                        }
-                    }
-                .CompanyName{
-                    display: flex; justify-content: space-between; align-items: center;
-                    .DocumentKey{
-                        display: flex; align-items: center; gap: 10px;
-                        h2{
-                            color: var(--vt-c-Color-White); font-size: 22px !important; font-weight: 600; line-height: 100%; margin: 0px;
-                            span{
-                                color: var(--vt-c-Color-Text-Light-Gray); font-weight: 400;
-                            }
-                        }
-                        .dot{
-                            background: var(--vt-c-Color-Text-Light-Plus-Gray); width: 8px; height: 8px; border-radius: 50%;
-                        }
-                        p{
-                            line-height: 100%; color: var(--vt-c-Color-Text-Light-Plus-Gray); font-size: 18px !important; font-weight: 400; margin: 0px;
-                        }
-                    }
+}
+@media (min-width: 2500px) {
+.navbar{
+    height: 100px;
+     .NavbarContentDv{
+        .NavbarContentDvOne{ 
+            .CompanyDv{
+                align-items: center;
+                figure{
+                    width: 60px; height: 60px;
                 }
-                .flexDv{
-                    display: flex; flex-direction: row; gap: 5px;
+                p{
+                    font-size: 18px ; 
                 }
-                .AleartsDv{
-                    display: flex; flex-direction: row; gap: 20px;
-                    .Icon_Plus_ToggleDV{
-                        display: flex; flex-direction: row; gap: 5px; align-items: center;
-                        svg{
-                            width: 24px !important; height: 24px !important;
-                        }
-                        p{
-                            color: var(--vt-c-Color-Text-gray); font-size: 18px !important; font-weight: 500; margin: 0px;
-                        }
-                    }
-                    .settingImg{
-                         width: 24px !important; height: 24px !important; cursor: pointer !important;
+                h6{
+                    font-size: 14px ;
+                    svg{
+                        width: 10px ; height: 8px ;
                     }
                 }
             }
-            .NavbarContentDvTwo{
-                width: 30%;  display: flex; justify-content: space-between; align-items: center;
-                .ProfileDvMain{
-                    display: flex; flex-direction: row-reverse; gap: 22px; align-items: center;
-                    img{
-                        width: 35px; height: 35px; border-radius: 50%;
+            .CompanyName{
+                .DocumentKey{
+                    h2{
+                        font-size: 22px ; 
                     }
-                    .settingImg{
-                        width: 24px; height: 24px;
-                    }
-                    svg{
-                        path{
-                            filter: invert(76%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(116%) contrast(91%);
-                        }
+                    p{
+                        font-size: 18px ; 
                     }
                 }
-                .TabsBtn{
-                    display: flex; align-items: center; justify-content: space-between;
-                    .p-togglebutton-checked{
-                        border-radius: 8px; background: #203063; height: 41px;
-                        .p-togglebutton-label{
-                            color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
-                        }
+            }
+            .AleartsDv{
+                .Icon_Plus_ToggleDV{
+                    svg{
+                        width: 24px; height: 24px;
                     }
+                    p{
+                        font-size: 18px ;
+                    }
+                }
+                .settingImg{
+                     width: 24px; height: 24px; cursor: pointer;
+                }
+            }
+        }
+        .NavbarContentDvTwo{
+            .ProfileDvMain{
+                img{
+                    width: 60px; height: 60px ;  border-radius: 50%;
+                }
+                svg{
+                    width: 35px ; height: 35px;
+                }
+            }
+            .TabsBtn{
+                display: flex; align-items: center; justify-content: space-between;
+                .p-togglebutton-checked{
+                    border-radius: 8px; background: #203063; height: 41px;
                     .p-togglebutton-label{
-                        color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 16px; padding: 11px 15px;
+                        color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
                     }
+                }
+                .p-togglebutton-label{
+                    color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 20px; padding: 11px 15px;
                 }
             }
         }
     }
 }
+}
+@media (min-width: 2400px) and (max-width: 2550px) {
+.navbar{
+    height: 100px;
+     .NavbarContentDv{
+        .NavbarContentDvOne{ 
+            .CompanyDv{
+                align-items: center;
+                figure{
+                    width: 60px; height: 60px;
+                }
+                p{
+                    font-size: 18px ; 
+                }
+                h6{
+                    font-size: 14px ;
+                    svg{
+                        width: 10px ; height: 8px ;
+                    }
+                }
+            }
+            .CompanyName{
+                .DocumentKey{
+                    h2{
+                        font-size: 22px ; 
+                    }
+                    p{
+                        font-size: 18px ; 
+                    }
+                }
+            }
+            .AleartsDv{
+                .Icon_Plus_ToggleDV{
+                    svg{
+                        width: 24px; height: 24px;
+                    }
+                    p{
+                        font-size: 18px ;
+                    }
+                }
+                .settingImg{
+                     width: 24px; height: 24px; cursor: pointer;
+                }
+            }
+        }
+        .NavbarContentDvTwo{
+            .ProfileDvMain{
+                img{
+                    width: 60px; height: 60px ;  border-radius: 50%;
+                }
+                svg{
+                    width: 35px ; height: 35px;
+                }
+            }
+            .TabsBtn{
+                display: flex; align-items: center; justify-content: space-between;
+                .p-togglebutton-checked{
+                    border-radius: 8px; background: #203063; height: 41px;
+                    .p-togglebutton-label{
+                        color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                    }
+                }
+                .p-togglebutton-label{
+                    color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 20px; padding: 11px 15px;
+                }
+            }
+        }
+    }
+}
+}
+@media (min-width: 1745px) and (max-width: 1910px) {
+.navbar{
+    height: 80px;
+     .NavbarContentDv{
+        .NavbarContentDvOne{ 
+            .CompanyDv{
+                align-items: center;
+                figure{
+                    width: 40px; height: 40px;
+                }
+                p{
+                    font-size: 14px ; 
+                }
+                h6{
+                    font-size: 12px ;
+                    svg{
+                        width: 6px ; height: 4px ;
+                    }
+                }
+            }
+            .CompanyName{
+                .DocumentKey{
+                    h2{
+                        font-size: 16px ; 
+                    }
+                    p{
+                        font-size: 14px ; 
+                    }
+                }
+            }
+            .AleartsDv{
+                .Icon_Plus_ToggleDV{
+                    svg{
+                        width: 20px; height: 20px;
+                    }
+                    p{
+                        font-size: 14px ;
+                    }
+                }
+                .settingImg{
+                     width: 24px; height: 24px; cursor: pointer;
+                }
+            }
+        }
+        .NavbarContentDvTwo{
+            .ProfileDvMain{
+                img{
+                    width: 40px; height: 40px ;  border-radius: 50%;
+                }
+                svg{
+                    width: 35px ; height: 35px;
+                }
+            }
+            .TabsBtn{
+                display: flex; align-items: center; justify-content: space-between;
+                .p-togglebutton-checked{
+                    border-radius: 8px; background: #203063; height: 41px;
+                    .p-togglebutton-label{
+                        color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                    }
+                }
+                .p-togglebutton-label{
+                    color: #BFBFBF; line-height: 100%; font-weight: 400;  font-size: 16px; padding: 11px 15px;
+                }
+            }
+        }
+    }
+}
+}
+@media (min-width: 1280px) and (max-width: 1535px) {
+.navbar{
+    height: 57px; padding: 10px;
+     .NavbarContentDv{
+        .NavbarContentDvOne{ 
+            .CompanyDv{
+                align-items: center;
+                figure{
+                    width: 30px; height: 30px;
+                }
+                p{
+                    font-size: 10px;  
+                }
+                h6{
+                    font-size: 8px ;
+                    svg{
+                        width: 6px ; height: 4px ;
+                    }
+                }
+            }
+            .CompanyName{
+                .DocumentKey{
+                    h2{
+                        font-size: 14px;  
+                    }
+                    p{
+                        font-size: 12px ; 
+                    }
+                }
+            }
+            .AleartsDv{
+                .Icon_Plus_ToggleDV{
+                    svg{
+                        width: 14px; height: 14px;
+                    }
+                    p{
+                        font-size: 10px ;
+                    }
+                }
+                .settingImg{
+                     width: 20px; height: 20px; cursor: pointer;
+                }
+            }
+        }
+        .NavbarContentDvTwo{
+            .ProfileDvMain{
+                img{
+                    width: 35px; height: 35px;  border-radius: 50%;
+                }
+                svg{
+                    width: 30px ; height: 30px;
+                }
+            }
+            .TabsBtn{
+                display: flex; align-items: center; justify-content: space-between;
+                .p-togglebutton-checked{
+                    border-radius: 8px; background: #203063; height: 30px;
+                    .p-togglebutton-label{
+                        color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                    }
+                }
+                .p-togglebutton-label{
+                    color: #BFBFBF; line-height: 100%; font-weight: 400;padding: 10px 12px;font-size: 10px;
+                }
+            }
+        }
+    }
+}
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+.navbar{
+    height: 55px; padding: 10px;
+     .NavbarContentDv{
+        .NavbarContentDvOne{ 
+            .CompanyDv{
+                align-items: center;
+                figure{
+                    width: 30px; height: 30px;
+                }
+                p{
+                    font-size: 8px;  
+                }
+                h6{
+                    font-size: 6px;
+                    svg{
+                        width: 5px ; height: 3px;
+                    }
+                }
+            }
+            .CompanyName{
+                .DocumentKey{
+                    gap: 6px;
+                    h2{
+                        font-size: 12px;  
+                    }
+                    p{
+                        font-size: 10px ; 
+                    }
+                }
+            }
+            .AleartsDv{
+                .Icon_Plus_ToggleDV{
+                    svg{
+                        width: 10px; height: 10px;
+                    }
+                    p{
+                        font-size: 8px;
+                    }
+                }
+                .settingImg{
+                     width: 18px !important; height: 18px !important; cursor: pointer;
+                }
+            }
+        }
+        .NavbarContentDvTwo{
+            .ProfileDvMain{
+                img{
+                    width: 30px; height: 30px;  border-radius: 50%;
+                }
+                svg{
+                    width: 20px !important; height: 20px !important;
+                }
+            }
+            .TabsBtn{
+                display: flex; align-items: center; justify-content: space-between;
+                .p-togglebutton-checked{
+                    border-radius: 8px; background: #203063; height: 30px;
+                    .p-togglebutton-label{
+                        color: var(--vt-c-Color-White); line-height: 100%; font-weight: 600; 
+                    }
+                }
+                .p-togglebutton-label{
+                    color: #BFBFBF; line-height: 100%; font-weight: 400;padding: 10px 12px;font-size: 10px;
+                }
+            }
+        }
+    }
+}
+}
+
 #FirstBackground_Navbar{
     background: var(--vt-c-Traders-Main-Background);
 }

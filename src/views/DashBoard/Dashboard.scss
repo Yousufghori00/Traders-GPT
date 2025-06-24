@@ -28,12 +28,6 @@
                 p{
                     color: #747883; font-size: 15px; font-weight: 600; margin: 0px;
                 }
-                .p-select{
-                    width: 130px;
-                }
-                .p-select-label{
-                    color: #7A90B2; font-size: 15px; font-weight: 600; 
-                }
             }
         }
         .TrendingOption{
@@ -86,10 +80,10 @@
                                 }
                             }
                             input{
-                                border: none; color: #717AB4; font-size: 16px; font-weight: 400; background: none; width: 100%; padding: 0px 0px 0px 20px;
+                                font-family: var(--vt-c-Text-Font-Montserrat); border: none; color: #717AB4; font-size: 22px; font-weight: 400; background: none; width: 100%; padding: 0px 0px 0px 20px;
                             }
                             input::placeholder{
-                                 color: #717AB4; font-size: 16px; font-weight: 400;
+                                 color: #717AB4; font-size: 16px; font-weight: 400; font-family: var(--vt-c-Text-Font-Montserrat);
                                 }
                                 input:focus{
                                     outline: none; box-shadow: none; border: none; 
@@ -111,7 +105,7 @@
                             display: flex; flex-direction: row; gap: 15px;
                             .Web{
                                 width: fit-content; height: 31px; display: flex; flex-direction: row; gap: 6px; border-radius: 10px; border: 1px solid #3F5191; padding: 5px; align-items: center;
-                                img{
+                                svg{
                                     width: 20px; height: 20px;
                                 }
                                 .MicroImg{
@@ -170,4 +164,812 @@
                     }
                 }
             }
+}
+@media (min-width: 2500px) {
+    .DashBoardOneMain{
+        height: calc(100vh - 100px);
+        .CampanyLogo{
+            img{
+                width: 60px; height: 60px;
+            }
+            .CampanyTextMain{ 
+                .CampanyText{
+                    h1{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .Select{
+                p{
+                    font-size: 22px; 
+                }                
+            }
+        }
+        .TrendingOption{
+            .OptionsMain{
+                .optionHead{
+                    .trendText{
+                        svg{
+                            width: 30px; height: 30px;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    .TrendIcon{
+                        .IconBox{
+                            width: 40px; height: 40px;
+                            svg{
+                                width: 30px; height: 20px;
+                            }
+                        }
+                    }
+                }
+                .TrendSuggested{
+                    .Suggest{
+                        p{
+                            font-size: 15px; 
+                        }
+                    }
+                }
+            }
+            .ChatBoxMain{
+                .ChatBoxUnder{
+                    padding: 30px 18px;gap: 40px;
+                    .ChatBoxUnderMainDv{
+                        .AskSomething{
+                            width: 85%;
+                        }
+                        .plan{
+                            p{
+                                font-size: 18px;
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ChatComitmentMain{
+                    .WebMode{
+                        .Web{
+                            height: fit-content;
+                            svg{
+                                width: 30px; height: 30px;
+                            }
+                            p{
+                                font-size: 16px;
+                            }
+                            .circle{
+                                width: 18px; height: 18px;
+                            }
+                        }
+                    }
+                    .IconsForCommit{
+                        .Attachement{ 
+                            width: 45px; height: 45px;
+                            svg{
+                                width: 28px; height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .MiddleContentDv{
+            img{  
+                width: 120px; height: 110px;
+            }
+            p{
+                font-size: 40px;
+            }
+            h4{
+                font-size: 23px; line-height: 35px;
+            }
+            .QuestionBoxMain{
+                .Box{
+                    width: 325px; height: fit-content; 
+                    .Flash{
+                        width: 45px; height: 45px;
+                        svg{ 
+                            width: 31px; height: 30px;
+                        }
+                    }
+                    p{
+                        font-size: 20px; line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 2400px) and (max-width: 2550px) {
+    .DashBoardOneMain{
+        height: calc(100vh - 100px);
+        .CampanyLogo{
+            img{
+                width: 55px; height: 55px;
+            }
+            .CampanyTextMain{ 
+                .CampanyText{
+                    h1{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .Select{
+                p{
+                    font-size: 20px; 
+                }                
+            }
+        }
+        .TrendingOption{
+            .OptionsMain{
+                .optionHead{
+                    .trendText{
+                        svg{
+                            width: 30px; height: 30px;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                    .TrendIcon{
+                        .IconBox{
+                            width: 40px; height: 40px;
+                            svg{
+                                width: 30px; height: 20px;
+                            }
+                        }
+                    }
+                }
+                .TrendSuggested{
+                    .Suggest{
+                        p{
+                            font-size: 14px; 
+                        }
+                    }
+                }
+            }
+            .ChatBoxMain{
+                .ChatBoxUnder{
+                    padding: 21px 18px; gap: 40px;
+                    .ChatBoxUnderMainDv{
+                        .AskSomething{
+                            width: 85%;
+                        }
+                        .plan{
+                            p{
+                                font-size: 18px;
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ChatComitmentMain{
+                    .WebMode{
+                        .Web{
+                            height: fit-content;
+                            svg{
+                                width: 30px; height: 30px;
+                            }
+                            p{
+                                font-size: 16px;
+                            }
+                            .circle{
+                                width: 18px; height: 18px;
+                            }
+                            .MicroImg{
+                                width: 20px; height: 29px;
+                            }
+                        }
+                    }
+                    .IconsForCommit{
+                        .Attachement{ 
+                            width: 45px; height: 45px;
+                            svg{
+                                width: 28px; height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .MiddleContentDv{
+            img{  
+                width: 100px; height: 90px;
+            }
+            p{
+                font-size: 36px;
+            }
+            h4{
+                font-size: 20px; line-height: 30px;
+            }
+            .QuestionBoxMain{
+                .Box{
+                    width: 325px; height: fit-content; 
+                    .Flash{
+                        width: 40px; height: 40px;
+                        svg{ 
+                            width: 24px; height: 24px;
+                        }
+                    }
+                    p{
+                        font-size: 20px; line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1745px) and (max-width: 1910px) {
+    .DashBoardOneMain{
+        height: calc(100vh - 100px); padding: 18px 20px;
+        .CampanyLogo{
+            img{
+                width: 45px; height: 45px;
+            }
+            .CampanyTextMain{ 
+                .CampanyText{
+                    h1{
+                        font-size: 14px;
+                    }
+                    h2{
+                        font-size: 15px;
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .Select{
+                p{
+                    font-size: 18px; 
+                }                
+            }
+        }
+        .TrendingOption{
+            .OptionsMain{
+                .optionHead{
+                    .trendText{
+                        gap: 5px;
+                        svg{
+                            width: 20px; height: 20px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                    .TrendIcon{
+                        .IconBox{
+                            width: 33px; height: 33px;
+                            svg{
+                                width: 20px; height: 16px;
+                            }
+                        }
+                    }
+                }
+                .TrendSuggested{
+                    .Suggest{
+                        p{
+                            font-size: 11px; 
+                        }
+                    }
+                }
+            }
+            .ChatBoxMain{
+                .ChatBoxUnder{
+                    padding: 18px; gap: 20px;
+                    .ChatBoxUnderMainDv{
+                        .AskSomething{
+                            width: 85%;
+                            input{
+                                font-size: 18px;
+                            }
+                            input::placeholder{
+                                font-size: 18px;
+                            }
+                        }
+                        .plan{
+                            p{
+                                font-size: 12px;
+                                span{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ChatComitmentMain{
+                    .WebMode{
+                        .Web{
+                            height: fit-content;
+                            svg{
+                                width: 22px; height: 22px;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                            .circle{
+                                width: 15px; height: 15px;
+                            }
+                            .MicroImg{
+                                width: 14px; height: 22px;
+                            }
+                        }
+                    }
+                    .IconsForCommit{
+                        gap: 10px;
+                        .Attachement{ 
+                            width: 35px; height: 35px;
+                            svg{
+                                width: 20px; height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .MiddleContentDv{
+            gap: 20px;
+            img{  
+                width: 70px; height: 65px;
+            }
+            p{
+                font-size: 28px;
+            }
+            h4{
+                font-size: 16px; line-height: 25px;
+            }
+            .QuestionBoxMain{
+                gap: 20px;
+                .Box{
+                    width: 245px; height: fit-content; padding: 12px 15px;
+                    .Flash{
+                        width: 40px; height: 40px;
+                        svg{ 
+                            width: 20px; height: 20px;
+                        }
+                    }
+                    p{
+                        font-size: 14px; line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1536px) and (max-width: 1745px) {
+    .DashBoardOneMain{
+        height: calc(100vh - 100px); padding: 18px 20px;
+        .CampanyLogo{
+            img{
+                width: 38px; height: 38px;
+            }
+            .CampanyTextMain{ 
+                .CampanyText{
+                    h1{
+                        font-size: 12px;
+                    }
+                    h2{
+                        font-size: 13px;
+                        span{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .Select{
+                p{
+                    font-size: 16px; 
+                }                
+            }
+        }
+        .TrendingOption{
+            .OptionsMain{
+                .optionHead{
+                    .trendText{
+                        gap: 5px;
+                        svg{
+                            width: 16px; height: 16px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                    .TrendIcon{
+                        .IconBox{
+                            width: 30px; height: 30px;
+                            svg{
+                                width: 17px; height: 14px;
+                            }
+                        }
+                    }
+                }
+                .TrendSuggested{
+                    .Suggest{
+                        p{
+                            font-size: 9px; 
+                        }
+                    }
+                }
+            }
+            .ChatBoxMain{
+                .ChatBoxUnder{
+                    padding: 18px; gap: 20px;
+                    .ChatBoxUnderMainDv{
+                        .AskSomething{
+                            width: 85%;
+                            input{
+                                font-size: 14px; padding-left: 12px;
+                            }
+                            input::placeholder{
+                                font-size: 14px;
+                            }
+                            .BoxIcon{
+                                width: 33px; height: 30px; border-radius: 6px;
+                            }
+                        }
+                        .plan{
+                            p{
+                                font-size: 10px;
+                                span{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ChatComitmentMain{
+                    .WebMode{
+                        .Web{
+                            height: fit-content;
+                            svg{
+                                width: 22px; height: 22px;
+                            }
+                            p{
+                                font-size: 12px;
+                            }
+                            .circle{
+                                width: 15px; height: 15px;
+                            }
+                            .MicroImg{
+                                width: 14px; height: 22px;
+                            }
+                        }
+                    }
+                    .IconsForCommit{
+                        gap: 10px;
+                        .Attachement{ 
+                            width: 35px; height: 35px;
+                            svg{
+                                width: 20px; height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .MiddleContentDv{
+            gap: 20px;
+            img{  
+                width: 60px; height: 55px;
+            }
+            p{
+                font-size: 24px;
+            }
+            h4{
+                font-size: 13px; line-height: 20px;
+            }
+            .QuestionBoxMain{
+                gap: 20px;
+                .Box{
+                    width: 215px; height: fit-content; padding: 12px 15px;
+                    .Flash{
+                        width: 30px; height: 30px; border-radius: 6px;
+                        svg{ 
+                            width: 16px; height: 16px;
+                        }
+                    }
+                    p{
+                        font-size: 13px; line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .DashBoardOneMain{
+        height: calc(100vh - 60px); padding: 18px 20px;
+        .CampanyLogo{
+            img{
+                width: 30px; height: 30px;
+            }
+            .CampanyTextMain{ 
+                gap: 10px;
+                .CampanyText{
+                    gap: 5px;
+                    h1{
+                        font-size: 10px;
+                    }
+                    h2{
+                        font-size: 10px;
+                        span{
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+            .Select{
+                p{
+                    font-size: 12px; 
+                }                
+            }
+        }
+        .TrendingOption{
+            .OptionsMain{
+                .optionHead{
+                    .trendText{
+                        gap: 5px;
+                        svg{
+                            width: 16px; height: 16px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                    .TrendIcon{
+                        .IconBox{
+                            width: 25px; height: 25px;
+                            svg{
+                                width: 14px; height: 11px;
+                            }
+                        }
+                    }
+                }
+                .TrendSuggested{
+                    .Suggest{
+                        padding: 10px;
+                        p{
+                            font-size: 8px; 
+                        }
+                    }
+                }
+            }
+            .ChatBoxMain{
+                .ChatBoxUnder{
+                    padding: 15px; gap: 20px;
+                    .ChatBoxUnderMainDv{
+                        .AskSomething{
+                            width: 85%;
+                            input{
+                                font-size: 12px; padding-left: 12px;
+                            }
+                            input::placeholder{
+                                font-size: 12px;
+                            }
+                            .BoxIcon{
+                                width: 25px; height: 24px; border-radius: 4px;
+                                svg{
+                                    width: 15px; height: 15px;
+                                }
+                            }
+                        }
+                        .plan{
+                            p{
+                                font-size: 8px;
+                                span{
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ChatComitmentMain{
+                    .WebMode{
+                        .Web{
+                            height: fit-content; border-radius: 8px;
+                            svg{
+                                width: 18px; height: 18px;
+                            }
+                            p{
+                                font-size: 10px;
+                            }
+                            .circle{
+                                width: 12px; height: 12px;
+                            }
+                            .MicroImg{
+                                width: 10px; height: 17px;
+                            }
+                        }
+                    }
+                    .IconsForCommit{
+                        gap: 10px;
+                        .Attachement{ 
+                            border-radius: 5px; width: 27px; height: 27px;
+                            svg{
+                                width: 16px; height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .MiddleContentDv{
+            gap: 20px;
+            img{  
+                width: 50px; height: 45px;
+            }
+            p{
+                font-size: 20px;
+            }
+            h4{
+                font-size: 11px; line-height: 16px;
+            }
+            .QuestionBoxMain{
+                gap: 20px;
+                .Box{
+                    width: 175px; height: fit-content; padding: 10px 12px; gap: 10px;
+                    .Flash{
+                        width: 25px; height: 25px; border-radius: 6px;
+                        svg{ 
+                            width: 14px; height: 14px;
+                        }
+                    }
+                    p{
+                        font-size: 10px; line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .DashBoardOneMain{
+        height: calc(100vh - 60px); padding: 12px 10px;
+        .CampanyLogo{
+            img{
+                width: 25px; height: 25px;
+            }
+            .CampanyTextMain{ 
+                gap: 10px;
+                .CampanyText{
+                    gap: 5px;
+                    h1{
+                        font-size: 9px;
+                    }
+                    h2{
+                        font-size: 9px;
+                        span{
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+            .Select{
+                p{
+                    font-size: 10px; 
+                }                
+            }
+        }
+        .TrendingOption{
+            .OptionsMain{
+                .optionHead{
+                    .trendText{
+                        gap: 2px;
+                        svg{
+                            width: 12px; height: 12px;
+                        }
+                        p{
+                            font-size: 9px;
+                        }
+                    }
+                    .TrendIcon{
+                        .IconBox{
+                            width: 20px; height: 20px; border-radius: 3px;
+                            svg{
+                                width: 14px; height: 11px;
+                            }
+                        }
+                    }
+                }
+                .TrendSuggested{
+                    .Suggest{
+                        padding: 8px;
+                        p{
+                            font-size: 7px; 
+                        }
+                    }
+                }
+            }
+            .ChatBoxMain{
+                .ChatBoxUnder{
+                    padding: 10px; gap: 15px;
+                    .ChatBoxUnderMainDv{
+                        .AskSomething{
+                            width: 85%;
+                            input{
+                                font-size: 10px; padding-left: 10px;
+                            }
+                            input::placeholder{
+                                font-size: 10px;
+                            }
+                            .BoxIcon{
+                                width: 20px; height: 20px; border-radius: 4px;
+                                svg{
+                                    width: 12px; height: 12px;
+                                }
+                            }
+                        }
+                        .plan{
+                            p{
+                                font-size: 8px;
+                                span{
+                                    font-size: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ChatComitmentMain{
+                    .WebMode{
+                        .Web{
+                            height: fit-content; border-radius: 5px;
+                            svg{
+                                width: 14px; height: 14px;
+                            }
+                            p{
+                                font-size: 8px;
+                            }
+                            .circle{
+                                width: 10px; height: 10px;
+                            }
+                            .MicroImg{
+                                width: 10px; height: 14px;
+                            }
+                        }
+                    }
+                    .IconsForCommit{
+                        gap: 10px;
+                        .Attachement{ 
+                            border-radius: 5px; width: 27px; height: 27px;
+                            svg{
+                                width: 16px; height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .MiddleContentDv{
+            gap: 20px;
+            img{  
+                width: 42px; height: 40px;
+            }
+            p{
+                font-size: 16px;
+            }
+            h4{
+                font-size: 9px; line-height: 12px;
+            }
+            .QuestionBoxMain{
+                gap: 10px;
+                .Box{
+                    width: 145px; height: fit-content; padding: 10px 12px; gap: 8px;
+                    .Flash{
+                        width: 20px; height: 20px; border-radius: 3px;
+                        svg{ 
+                            width: 12px; height: 12px;
+                        }
+                    }
+                    p{
+                        font-size: 8px; line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
