@@ -53,7 +53,7 @@
         </div>
         <div class="NavbarContentDvTwo">
             <div class="TabsBtn">
-                <SelectButton v-model="value" :options="options" />
+                <SelectButton v-model="value" :options="options" @change="handleSelectChange" />
             </div>
             <div class="ProfileDvMain">
                 <img src="../../assets/Image/profilePic copy.jpg" alt="">
@@ -66,23 +66,27 @@
 </template>
 
 <script>
-import {
-    ref
-} from 'vue'
+import { ref, watch } from 'vue';
 import SelectButton from 'primevue/selectbutton';
+import { toggleDashBoardbar } from '../../views/DashBoard/state.js';
+
 export default {
-    components: {
-        SelectButton,
-    },
-    setup() {
-        const checked = ref(false)
-        return {
-            checked
-        }
-    }
-}
-</script><script setup>
-const checked = ref(false);
-const value = ref('Analytics')
-const options = ['Analytics', 'History']
+  components: {
+    SelectButton,
+  },
+  setup() {
+    const value = ref(null);
+    const options = ['Analytics', 'History'];
+
+    watch(value, (newVal) => {
+      if (newVal === 'Analytics') {
+        toggleDashBoardbar();
+      }
+    });
+    return {
+      value,
+      options,
+    };
+  },
+};
 </script>

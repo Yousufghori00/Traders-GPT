@@ -335,6 +335,9 @@
             img{
                 width: 174px; height: 32px; 
             }
+            .SmallLogo{
+                width: 174px; height: 32px;  position: relative; left: -17px;
+            }
             .SideBarToggle{
                 width: 24px; height: 24px; cursor: pointer;
             }
@@ -1672,12 +1675,21 @@
               transition: all 0.3s ease; padding: 16px 20px; background: var(--vt-c-Traders-Main-Background); display: flex; flex-direction: column; gap: 28px; position: relative; height: calc(100vh - 80px); overflow-y: auto; overflow-x: hidden;
                /* background: var(--vt-c-Traders-Main-SideBar2-Background); */
             .ImgHead{
-                display: flex; justify-content: space-between; align-items: center; 
+                display: flex; justify-content: space-between; align-items: center;  padding-left: 40px;
                 img{
                     width: 150px; height: 31px;
                 }
                 svg{
                     width: 25px; height: 25px;
+                }
+                 .toggleIcon{
+                        position: absolute; left: 10px; padding: 1px 1px; background: #5969A3; border-radius: 50%; display: flex;
+                    svg{
+                        width: 25px; height: 25px; transform: rotate(90deg);
+                    path{
+                        stroke: var(--vt-c-Color-White); 
+                    }
+                }
                 }
             }
             .SelectBtn::-webkit-scrollbar { display: none;}

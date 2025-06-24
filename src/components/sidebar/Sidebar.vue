@@ -2,11 +2,11 @@
 <div class="sidebar" :style="{ width: sidebarWidth }">
     <div class="LogoPlusConverSationMain">
         <div class="T-GPTLogo">
-            <img v-if="collapsed" src="../../assets/Image/favicon.png" alt="Trader Logo" />
-            <img v-else src="../../assets/Image/TraderGTPLogo.png" alt="Trader Logo">
-            <img src="../../assets/Image/SideBarToggleIcon.png" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar" alt="SideBar Toggle" class="SideBarToggle">
+            <img v-if="collapsed" class="SmallLogo" src="../../assets/Image/favicon.png" alt="Trader Logo" @click="toggleSidebar" />
+            <img v-else  src="../../assets/Image/TraderGTPLogo.png" alt="Trader Logo" >
+            <img v-if="!collapsed" src="../../assets/Image/SideBarToggleIcon.png" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar" alt="SideBar Toggle" class="SideBarToggle">
         </div>
-        <div class="Dv_ConverSation">
+        <div v-if="!collapsed" class="Dv_ConverSation">
             <div class="ConverSationMain">
                 <div class="ConverSation">
                     <inline-svg src="/src/assets/Image/Svg/BoxIcon.svg" />
@@ -29,7 +29,7 @@
         <SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>
         <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink> -->
     </div>
-    <div class="MessagesDv_ContentMain">
+    <div v-if="!collapsed" class="MessagesDv_ContentMain">
         <router-link to="/dashboard" style="text-decoration: none; border-bottom: none;">
             <div class="MessageDv" :class="{ active: selectedIndex === 0 }" @click="selectedIndex = 0">
                 <div class="Noc-GeneratingDvMain">
