@@ -1,8 +1,8 @@
 <template>
     <div class="ImgHead">
-        <div class="toggleIcon">
+        <!-- <div class="toggleIcon">
             <inline-svg src="/src/assets/Image/Svg/Arrow.svg" @click="toggleDashBoardbar" />
-        </div>
+        </div> -->
         <img src="../assets/Image/AnalyticsLogo.png" alt="">
         <inline-svg src="/src/assets/Image/Svg/EditGoIcon.svg" />
     </div>

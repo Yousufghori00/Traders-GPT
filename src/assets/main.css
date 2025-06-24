@@ -38,6 +38,76 @@
         }
     }
 }
+@media (min-width: 2500px) {
+      .SideBarComponents_CalledInAll_Page{
+          .SelectBtn{ 
+              .p-togglebutton-checked{
+                  .p-togglebutton-label{
+                      height: 60px; 
+                  }
+              }
+              .p-togglebutton-label{
+                   padding: 19px 20px; font-size: 20px;
+              }
+          }
+      }
+  }
+@media (min-width: 2400px) and (max-width: 2550px) {
+      .SideBarComponents_CalledInAll_Page{
+          .SelectBtn{ 
+              .p-togglebutton-checked{
+                  .p-togglebutton-label{
+                      height: 55px; 
+                  }
+              }
+              .p-togglebutton-label{
+                   padding: 18px 20px; font-size: 18px;
+              }
+          }
+      }
+  }
+@media (min-width: 1536px) and (max-width: 1745px) {
+      .SideBarComponents_CalledInAll_Page{
+          .SelectBtn{ 
+              .p-togglebutton-checked{
+                  .p-togglebutton-label{
+                      height: 40px; 
+                  }
+              }
+              .p-togglebutton-label{
+                   padding: 12px 14px; font-size: 12px;
+              }
+          }
+      }
+  }
+ @media (min-width: 1280px) and (max-width: 1535px) {
+      .SideBarComponents_CalledInAll_Page{
+          .SelectBtn{ 
+              .p-togglebutton-checked{
+                  .p-togglebutton-label{
+                    height: 35px; display: flex; justify-content: center; align-items: center; border-radius: 6px;
+                  }
+              }
+              .p-togglebutton-label{
+                   padding: 10px 12px; font-size: 10px;
+              }
+          }
+      }
+  }
+ @media (min-width: 1024px) and (max-width: 1279px) {
+      .SideBarComponents_CalledInAll_Page{
+          .SelectBtn{ 
+              .p-togglebutton-checked{
+                  .p-togglebutton-label{
+                    height: 30px; display: flex; justify-content: center; align-items: center; border-radius: 4px;
+                  }
+              }
+              .p-togglebutton-label{
+                   padding: 8px 10px; font-size: 9px;
+              }
+          }
+      }
+  }
 
 .TabsContent{
     .p-togglebutton-checked{
@@ -1551,21 +1621,12 @@
               transition: all 0.3s ease; padding: 16px 20px; background: var(--vt-c-Traders-Main-Background); display: flex; flex-direction: column; gap: 28px; position: relative; height: calc(100vh - 80px); overflow-y: auto; overflow-x: hidden;
                /* background: var(--vt-c-Traders-Main-SideBar2-Background); */
             .ImgHead{
-                display: flex; justify-content: space-between; align-items: center; padding-left: 40px;
+                display: flex; justify-content: space-between; align-items: center; 
                 img{
                     width: 150px; height: 31px;
                 }
-                .icon{
+                svg{
                     width: 25px; height: 25px;
-                }
-                .toggleIcon{
-                        position: absolute; left: 10px; padding: 1px 1px; background: #5969A3; border-radius: 50%; display: flex;
-                    svg{
-                        width: 25px; height: 25px; transform: rotate(90deg);
-                    path{
-                        stroke: var(--vt-c-Color-White); 
-                    }
-                }
                 }
             }
             .SelectBtn::-webkit-scrollbar { display: none;}
@@ -1719,5 +1780,831 @@
                     }
                 }
             }
+    }
+    @media (min-width: 2500px) {
+        .SideBarComponents_CalledInAll_Page{
+            height: calc(100vh - 100px);
+            .ImgHead{
+                img{
+                    width: 230px; height: 50px;
+                }
+                svg{
+                    width: 32px; height: 32px;
+                }
+            }
+            .CompanyControversyMain{
+                .CompanyNameDv{
+                    gap: 30px;
+                    .CampanyLogo{
+                        img{
+                            width: 66px; height: 66px;
+                        }
+                        .CampanyTextMain{ 
+                            .CampanyText{
+                                gap: 8px;
+                                h1{
+                                    font-size: 22px; 
+                                }
+                                h2{
+                                    font-size: 22px;
+                                    span{
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                        .threeDot{
+                            width: 40px; height: 40px ;
+                        }
+                    }
+                    .BoxMain{
+                        .BoxDvContent{
+                            .BoxDvContentTextMain{
+                                width: 270px; height: fit-content; 
+                                .BoxText{
+                                    gap: 10px;
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                    h2{
+                                        font-size: 20px;
+                                    }
+                                    h6{
+                                        font-size: 20px;
+                                        span{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }.ForCastMain{
+                        .ForCastHead{
+                            p{
+                                font-size: 22px;
+                            }
+                            h2{
+                                font-size: 18px;
+                            }
+                        }
+                        .DayOfBoxMainDv{
+                            .DivForKeep{
+                                .DayOfBoxMain{
+                                    height: fit-content;
+                                    .OnDay{
+                                        width: 60px; height: 60px ; 
+                                        p{
+                                            font-size: 22px; 
+                                        }
+                                        h6{
+                                            font-size: 16px; 
+                                        }
+                                    }
+                                    h1{
+                                        font-size: 22px;
+                                    }
+                                    .LinearGraph{
+                                        gap: 5px;
+                                        img{
+                                            width: 70px; height: 30px; 
+                                        }
+                                        h3{
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .MetricsPerformanceMain{
+                        .MetricsText{
+                            p{
+                                font-size: 22px;
+                            }
+                            h2{
+                                font-size: 18px;
+                            }
+                        }
+                        .MetricsPerformanceBoxDv{
+                            .MetricsBoxOne{
+                                height: fit-content; width: 400px; 
+                                .Structure{ 
+                                    gap: 12px;
+                                    h1{
+                                        font-size: 24px; 
+                                        svg{
+                                            width: 28px; height: 28px;
+                                        }
+                                    }
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                }
+                                .AuthDiv{
+                                    padding: 18px 20px;
+                                    h1{
+                                        font-size: 20px;
+                                    }
+                                    h4{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 2400px) and (max-width: 2550px) {
+        .SideBarComponents_CalledInAll_Page{
+            height: calc(100vh - 100px);
+            .ImgHead{
+                img{
+                    width: 220px; height: 45px;
+                }
+                svg{
+                    width: 28px; height: 28px;
+                }
+            }
+            .CompanyControversyMain{
+                .CompanyNameDv{
+                    gap: 30px;
+                    .CampanyLogo{
+                        img{
+                            width: 60px; height: 60px;
+                        }
+                        .CampanyTextMain{ 
+                            .CampanyText{
+                                gap: 8px;
+                                h1{
+                                    font-size: 20px; 
+                                }
+                                h2{
+                                    font-size: 20px;
+                                    span{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .threeDot{
+                            width: 38px; height: 38px;
+                        }
+                    }
+                    .BoxMain{
+                        .BoxDvContent{
+                            .BoxDvContentTextMain{
+                                width: 270px; height: fit-content; 
+                                .BoxText{
+                                    gap: 10px;
+                                    p{
+                                        font-size: 17px;
+                                    }
+                                    h2{
+                                        font-size: 19px;
+                                    }
+                                    h6{
+                                        font-size: 19px;
+                                        span{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }.ForCastMain{
+                        .ForCastHead{
+                            p{
+                                font-size: 22px;
+                            }
+                            h2{
+                                font-size: 18px;
+                            }
+                        }
+                        .DayOfBoxMainDv{
+                            .DivForKeep{
+                                .DayOfBoxMain{
+                                    height: fit-content;
+                                    .OnDay{
+                                        width: 60px; height: 60px ; 
+                                        p{
+                                            font-size: 22px; 
+                                        }
+                                        h6{
+                                            font-size: 16px; 
+                                        }
+                                    }
+                                    h1{
+                                        font-size: 22px;
+                                    }
+                                    .LinearGraph{
+                                        gap: 5px;
+                                        img{
+                                            width: 70px; height: 30px; 
+                                        }
+                                        h3{
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .MetricsPerformanceMain{
+                        .MetricsText{
+                            p{
+                                font-size: 22px;
+                            }
+                            h2{
+                                font-size: 18px;
+                            }
+                        }
+                        .MetricsPerformanceBoxDv{
+                            .MetricsBoxOne{
+                                height: fit-content; width: 400px; 
+                                .Structure{ 
+                                    gap: 12px;
+                                    h1{
+                                        font-size: 24px; 
+                                        svg{
+                                            width: 28px; height: 28px;
+                                        }
+                                    }
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                }
+                                .AuthDiv{
+                                    padding: 18px 20px;
+                                    h1{
+                                        font-size: 20px;
+                                    }
+                                    h4{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1745px) and (max-width: 1910px) {
+        .SideBarComponents_CalledInAll_Page{
+            height: calc(100vh - 100px);
+            .ImgHead{
+                img{
+                    width: 150px; height: 35px;
+                }
+                svg{
+                    width: 24px; height: 24px;
+                }
+            }
+            .CompanyControversyMain{
+                .CompanyNameDv{
+                    gap: 20px;
+                    .CampanyLogo{
+                        img{
+                            width: 50px; height: 50px;
+                        }
+                        .CampanyTextMain{ 
+                            .CampanyText{
+                                gap: 8px;
+                                h1{
+                                    font-size: 17px; 
+                                }
+                                h2{
+                                    font-size: 17px;
+                                    span{
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .threeDot{
+                            width: 30px; height: 30px;
+                        }
+                    }
+                    .BoxMain{
+                        .BoxDvContent{
+                            .BoxDvContentTextMain{
+                                width: 270px; height: fit-content; gap: 18px;
+                                .BoxText{
+                                    gap: 5px;
+                                    p{
+                                        font-size: 11px;
+                                    }
+                                    h2{
+                                        font-size: 14px;
+                                    }
+                                    h6{
+                                        font-size: 14px;
+                                        span{
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }.ForCastMain{
+                        gap: 10px;
+                        .ForCastHead{
+                            p{
+                                font-size: 16px;
+                            }
+                            h2{
+                                font-size: 12px;
+                            }
+                        }
+                        .DayOfBoxMainDv{
+                            .DivForKeep{
+                                .DayOfBoxMain{
+                                    height: fit-content; padding: 13px;
+                                    .OnDay{
+                                        width: 50px; height: 50px; 
+                                        p{
+                                            font-size: 18px; 
+                                        }
+                                        h6{
+                                            font-size: 12px; 
+                                        }
+                                    }
+                                    h1{
+                                        font-size: 16px;
+                                    }
+                                    .LinearGraph{
+                                        gap: 5px;
+                                        img{
+                                            width: 56px; height: 20px;
+                                        }
+                                        h3{
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .MetricsPerformanceMain{
+                        gap: 10px;
+                        .MetricsText{
+                           p{
+                                font-size: 16px;
+                            }
+                            h2{
+                                font-size: 12px;
+                            }
+                        }
+                        .MetricsPerformanceBoxDv{
+                            .MetricsBoxOne{
+                                height: fit-content; width: 400px; 
+                                .Structure{ 
+                                    gap: 5px;
+                                    h1{
+                                        font-size: 18px; 
+                                        svg{
+                                            width: 20px; height: 20px;
+                                        }
+                                    }
+                                    p{
+                                        font-size: 12px;
+                                    }
+                                }
+                                .AuthDiv{
+                                    padding: 10px 20px;
+                                    h1{
+                                        font-size: 16px;
+                                    }
+                                    h4{
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1536px) and (max-width: 1745px) {
+        .SideBarComponents_CalledInAll_Page{
+            height: calc(100vh - 100px); gap: 20px; padding: 15px;
+            .ImgHead{
+                img{
+                    width: 135px; height: 28px;
+                }
+                svg{
+                    width: 20px; height: 20px;
+                }
+            }
+            .CompanyControversyMain{
+                .CompanyNameDv{
+                    gap: 20px;
+                    .CampanyLogo{
+                        img{
+                            width: 40px; height: 40px;
+                        }
+                        .CampanyTextMain{ 
+                            .CampanyText{
+                                gap: 8px;
+                                h1{
+                                    font-size: 14px; 
+                                }
+                                h2{
+                                    font-size: 14px;
+                                    span{
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .threeDot{
+                            width: 25px; height: 25px;
+                        }
+                    }
+                    .BoxMain{
+                        .BoxDvContent{
+                            gap: 15px;
+                            .BoxDvContentTextMain{
+                                width: 270px; height: fit-content; gap: 18px; padding: 18px; border-radius: 6px;
+                                .BoxText{
+                                    gap: 5px;
+                                    p{
+                                        font-size: 10px;
+                                    }
+                                    h2{
+                                        font-size: 12px;
+                                    }
+                                    h6{
+                                        font-size: 12px;
+                                        span{
+                                            font-size: 9px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }.ForCastMain{
+                        gap: 10px;
+                        .ForCastHead{
+                            p{
+                                font-size: 14px;
+                            }
+                            h2{
+                                font-size: 10px;
+                            }
+                        }
+                        .DayOfBoxMainDv{
+                            .DivForKeep{
+                                .DayOfBoxMain{
+                                    height: fit-content; padding: 10px; gap: 20px;
+                                    .OnDay{
+                                        width: 45px; height: 45px; 
+                                        p{
+                                            font-size: 16px; 
+                                        }
+                                        h6{
+                                            font-size: 10px; 
+                                        }
+                                    }
+                                    h1{
+                                        font-size: 12px;
+                                    }
+                                    .LinearGraph{
+                                        gap: 5px;
+                                        img{
+                                            width: 46px; height: 15px;
+                                        }
+                                        h3{
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .MetricsPerformanceMain{
+                        gap: 10px;
+                        .MetricsText{
+                          p{
+                                font-size: 14px;
+                            }
+                            h2{
+                                font-size: 10px;
+                            }
+                        }
+                        .MetricsPerformanceBoxDv{
+                            .MetricsBoxOne{
+                                height: fit-content; width: 400px; 
+                                .Structure{ 
+                                    gap: 5px; padding: 10px 20px;
+                                    h1{
+                                        font-size: 14px; 
+                                        svg{
+                                            width: 20px; height: 20px;
+                                        }
+                                    }
+                                    p{
+                                        font-size: 10px;
+                                    }
+                                }
+                                .AuthDiv{
+                                    padding: 10px 20px;
+                                    h1{
+                                        font-size: 14px;
+                                    }
+                                    h4{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1280px) and (max-width: 1535px) {
+        .SideBarComponents_CalledInAll_Page{
+            height: calc(100vh - 57px); gap: 15px; padding: 10px;
+            .ImgHead{
+                img{
+                    width: 110px; height: 25px;
+                }
+                svg{
+                    width: 20px; height: 20px;
+                }
+            }
+            .CompanyControversyMain{
+                gap: 20px;
+                .CompanyNameDv{
+                    gap: 15px;
+                    .CampanyLogo{
+                        img{
+                            width: 35px; height: 35px;
+                        }
+                        .CampanyTextMain{ 
+                            gap: 10px;
+                            .CampanyText{
+                                gap: 5px;
+                                h1{
+                                    font-size: 12px; 
+                                }
+                                h2{
+                                    font-size: 12px;
+                                    span{
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+                        .threeDot{
+                            width: 20px; height: 20px;
+                        }
+                    }
+                    .BoxMain{
+                        .BoxDvContent{
+                            gap: 15px;
+                            .BoxDvContentTextMain{
+                                width: 270px; height: fit-content; gap: 18px; padding: 12px; border-radius: 6px;
+                                .BoxText{
+                                    gap: 5px;
+                                    p{
+                                        font-size: 8px;
+                                    }
+                                    h2{
+                                        font-size:10px;
+                                    }
+                                    h6{
+                                        font-size: 10px;
+                                        span{
+                                            font-size: 8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }.ForCastMain{
+                        gap: 5px;
+                        .ForCastHead{
+                            p{
+                                font-size: 12px;
+                            }
+                            h2{
+                                font-size: 9px;
+                            }
+                        }
+                        .DayOfBoxMainDv{
+                            .DivForKeep{
+                                .DayOfBoxMain{
+                                    height: fit-content; padding: 10px; gap: 15px;
+                                    .OnDay{
+                                        width: 35px; height: 35px; border-radius: 4px;
+                                        p{
+                                            font-size: 12px; 
+                                        }
+                                        h6{
+                                            font-size: 8px; 
+                                        }
+                                    }
+                                    h1{
+                                        font-size: 10px;
+                                    }
+                                    .LinearGraph{
+                                        gap: 5px;
+                                        img{
+                                            width: 35px; height: 10px;
+                                        }
+                                        h3{
+                                            font-size: 9px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .MetricsPerformanceMain{
+                        gap: 5px;
+                        .MetricsText{
+                            p{
+                                font-size: 12px;
+                            }
+                            h2{
+                                font-size: 9px;
+                            }
+                        }
+                        .MetricsPerformanceBoxDv{
+                            .MetricsBoxOne{
+                                height: fit-content; width: 400px; 
+                                .Structure{ 
+                                    gap: 3px; padding: 10px 15px;
+                                    h1{
+                                        font-size: 12px; 
+                                        svg{
+                                            width: 16px; height: 16px;
+                                        }
+                                    }
+                                    p{
+                                        font-size: 9px;
+                                    }
+                                }
+                                .AuthDiv{
+                                    padding: 10px 15px;
+                                    h1{
+                                        font-size: 11px;
+                                    }
+                                    h4{
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        .SideBarComponents_CalledInAll_Page{
+            height: calc(100vh - 57px); gap: 15px; padding: 10px;
+            .ImgHead{
+                img{
+                    width: 90px; height: 20px;
+                }
+                svg{
+                    width: 12px; height: 12px;
+                }
+            }
+            .CompanyControversyMain{
+                gap: 20px;
+                .CompanyNameDv{
+                    gap: 15px;
+                    .CampanyLogo{
+                        img{
+                            width: 30px; height: 30px;
+                        }
+                        .CampanyTextMain{ 
+                            gap: 7px;
+                            .CampanyText{
+                                gap: 5px;
+                                h1{
+                                    font-size: 10px; 
+                                }
+                                h2{
+                                    font-size: 10px;
+                                    span{
+                                        font-size: 7px;
+                                    }
+                                }
+                            }
+                        }
+                        .threeDot{
+                            width: 17px; height: 17px;
+                        }
+                    }
+                    .BoxMain{
+                        .BoxDvContent{
+                            gap: 10px;
+                            .BoxDvContentTextMain{
+                                width: 270px; height: fit-content; gap: 15px; padding: 12px; border-radius: 5px;
+                                .BoxText{
+                                    gap: 5px;
+                                    p{
+                                        font-size: 7px;
+                                    }
+                                    h2{
+                                        font-size: 9px;
+                                    }
+                                    h6{
+                                        font-size: 9px;
+                                        span{
+                                            font-size: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }.ForCastMain{
+                        gap: 4px;
+                        .ForCastHead{
+                            p{
+                                font-size: 10px;
+                            }
+                            h2{
+                                font-size: 8px;
+                            }
+                        }
+                        .DayOfBoxMainDv{
+                            .DivForKeep{
+                                gap: 10px;
+                                .DayOfBoxMain{
+                                    height: fit-content; padding: 10px; gap: 10px; border-radius: 6px;
+                                    .OnDay{
+                                        width: 30px; height: 30px; border-radius: 4px;
+                                        p{
+                                            font-size: 10px; 
+                                        }
+                                        h6{
+                                            font-size: 7px; 
+                                        }
+                                    }
+                                    h1{
+                                        font-size: 9px;
+                                    }
+                                    .LinearGraph{
+                                        gap: 5px;
+                                        img{
+                                            width: 30px; height: 10px;
+                                        }
+                                        h3{
+                                            font-size: 8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .MetricsPerformanceMain{
+                        gap: 5px;
+                        .MetricsText{
+                            p{
+                                font-size: 10px;
+                            }
+                            h2{
+                                font-size: 8px;
+                            }
+                        }
+                        .MetricsPerformanceBoxDv{
+                            .MetricsBoxOne{
+                                height: fit-content; width: 400px; 
+                                .Structure{ 
+                                    gap: 3px; padding: 10px 15px;
+                                    h1{
+                                        font-size: 10px; 
+                                        svg{
+                                            width: 12px; height: 12px;
+                                        }
+                                    }
+                                    p{
+                                        font-size: 8px;
+                                    }
+                                }
+                                .AuthDiv{
+                                    padding: 10px 15px;
+                                    h1{
+                                        font-size: 9px;
+                                    }
+                                    h4{
+                                        font-size: 9px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
