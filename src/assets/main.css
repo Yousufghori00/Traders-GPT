@@ -2053,7 +2053,7 @@
     }
     @media (min-width: 1745px) and (max-width: 1910px) {
         .SideBarComponents_CalledInAll_Page{
-            height: calc(100vh - 100px);
+            height: calc(100vh - 80px);
             .ImgHead{
                 img{
                     width: 150px; height: 35px;

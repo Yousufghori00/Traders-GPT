@@ -282,3 +282,1293 @@
     }
 }
 }
+@media (min-width: 2500px) {
+    .TradersChatDv_Content{
+        height: calc(100vh - 100px);
+        .ChatMain_Trader_Content{
+            .UserChat_UI{
+                img{
+                    width: 60px; height: 60px ;
+                }
+                .Chat{
+                    .Time_Date{
+                        p{
+                            font-size: 18px ;
+                            span{
+                                a{
+                                    font-size: 18px ; 
+                                }
+                            }
+                        }
+                    }
+                    .Talk{
+                        gap: 10px ;
+                        p{
+                            font-size: 20px ;
+                        }
+                        h1{
+                            font-size: 18px ; line-height: 27px ;
+                        }
+                    }
+                    .Executive_Summary{
+                        p{
+                            font-size: 20px ;
+                        }
+                        h1{
+                            font-size: 18px ; line-height: 27px ;
+                        }
+                        .Executive_Summary_TableMain{
+                            .Revenue_DV{
+                                .BigIcon{
+                                    width: 45px ; height: 45px ;
+                                    svg{
+                                        width: 25px ; height: 25px ;
+                                    }
+                                }
+                                p{
+                                    font-size: 18px;
+                                }
+                            }
+                            .Mini_Table_Main_Content{
+                                .Mini_Table{
+                                    .Revenue_DV_Width{
+                                        p{
+                                            font-size: 18px !important;
+                                        }
+                                    }   
+                                    .Chart_MAin_Content{
+                                        img{
+                                            width: 100% ; height: 450px ;
+                                        }
+                                        .Boxex_DV{
+                                            gap: 23px ;
+                                            .Box{
+                                                height: 190px ;
+                                                img{
+                                                    width: 70px ; height: 70px ; 
+                                                }
+                                                .TextBox{
+                                                    p{
+                                                        width:145px ; font-size: 20px ;
+                                                    }
+                                                    h1{
+                                                        width: 145px ;  font-size: 20px ; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .TrendIcon{
+                        .IconBox{
+                            width: 45px ; height: 45px ;
+                            svg{
+                                width: 30px; height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .OptionsMain{
+            .optionHead{
+                .trendText{
+                    gap: 10px ;
+                    svg{
+                        width: 30px ; height: 30px ;
+                    }
+                    p{
+                        font-size: 20px ;
+                    }
+                }
+                .TrendIcon{
+                    .IconBox{
+                        width: 45px ; height: 45px ;
+                        svg{
+                            width: 30px; height: 24px;
+                        }
+                    }
+                }
+            }
+            .TrendSuggested{
+                gap: 25px ;
+                .Suggest{
+                    p{
+                        font-size: 17px ;
+                    }
+                }
+            }
+        }
+        .ChatInput_Suggested_Section_Main{
+            .Suggestion_Content_Padding{
+                .Suggestion_Content{
+                    gap: 25px ;
+                    .OptionGet_By{
+                        .IconGet{
+                            width: 56px ; height: 56px ; border-radius: 5px ; 
+                            svg{
+                                width: 29px ; height: 27px ; 
+                            }
+                            .StokeImg{
+                                width: 30px ; height: 30px ;  
+                            }
+                        }
+                        .Text_PlusIcon{
+                            gap: 10px ;
+                            .Lock_Text{
+                                gap: 15px ;
+                                h1{
+                                    font-size: 22px ;
+                                }
+                                h3{
+                                    font-size: 18px ; 
+                                }
+                                p{
+                                    font-size: 18px ; 
+                                }
+                                .lock_Icon{
+                                    width: 25px ;  height: 24px ;
+                                    svg{
+                                        width: 14px ; height: 14px ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ChatSection_Dv{
+                .IconPlus_Input{
+                    .SearchIcon{ 
+                        cursor: pointer; width: 60px ; height: 60px ;
+                        svg{
+                            width: 33px ; height: 20px ;
+                        }
+                    }
+                    .Input{
+                        padding: 12px ;
+                        .ImgInput{
+                            img{ width: 50px ; height: 50px ; }
+                            input{ font-size: 18px ;}
+                            input::placeholder{ font-size: 18px ; }
+                        }
+                        .MicroPhoneIcon{
+                            .Micro{
+                                width: 55px ; height: 55px ;
+                                svg{
+                                    width: 32px ; height: 32px ;
+                                }
+                            }
+                        }
+                    }
+                    .Micro-Sent{
+                        width: 55px ; height: 55px ;
+                        svg{
+                            width: 32px ; height: 32px  ;
+                        }
+                    }
+                }
+                .ToggleIcon_DV{
+                    .ToggleIcon{
+                        .Toggle_Dv {
+                            svg{
+                                width: 30px ; height: 30px ;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 20px ;
+                        span{
+                            font-size: 20px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 2400px) and (max-width: 2550px) {
+    .TradersChatDv_Content{
+        height: calc(100vh - 100px);
+        .ChatMain_Trader_Content{
+            .UserChat_UI{
+                img{
+                    width: 55px; height: 55px;
+                }
+                .Chat{
+                    .Time_Date{
+                        p{
+                            font-size: 16px;
+                            span{
+                                a{
+                                    font-size: 16px; 
+                                }
+                            }
+                        }
+                    }
+                    .Talk{
+                        gap: 10px ;
+                        p{
+                            font-size: 20px ;
+                        }
+                        h1{
+                            font-size: 17px; line-height: 28px;
+                        }
+                    }
+                    .Executive_Summary{
+                        p{
+                            font-size: 20px ;
+                        }
+                        h1{
+                            font-size: 18px ; line-height: 27px ;
+                        }
+                        .Executive_Summary_TableMain{
+                            .Revenue_DV{
+                                .BigIcon{
+                                    width: 45px ; height: 45px ;
+                                    svg{
+                                        width: 25px ; height: 25px ;
+                                    }
+                                }
+                                p{
+                                    font-size: 18px;
+                                }
+                            }
+                            .Mini_Table_Main_Content{
+                                .Mini_Table{
+                                    .Revenue_DV_Width{
+                                        p{
+                                            font-size: 18px !important;
+                                        }
+                                    }   
+                                    .Chart_MAin_Content{
+                                        img{
+                                            width: 100% ; height: 450px ;
+                                        }
+                                        .Boxex_DV{
+                                            gap: 22px ;
+                                            .Box{
+                                                height: 190px ;
+                                                img{
+                                                    width: 70px ; height: 70px ; 
+                                                }
+                                                .TextBox{
+                                                    p{
+                                                        width:145px ; font-size: 18px;
+                                                    }
+                                                    h1{
+                                                        width: 145px ;  font-size: 18px; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   .TrendIcon{
+                    .IconBox{
+                        width: 40px; height: 40px ;
+                        svg{
+                            width: 28px; height: 22px;
+                        }
+                    }
+                }
+                }
+            }
+        }
+        .OptionsMain{
+            .optionHead{
+                .trendText{
+                    gap: 10px;
+                    svg{
+                        width: 25px; height: 25px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+                .TrendIcon{
+                    .IconBox{
+                        width: 40px; height: 40px ;
+                        svg{
+                            width: 28px; height: 22px;
+                        }
+                    }
+                }
+            }
+            .TrendSuggested{
+                gap: 25px ;
+                .Suggest{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .ChatInput_Suggested_Section_Main{
+            .Suggestion_Content_Padding{
+                .Suggestion_Content{
+                    gap: 22px;
+                    .OptionGet_By{
+                        .IconGet{
+                            width: 50px; height: 50px; border-radius: 5px; 
+                            svg{
+                                width: 25px ; height: 23px ; 
+                            }
+                            .StokeImg{
+                                width: 27px ; height: 27px ;  
+                            }
+                        }
+                        .Text_PlusIcon{
+                            gap: 10px;
+                            .Lock_Text{
+                                gap: 15px;
+                                h1{
+                                    font-size: 20px;
+                                }
+                                h3{
+                                    font-size: 16px; 
+                                }
+                                p{
+                                    font-size: 16px; 
+                                }
+                                .lock_Icon{
+                                    width: 22px;  height: 22px ;
+                                    svg{
+                                        width: 12px ; height: 12px ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ChatSection_Dv{
+                .IconPlus_Input{
+                    .SearchIcon{ 
+                        cursor: pointer; width: 55px; height: 55px;
+                        svg{
+                            width: 30px ; height: 17px ;
+                        }
+                    }
+                    .Input{
+                        padding: 10px;
+                        .ImgInput{
+                            img{ width: 45px; height: 45px; }
+                            input{ font-size: 16px;}
+                            input::placeholder{ font-size: 16px; }
+                        }
+                        .MicroPhoneIcon{
+                            .Micro{
+                                width: 50px; height: 50px;
+                                svg{
+                                    width: 27px ; height: 27px ;
+                                }
+                            }
+                        }
+                    }
+                    .Micro-Sent{
+                        width: 50px; height: 50px;
+                        svg{
+                            width: 27px; height: 27px;
+                        }
+                    }
+                }
+                .ToggleIcon_DV{
+                    .ToggleIcon{
+                        .Toggle_Dv {
+                            svg{
+                                width: 27px; height: 27px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 18px ;
+                        span{
+                            font-size: 18px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1745px) and (max-width: 1910px) {
+    .TradersChatDv_Content{
+        height: calc(100vh - 80px); padding: 16px 20px 16px 20px;
+        .ChatMain_Trader_Content{
+            .UserChat_UI{
+                img{
+                    width: 45px; height: 45px; border-radius: 6px;
+                }
+                .Chat{
+                    .Time_Date{
+                        p{
+                            font-size: 14px;
+                            span{
+                                a{
+                                    font-size: 14px; 
+                                }
+                            }
+                        }
+                    }
+                    .Talk{
+                        gap: 8px; border-radius: 10px; padding: 12px 18px;
+                        p{
+                            font-size: 20px ;
+                        }
+                        h1{
+                            font-size: 14px; line-height: 23px;
+                        }
+                    }
+                    .Executive_Summary{
+                        p{
+                            font-size: 16px;
+                        }
+                        h1{
+                            font-size: 14px ; line-height: 23px;
+                        }
+                        .Executive_Summary_TableMain{
+                            .Revenue_DV{
+                                .BigIcon{
+                                    width: 30px; height: 30px;
+                                    svg{
+                                        width: 16px; height: 16px;
+                                    }
+                                }
+                                p{
+                                    font-size: 16px;
+                                }
+                            }
+                            .Mini_Table_Main_Content{
+                                .Mini_Table{
+                                    .Revenue_DV_Width{
+                                        padding: 10px 12px;
+                                        p{
+                                            font-size: 13px !important;
+                                        }
+                                    }   
+                                    .Chart_MAin_Content{
+                                        img{
+                                            width: 100% ; height: 330px;
+                                        }
+                                        .Boxex_DV{
+                                            gap: 15px;
+                                            .Box{
+                                                height: 130px;
+                                                img{
+                                                    width: 45px; height: 45px;
+                                                }
+                                                .TextBox{
+                                                    p{
+                                                        width:145px; font-size: 12px;
+                                                    }
+                                                    h1{
+                                                        width: 145px;  font-size: 12px; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   .TrendIcon{
+                    margin-top: 10px;
+                    .IconBox{
+                        width: 30px; height: 30px;
+                        svg{
+                            width: 22px; height: 16px;
+                        }
+                    }
+                }
+                }
+            }
+        }
+        .OptionsMain{
+            .optionHead{
+                .trendText{
+                    gap: 4px;
+                    svg{
+                        width: 20px; height: 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                 .TrendIcon{
+                    margin-top: 10px;
+                    .IconBox{
+                        width: 30px; height: 30px;
+                        svg{
+                            width: 22px; height: 16px;
+                        }
+                    }
+                }
+            }
+            .TrendSuggested{
+                gap: 20px;
+                .Suggest{
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .ChatInput_Suggested_Section_Main{
+            padding: 0px;
+            .Suggestion_Content_Padding{
+                .Suggestion_Content{
+                    gap: 22px;
+                    .OptionGet_By{
+                        .IconGet{
+                            width: 50px; height: 50px; border-radius: 5px; 
+                            svg{
+                                width: 25px ; height: 23px ; 
+                            }
+                            .StokeImg{
+                                width: 27px ; height: 27px ;  
+                            }
+                        }
+                        .Text_PlusIcon{
+                            gap: 10px;
+                            .Lock_Text{
+                                gap: 15px;
+                                h1{
+                                    font-size: 20px;
+                                }
+                                h3{
+                                    font-size: 16px; 
+                                }
+                                p{
+                                    font-size: 16px; 
+                                }
+                                .lock_Icon{
+                                    width: 22px;  height: 22px ;
+                                    svg{
+                                        width: 12px ; height: 12px ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ChatSection_Dv{
+                .IconPlus_Input{
+                    .SearchIcon{ 
+                        cursor: pointer; width: 45px; height: 45px;
+                        svg{
+                            width: 30px ; height: 17px ;
+                        }
+                    }
+                    .Input{
+                        padding: 5px 10px;
+                        .ImgInput{
+                            img{ width: 27px; height: 27px; }
+                            input{ font-size: 12px;}
+                            input::placeholder{ font-size: 12px; }
+                        }
+                        .MicroPhoneIcon{
+                            .Micro{
+                                width: 40px; height: 40px;
+                                svg{
+                                    width: 22px ; height: 22px ;
+                                }
+                            }
+                        }
+                    }
+                    .Micro-Sent{
+                        width: 40px; height: 40px;
+                        svg{
+                            width: 22px ; height: 22px ;
+                        }
+                    }
+                }
+                .ToggleIcon_DV{
+                    .ToggleIcon{
+                        .Toggle_Dv {
+                            svg{
+                                width: 22px; height: 22px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 12px;
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1536px) and (max-width: 1745px) {
+    .TradersChatDv_Content{
+        height: calc(100vh - 80px); padding: 16px 20px 16px 20px;
+        .ChatMain_Trader_Content{
+            .UserChat_UI{
+                img{
+                    width: 40px; height: 40px; border-radius: 6px;
+                }
+                .Chat{
+                    gap: 2px;
+                    .Time_Date{
+                        p{
+                            font-size: 10px;
+                            span{
+                                a{
+                                    font-size: 10px; 
+                                }
+                            }
+                        }
+                    }
+                    .Talk{
+                        gap: 4px; border-radius: 10px; padding: 12px 18px;
+                        p{
+                            font-size: 12px;
+                        }
+                        h1{
+                            font-size: 10px; line-height: 18px;
+                        }
+                    }
+                    .Executive_Summary{
+                        p{
+                            font-size: 12px;
+                        }
+                        h1{
+                            font-size: 10px; line-height: 18px;
+                        }
+                        .Executive_Summary_TableMain{
+                            margin-top: 10px;
+                            .Revenue_DV{
+                                padding: 8px 15px;
+                                .BigIcon{
+                                    width: 25px; height: 25px;
+                                    svg{
+                                        width: 12px; height: 12px;
+                                    }
+                                }
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                            .Mini_Table_Main_Content{
+                                .Mini_Table{
+                                    .Revenue_DV_Width{
+                                        padding: 10px 12px;
+                                        p{
+                                            font-size: 10px !important;
+                                        }
+                                    }   
+                                    .Chart_MAin_Content{
+                                        img{
+                                            width: 100% ; height: 250px;
+                                        }
+                                        .Boxex_DV{
+                                            gap: 13px;
+                                            .Box{
+                                                height: 110px;
+                                                img{
+                                                    width: 40px; height: 40px;
+                                                }
+                                                .TextBox{
+                                                    p{
+                                                        width:145px; font-size: 10px;
+                                                    }
+                                                    h1{
+                                                        width: 145px;  font-size: 10px; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   .TrendIcon{
+                    margin-top: 10px;
+                    .IconBox{
+                        width: 25px; height: 25px;
+                        svg{
+                            width: 18px; height: 12px;
+                        }
+                    }
+                }
+                }
+            }
+        }
+        .OptionsMain{
+            gap: 10px;
+            .optionHead{
+                .trendText{
+                    gap: 4px;
+                    svg{
+                        width: 16px; height: 16px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                  .TrendIcon{
+                    margin-top: 10px;
+                    .IconBox{
+                        width: 25px; height: 25px;
+                        svg{
+                            width: 18px; height: 12px;
+                        }
+                    }
+                }
+            }
+            .TrendSuggested{
+                gap: 15px;
+                .Suggest{
+                    p{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+        .ChatInput_Suggested_Section_Main{
+            padding: 0px; border-radius: 10px;
+            .Suggestion_Content_Padding{
+                padding: 10px;
+                .Suggestion_Content{
+                    gap: 22px;
+                    .OptionGet_By{
+                        .IconGet{
+                            width: 35px; height: 35px; border-radius: 5px; 
+                            svg{
+                                width: 20px ; height: 19px ; 
+                            }
+                            .StokeImg{
+                                width: 20px ; height: 20px ;  
+                            }
+                        }
+                        .Text_PlusIcon{
+                            gap: 5px;
+                            .Lock_Text{
+                                gap: 10px;
+                                h1{
+                                    font-size: 12px;
+                                }
+                                h3{
+                                    font-size: 10px; 
+                                }
+                                p{
+                                    font-size: 8px; 
+                                }
+                                .lock_Icon{
+                                    width: 17px;  height: 17px;
+                                    svg{
+                                        width: 10px; height: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ChatSection_Dv{
+                padding: 10px; gap: 17px;
+                .IconPlus_Input{
+                    .SearchIcon{ 
+                        width: 35px; height: 35px; border-radius: 5px; cursor: pointer;
+                        svg{
+                            width: 20px; height: 11px;
+                        }
+                    }
+                    .Input{
+                        padding: 3px 10px;
+                        .ImgInput{
+                            img{ width: 27px; height: 27px; }
+                            input{ font-size: 12px;}
+                            input::placeholder{ font-size: 12px; }
+                        }
+                        .MicroPhoneIcon{
+                            .Micro{
+                                width: 30px; height: 30px; border-radius: 4px;
+                                svg{
+                                    width: 16px; height: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .Micro-Sent{
+                         width: 30px; height: 30px; border-radius: 4px;
+                         svg{
+                            width: 16px; height: 16px;
+                        }
+                    }
+                }
+                .ToggleIcon_DV{
+                    .ToggleIcon{
+                        .Toggle_Dv {
+                            svg{
+                                width: 18px; height: 18px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 10px;
+                        span{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .TradersChatDv_Content{
+        height: calc(100vh - 57px); padding: 16px 20px 16px 20px;
+        .ChatMain_Trader_Content{
+            .UserChat_UI{
+                gap: 10px;
+                img{
+                    width: 30px; height: 30px; border-radius: 6px;
+                }
+                .Chat{
+                    gap: 2px;
+                    .Time_Date{
+                        p{
+                            font-size: 9px;
+                            span{
+                                a{
+                                    font-size: 9px; 
+                                }
+                            }
+                        }
+                    }
+                    .Talk{
+                        gap: 3px; border-radius: 6px; padding: 10px 14px;
+                        p{
+                            font-size: 10px;
+                        }
+                        h1{
+                            font-size: 9px; line-height: 14px;
+                        }
+                    }
+                    .Executive_Summary{
+                        padding: 10px 14px; gap: 3px; border-radius: 6px;
+                        p{
+                            font-size: 12px;
+                        }
+                        h1{
+                            font-size: 10px; line-height: 18px;
+                        }
+                        .Executive_Summary_TableMain{
+                            margin-top: 10px;
+                            .Revenue_DV{
+                                padding: 8px 15px;
+                                .BigIcon{
+                                    width: 20px; height: 20px;
+                                    svg{
+                                        width: 8px; height: 8px;
+                                    }
+                                }
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                            .Mini_Table_Main_Content{
+                                .Mini_Table{
+                                    .Revenue_DV_Width{
+                                        padding: 10px 12px !important;
+                                        p{
+                                            font-size: 9px !important;
+                                        }
+                                    }   
+                                    .Chart_MAin_Content{
+                                        img{
+                                            width: 100% ; height: 220px;
+                                        }
+                                        .Boxex_DV{
+                                            gap: 10px;
+                                            .Box{
+                                                height: 95px; border-radius: 4px;
+                                                img{
+                                                    width: 35px; height: 35px;
+                                                }
+                                                .TextBox{
+                                                    p{
+                                                        width:145px; font-size: 9px;
+                                                    }
+                                                    h1{
+                                                        width: 145px;  font-size: 9px; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   .TrendIcon{
+                    margin-top: 10px;
+                    .IconBox{
+                        width: 20px; height: 20px;
+                        svg{
+                            width: 15px; height: 10px;
+                        }
+                    }
+                }
+                }
+            }
+        }
+        .OptionsMain{
+            gap: 10px;
+            .optionHead{
+                .trendText{
+                    gap: 4px;
+                    svg{
+                        width: 12px; height: 12px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+                  .TrendIcon{
+                    margin-top: 10px;
+                    .IconBox{
+                        width: 20px; height: 20px;
+                        svg{
+                            width: 15px; height: 10px;
+                        }
+                    }
+                }
+            }
+            .TrendSuggested{
+                gap: 15px;
+                .Suggest{
+                    padding: 8px; border-radius: 6px;
+                    p{
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+        .ChatInput_Suggested_Section_Main{
+            padding: 0px; border-radius: 10px;
+            .Suggestion_Content_Padding{
+                padding: 10px;
+                .Suggestion_Content{
+                    gap: 22px;
+                    .OptionGet_By{
+                        .IconGet{
+                            width: 35px; height: 35px; border-radius: 5px; 
+                            svg{
+                                width: 20px ; height: 19px ; 
+                            }
+                            .StokeImg{
+                                width: 20px ; height: 20px ;  
+                            }
+                        }
+                        .Text_PlusIcon{
+                            gap: 5px;
+                            .Lock_Text{
+                                gap: 10px;
+                                h1{
+                                    font-size: 12px;
+                                }
+                                h3{
+                                    font-size: 10px; 
+                                }
+                                p{
+                                    font-size: 8px; 
+                                }
+                                .lock_Icon{
+                                    width: 17px;  height: 17px;
+                                    svg{
+                                        width: 10px; height: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ChatSection_Dv{
+                padding: 10px; gap: 17px;
+                .IconPlus_Input{
+                    .SearchIcon{ 
+                        width: 30px; height: 30px; border-radius: 5px; cursor: pointer;
+                        svg{
+                            width: 20px; height: 11px;
+                        }
+                    }
+                    .Input{
+                        padding: 5px 10px; border-radius: 5px;
+                        .ImgInput{
+                            img{ width: 22px; height: 22px; }
+                            input{ font-size: 10px;}
+                            input::placeholder{ font-size: 10px; }
+                        }
+                        .MicroPhoneIcon{
+                            .Micro{
+                                width: 25px; height: 25px; border-radius: 4px;
+                                svg{
+                                    width: 12px; height: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .Micro-Sent{
+                          width: 25px; height: 25px; border-radius: 4px;
+                          svg{
+                            width: 12px; height: 12px;
+                        
+                        }
+                    }
+                }
+                .ToggleIcon_DV{
+                    .ToggleIcon{
+                        .Toggle_Dv {
+                            svg{
+                                width: 14px; height: 14px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 10px;
+                        span{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .TradersChatDv_Content{
+        height: calc(100vh - 55px); padding: 10px 15px 10px 15px;
+        .ChatMain_Trader_Content{
+            gap: 15px;
+            .UserChat_UI{
+                gap: 10px;
+                img{
+                    width: 25px; height: 25px; border-radius: 3px;
+                }
+                .Chat{
+                    gap: 2px;
+                    .Time_Date{
+                        p{
+                            font-size: 7px;
+                            span{
+                                a{
+                                    font-size: 7px; 
+                                }
+                            }
+                        }
+                    }
+                    .Talk{
+                        gap: 3px; border-radius: 6px; padding: 10px 14px;
+                        p{
+                            font-size: 10px;
+                        }
+                        h1{
+                            font-size: 8px; line-height: 13px;
+                        }
+                    }
+                    .Executive_Summary{
+                        padding: 10px 14px; gap: 3px; border-radius: 6px;
+                        p{
+                            font-size: 10px;
+                        }
+                        h1{
+                            font-size: 8px; line-height: 13px;
+                        }
+                        .Executive_Summary_TableMain{
+                            margin-top: 10px;
+                            .Revenue_DV{
+                                padding: 8px 15px;
+                                .BigIcon{
+                                    width: 20px; height: 20px;
+                                    svg{
+                                        width: 8px; height: 8px;
+                                    }
+                                }
+                                p{
+                                    font-size: 10px;
+                                }
+                            }
+                            .Mini_Table_Main_Content{
+                                .Mini_Table{
+                                    .Revenue_DV_Width{
+                                        padding: 10px 12px !important;
+                                        p{
+                                            font-size: 7px !important;
+                                        }
+                                    }   
+                                    .Chart_MAin_Content{
+                                        img{
+                                            width: 100% ; height: 170px;
+                                        }
+                                        .Boxex_DV{
+                                            gap: 9px; margin-top: 10px;
+                                            .Box{
+                                                height: 85px; border-radius: 4px;
+                                                img{
+                                                    width: 30px; height: 30px;
+                                                }
+                                                .TextBox{
+                                                    p{
+                                                        width:145px; font-size: 7px;
+                                                    }
+                                                    h1{
+                                                        width: 145px;  font-size: 7px; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   .TrendIcon{
+                    margin-top: 5px; gap: 5px;
+                    .IconBox{
+                        width: 17px; height: 17px; border-radius: 3px;
+                        svg{
+                            width: 10px; height: 12px;
+                        }
+                    }
+                }
+                }
+            }
+        }
+        .OptionsMain{
+            gap: 10px;
+            .optionHead{
+                .trendText{
+                    gap: 4px;
+                    svg{
+                        width: 10px; height: 10px;
+                    }
+                    p{
+                        font-size: 8px;
+                    }
+                }
+                   .TrendIcon{
+                    margin-top: 5px; gap: 5px;
+                    .IconBox{
+                        width: 17px; height: 17px; border-radius: 3px;
+                        svg{
+                            width: 10px; height: 12px;
+                        }
+                    }
+                }
+            }
+            .TrendSuggested{
+                gap: 15px;
+                .Suggest{
+                    padding: 8px; border-radius: 6px;
+                    p{
+                        font-size: 7px;
+                    }
+                }
+            }
+        }
+        .ChatInput_Suggested_Section_Main{
+            padding: 0px; border-radius: 10px;
+            .Suggestion_Content_Padding{
+                padding: 10px;
+                .Suggestion_Content{
+                    gap: 22px;
+                    .OptionGet_By{
+                        .IconGet{
+                            width: 35px; height: 35px; border-radius: 5px; 
+                            svg{
+                                width: 20px ; height: 19px ; 
+                            }
+                            .StokeImg{
+                                width: 20px ; height: 20px ;  
+                            }
+                        }
+                        .Text_PlusIcon{
+                            gap: 5px;
+                            .Lock_Text{
+                                gap: 10px;
+                                h1{
+                                    font-size: 12px;
+                                }
+                                h3{
+                                    font-size: 10px; 
+                                }
+                                p{
+                                    font-size: 8px; 
+                                }
+                                .lock_Icon{
+                                    width: 17px;  height: 17px;
+                                    svg{
+                                        width: 10px; height: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ChatSection_Dv{
+                padding: 10px; gap: 17px;
+                .IconPlus_Input{
+                    .SearchIcon{ 
+                        width: 25px; height: 25px; border-radius: 3px; cursor: pointer;
+                        svg{
+                            width: 15px; height: 8px;
+                        }
+                    }
+                    .Input{
+                        padding: 5px 10px; border-radius: 5px;
+                        .ImgInput{
+                            img{ width: 20px; height: 20px; }
+                            input{ font-size: 9px;}
+                            input::placeholder{ font-size: 9px; }
+                        }
+                        .MicroPhoneIcon{
+                            .Micro{
+                                width: 20px; height: 20px; border-radius: 4px;
+                                svg{
+                                    width: 10px; height: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .Micro-Sent{
+                        width: 20px; height: 20px; border-radius: 4px;
+                        svg{
+                            width: 10px; height: 10px;
+                        }
+                    }
+                }
+                .ToggleIcon_DV{
+                    .ToggleIcon{
+                        .Toggle_Dv {
+                            svg{
+                                width: 12px; height: 12px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 8px;
+                        span{
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
